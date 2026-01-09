@@ -1,0 +1,816 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_3fa88e067449c8d128286c8d4d3272fb_20250516_072917_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-16 07:29 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_3fa88e067449c8d128286c8d4d3272fb_20250516_072917_analysis.html<br>File Size: 105472<br>
+File Type: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, 3 sections<br>
+Compilation timestamp: 1970-01-30 04:33:03<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    3fa88e067449c8d128286c8d4d3272fb<br>
+SHA1:   0b9d2fd8bbd304455b0bcfc6e31c44a476dda506<br>
+SHA256: 40d99eef567726af4edf499f890c70eda95a7643f6f6da1abbb7bd20c30b2d52<br>
+SHA512: cdebcd53cb0814f5038d33bfa96a4ffcc73b5c26ac403a9bb68818a3c1a8ec9705b9cef2d327ca1eb8e5442e84b8b5dbd30027e7261f13391c24c3ac07562555<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0xb3dd<br>Number of Sections: 3<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>.MPRESS1</td>
+                        <td>0x1000</td>
+                        <td>0x19000</td>
+                        <td>100352</td>
+                        <td>5.58 (Not packed)</td></tr>
+<tr><td>.MPRESS2</td>
+                        <td>0x1a000</td>
+                        <td>0x1000</td>
+                        <td>3584</td>
+                        <td>5.75 (Not packed)</td></tr>
+<tr><td>.imports</td>
+                        <td>0x1b000</td>
+                        <td>0x1000</td>
+                        <td>1024</td>
+                        <td>3.98 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.DLL</b><br>
+0x412000 Sleep<br>
+0x412004 lstrlenA<br>
+0x412008 CreateThread<br>
+0x41200c VirtualFree<br>
+0x412010 GetModuleFileNameW<br>
+0x412014 GetTickCount<br>
+0x412018 ExitProcess<br>
+0x41201c GetFileSize<br>
+0x412020 VirtualAlloc<br>
+0x412024 ReadFile<br>
+0x412028 CloseHandle<br>
+0x41202c CreateFileW<br>
+0x412030 lstrlenW<br>
+0x412034 MultiByteToWideChar<br>
+<b>ntdll.dll</b><br>
+0x41203c memset<br>
+0x412040 _wtoi<br>
+0x412044 memcpy<br>
+<b>ole32.dll</b><br>
+0x41204c CreateStreamOnHGlobal<br>
+<b>SHLWAPI.dll</b><br>
+0x412054 StrStrA<br>
+<b>USER32.dll</b><br>
+0x41205c wsprintfA<br>
+0x412060 wsprintfW<br>
+<b>WINHTTP.dll</b><br>
+0x412068 WinHttpCrackUrl<br>
+0x41206c WinHttpOpen<br>
+0x412070 WinHttpConnect<br>
+0x412074 WinHttpOpenRequest<br>
+0x412078 WinHttpSendRequest<br>
+0x41207c WinHttpQueryHeaders<br>
+0x412080 WinHttpReadData<br>
+0x412084 WinHttpCloseHandle<br>
+0x412088 WinHttpReceiveResponse<br>
+<b>KERNEL32.DLL</b><br>
+0x412090 GetModuleFileNameW<br>
+<b>KERNEL32.DLL</b><br>
+0x412098 GetModuleHandleA<br>
+0x41209c LoadLibraryA<br>
+0x4120a0 LocalAlloc<br>
+0x4120a4 LocalFree<br>
+0x4120a8 GetModuleFileNameA<br>
+0x4120ac ExitProcess<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x412000 Sleep<br>
+0x412000 Sleep<br>
+0x412004 lstrlenA<br>
+0x412008 CreateThread<br>
+0x412008 CreateThread<br>
+0x41200c VirtualFree<br>
+0x41200c VirtualFree<br>
+0x412010 GetModuleFileNameW<br>
+0x412014 GetTickCount<br>
+0x412014 GetTickCount<br>
+0x412018 ExitProcess<br>
+0x41201c GetFileSize<br>
+0x412020 VirtualAlloc<br>
+0x412020 VirtualAlloc<br>
+0x412024 ReadFile<br>
+0x412024 ReadFile<br>
+0x412028 CloseHandle<br>
+0x41202c CreateFileW<br>
+0x41202c CreateFileW<br>
+0x41202c CreateFileW<br>
+0x412030 lstrlenW<br>
+0x412034 MultiByteToWideChar<br>
+0x41203c memset<br>
+0x412040 _wtoi<br>
+0x412044 memcpy<br>
+0x41204c CreateStreamOnHGlobal<br>
+0x412054 StrStrA<br>
+0x41205c wsprintfA<br>
+0x412060 wsprintfW<br>
+0x412068 WinHttpCrackUrl<br>
+0x41206c WinHttpOpen<br>
+0x412070 WinHttpConnect<br>
+0x412074 WinHttpOpenRequest<br>
+0x412078 WinHttpSendRequest<br>
+0x41207c WinHttpQueryHeaders<br>
+0x412080 WinHttpReadData<br>
+0x412084 WinHttpCloseHandle<br>
+0x412088 WinHttpReceiveResponse<br>
+0x412090 GetModuleFileNameW<br>
+0x412098 GetModuleHandleA<br>
+0x412098 GetModuleHandleA<br>
+0x412098 GetModuleHandleA<br>
+0x41209c LoadLibraryA<br>
+0x41209c LoadLibraryA<br>
+0x41209c LoadLibraryA<br>
+0x4120a0 LocalAlloc<br>
+0x4120a4 LocalFree<br>
+0x4120a8 GetModuleFileNameA<br>
+0x4120ac ExitProcess<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!Win32<br>
+.EXE.<br>
+.MPRESS1<br>
+.MPRESS2<br>
+.imports<br>
+Qh("@<br>
+h$"@<br>
+Phl#@<br>
+Pu$j<br>
+hx#@<br>
+Pu#j<br>
+KERNEL32.DLL<br>
+Sleep<br>
+lstrlenA<br>
+CreateThread<br>
+VirtualFree<br>
+GetModuleFileNameW<br>
+GetTickCount<br>
+ExitProcess<br>
+GetFileSize<br>
+VirtualAlloc<br>
+ReadFile<br>
+CloseHandle<br>
+CreateFileW<br>
+lstrlenW<br>
+MultiByteToWideChar<br>
+ntdll.dll<br>
+memset<br>
+_wtoi<br>
+memcpy<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+SHLWAPI.dll<br>
+StrStrA<br>
+USER32.dll<br>
+wsprintfA<br>
+wsprintfW<br>
+WINHTTP.dll<br>
+WinHttpCrackUrl<br>
+WinHttpOpen<br>
+WinHttpConnect<br>
+WinHttpOpenRequest<br>
+WinHttpSendRequest<br>
+WinHttpQueryHeaders<br>
+WinHttpReadData<br>
+WinHttpCloseHandle<br>
+WinHttpReceiveResponse<br>
+KERNEL32.DLL<br>
+GetModuleFileNameW<br>
+KERNEL32.DLL<br>
+GetModuleHandleA<br>
+LoadLibraryA<br>
+LocalAlloc<br>
+LocalFree<br>
+GetModuleFileNameA<br>
+ExitProcess<br>
+8Mue<br>
+KERNEL32<br>
+VirtualProtect<br>
+t<br>
+PTj<br>
+G(XPTPjxW<br>
+2%>7<br>
+|E.$<br>
+BxSzM<br>
+da'S<br>
+zY`,<br>
+RY_\<br>
+-<S<<br>
+D$Df<br>
+EUu*b<br>
+'"&^]<br>
+q{0s<br>
+FEUu<br>
+6uw<br>
+w//-<br>
+JqOK<br>
+~e6:<br>
+b9f3<br>
+_uxF<br>
+{*:<br>
+%$$\<br>
+TtGyR<br>
+HRid<br>
+/<br>
+yW<br>
+0$brA{(<br>
+_C+B<br>
+9vB/<br>
+%v?J<br>
+VR]b&<br>
+GVb&<br>
+R3CX<br>
+x8cV<br>
+(S)C<br>
+h<X8<br>
+XhEu<br>
+!b(-<br>
+m->B<br>
+$$`P<br>
+956`<br>
+D$$`Q<br>
+hXP6J<br>
+D$Xf<br>
+n][Z<br>
+H44<br>
+pkU1<br>
+;f*&<br>
+\?nM<br>
+8.htW.B<br>
+1'_D<br>
+\$<br>
+h<br>
+{r_`<br>
+|$D^f<br>
+t$Dh"G<br>
+;h7<br>
+P}ISX<br>
+POH<br>
+"ixtS,O<br>
+r#xM<br>
+Pc{w<br>
+wvF)}<br>
+F/=W<br>
+-<br>
+la<br>
+ZOoZ|<br>
+^kx#<br>
+hy79<br>
+O.}a<br>
+ZtxF<br>
+e)PJh<br>
+xt]z<br>
+XvTu<br>
+.xQP<br>
+(<<br>
+2<br>
+*@q+<br>
+!Bn:<br>
+luX_<br>
+pKkh<br>
+b_U=<br>
+$PrgS<br>
++$e%<br>
+Qx0R<br>
+@}vH<br>
+71<br>
+,<br>
+5Jj0w<br>
+hCx}<br>
+h(d'-r&<br>
+pRGw]<br>
+ETbw<br>
+}Ig*S<br>
+7PCG<br>
+OZqw<br>
+6"zc<br>
+X?wk<br>
+@Mgl<o<br>
+@K)T<br>
+yg#p<br>
+uExv(0`<br>
+ir_|<br>
+BRg/<br>
+k"Kg<br>
+hE#d<br>
+"SO=<br>
+'63-<br>
+g9stw<br>
+U//J<br>
+WG.I<br>
+P&~D<br>
+2u^xk<br>
+x7<ZXt<br>
+#wla<br>
+BuQvY<br>
+t<R_W<br>
+*i<j<br>
+W}MtQ<br>
+6w;V<br>
+pR_g-<br>
+#mV><br>
+gU{a<br>
+MwOGg<br>
+zc=y<br>
+g6S0<br>
+ur{7<br>
+v]Ah<br>
+_vBV<br>
+Qd:<br>
+$}?QS<br>
+RA3p<br>
+X<br>
+rC<br>
+OXG[<br>
+m!#<br>
+Xs#H<br>
+R#gdS><br>
+Qy?E7<br>
+}`QBx$<br>
+h|Pq'<br>
+21@^<br>
+Ot_CkR<br>
+wh7c3<br>
+zvq1=<br>
+h0d6<br>
+QP;`<br>
+)=u6<br>
+F;|ZWY<br>
+{!MC<br>
+moW%<br>
+9f}?<br>
+^`P_<br>
+Hd@w<br>
+9qG4<br>
+M]Kqh<br>
+d3G1#"t<br>
+SO/0<br>
+KFKS8<br>
+<$;M<br>
+}5H)-<br>
+Fu;X,<br>
+^uWt<br>
+*T|Wb"<br>
+pCy*<br>
+Ya-$?C<br>
+{h<s<br>
+l$<br>
+`<br>
+UhEzr<br>
+user32.dll<br>
+#(w~<br>
+Lloa<br>
+F}4@<br>
+B#dL<br>
+D$Df<br>
+h~<br>
+=P<br>
+1;u@<br>
+\|G}&<br>
+/O>J<br>
+CpLoQ<br>
+0:rq~C<br>
+-*hQ<br>
+-}v<br>
+dTF<br>
+hJ=6<br>
+2XOKQK<br>
+N<<br>
+P<br>
+fb5ms<br>
+[a)<br>
+;1ER<br>
+d$<br>
+0<br>
+9#Sy!<br>
+:-+;UU?<br>
+s5MH<br>
+0$XM<br>
+;s@|<br>
+h;io<br>
+$&g`<br>
+EDg\\_a<br>
+dH+Z<br>
+bZ8spQ<br>
+BILf<br>
+CqYy<br>
+mV5l<br>
+^e]i<br>
+iN,W<br>
+[?^(d<br>
+&DE%<br>
+QS4<br>
+WDyk<br>
+t$@f<br>
+@&7*<br>
+D$(><br>
+^UW^T<br>
+@x4Z<br>
+-~M{<br>
+X}Kt<br>
+U33{O<br>
+r|,0<br>
+cY\H<br>
+-Q9$<br>
+mo\l<br>
+Q9nE<br>
+}\FT<br>
+WE^><br>
+H0+Cw<br>
+(>6@\{<br>
+<b~%<br>
+=pc"?<br>
+O=S8<br>
++OIS<br>
+sDsx<br>
+Sh@f<br>
+C2-\<br>
+nZY~F<br>
+lnBj<br>
+B%Rvc<br>
+oBzkp<br>
+-wR1<br>
+DEH<br>
+KZsJ<br>
+G&#]<br>
+\J9G<br>
+f<$VA<br>
+K-5E<br>
+2p3+<br>
+PS@|"m<br>
+qk0?G<br>
+oV`Qu$-<br>
+lBkE`<br>
+rb<br>
+`'G<<br>
+27Hsp5<br>
+f6_c<br>
+y%bj<br>
+bFd"9<br>
+Gu@u<br>
+2!S<br>
+R+vY<br>
+2)r&<br>
+m6[U<br>
+T(qr<br>
+yj{L<br>
+OI]%ri<br>
+J.>>7<br>
+.7=Z<br>
+6K!7A<br>
+LlK_<br>
+e4_fBD<br>
+h(9E<br>
+EBN^<br>
+sf<br>
+_<br>
+)@$6#{<br>
+EpuC<br>
+M`#'<br>
+h--q<br>
+.hRC7sZ<br>
+VTG%<br>
+l05#+<br>
+&<br>
+'k-Wu~<br>
+\;?o\<br>
+3o22}<br>
+D$(E<br>
+,`p[<br>
+s]~m<br>
+=xl^<br>
+-]:;n<br>
+`6*d<br>
+?#hs<br>
+ot`s|x<br>
+)zf[<br>
+gU5W=<br>
+7gyzO<br>
+D$(j<br>
+NfOe<br>
+j9]'<br>
+aT>R<br>
+4wHm<br>
+~g<br>
+d$<hyv<br>
+K#)-<br>
+jl8f<br>
+Zvuc'<br>
+Kt*B<br>
+KC#Gm<br>
+!q:X<br>
+1xNE<br>
+$<br>
+D$$WYA<br>
+~b0{<br>
+<tOe<br>
+'cDgQb}<br>
+T<br>
+x;<br>
+H{Q9<br>
+3Wk^<br>
+Eec7hM<br>
+D^<br>
+m<br>
+u>~E<br>
+@{En<br>
+w3sa<br>
+Fo7'<br>
+DFa1<br>
+v`,<br>
+pken^uG,@<br>
+ik+QA<br>
+,U)+<br>
+tg-g<br>
+y!#{U<br>
+agNc&<br>
+=!#+z<br>
+QbZq<br>
+ZbAsh<br>
+;#he:<br>
+w'L#<br>
+[>ZJ<br>
+]NDz<br>
+7K+[<br>
+~Z8s`lOqj<br>
+{i1U<br>
+P{=jtD<br>
+2pPf[<br>
+^Fsy<br>
+\~<br>
+e<br>
+m1bYw<br>
+U@Djs<br>
+r;=`<br>
+$Q2.X<br>
+K?UO<br>
+c%x<br>
+/z:.<br>
+`dWY<br>
+|obV<br>
+~Urh<br>
+@ZEK<br>
+D$<br>
+f<br>
+7toe^<br>
+q~v9j<br>
+tF`o7<br>
+t$2f<br>
+t$Df9<br>
+VnEw,J<br>
+Rt!TA<br>
+F($Jn<br>
+i)Pz<br>
+t$<br>
+f<br>
+k?O~<br>
+8}Do<br>
+v7L/\<br>
+[yzbAshh<br>
+"}X9<br>
+3)}B6<br>
+/af@<br>
+0ao_<br>
+::<br>
+CV1uJ<br>
+}eCe<br>
+pS`9<br>
+171`2<br>
+h\Ea<br>
+S5^(jv<br>
+!u>n<br>
+7e}^0<br>
+D$$`<br>
+jzI{phc<br>
+shh[<br>
+|$<f<br>
+UhO6><br>
+h&_e<br>
+``hf<br>
+T$8f<br>
+|$8h'R<br>
+t$8^<br>
+d$8T<br>
+h7Ca$`<br>
+|$@W<br>
+t$@^<br>
+d$<Tf<br>
+\$<P<br>
+D$8S<br>
+T$8f<br>
+|$4S<br>
+`hUf<br>
+d$4T<br>
+d$LTf<br>
+D$<br>
+R<br>
+T$<br>
+`<br>
+t$8^f<br>
+d$4Tf<br>
+t$,f<br>
+d$,Tf<br>
+l$@Y<br>
+)0O`<br>
+|$(hfs.<br>
+t$0f<br>
+|$0f<br>
+t$,f<br>
+d$0T<br>
+,$WU<br>
+d$PT<br>
+hVDN[<br>
+T$(f<br>
+f5J]<br>
+'VS?`<br>
+t$0``<br>
+d$$T<br>
+hee$c<br>
+d$HTf<br>
+t$4f<br>
+d$4TR<br>
+$ff)<br>
+t$<br>
+f<br>
+d$<br>
+T<br>
+t$Hf9<br>
+GPW9<br>
+d$@T<br>
+"6h#<br>
+8h$U<br>
+|$8f<br>
+htD{<br>
+t$0h<br>
+|$@h><br>
+t$Hf<br>
+d$<br>
+T<br>
+t$@f<br>
+d$<br>
+`f<br>
+hz<br>
+?m<br>
+t$0h<br>
+f5J]<br>
+|$,^<br>
+t$,f<br>
+t$4f<br>
+d$4TSf<br>
+t$,f<br>
+d$0T<br>
+t$@f<br>
+hO<br>
+C<br>
+D$<br>
++~A<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+KERNEL32.DLL<br>
+ntdll.dll<br>
+_wtoi<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+SHLWAPI.dll<br>
+StrStrA<br>
+USER32.dll<br>
+wsprintfA<br>
+WINHTTP.dll<br>
+WinHttpOpen<br>
+UWVS<br>
+9L$ts<br>
+D$xf<br>
+T$L3<br>
+;\$L<br>
+9L$t<br>
+t$t#t$l<br>
+;\$L<br>
+D$Hf<br>
+T$sf<br>
+D$t#D$h<br>
++L$d<br>
+D$t+D$\<br>
+;\$L<br>
+D$Hf<br>
+.)D$H+<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+|$`<br>
+L$H+<br>
+t$`+<br>
+t$8w<br>
+;\$L<br>
+L$xf<br>
+D$X3<br>
+L$8f+<br>
+;\$L<br>
+L$8f<br>
+;\$L<br>
+s`)L$4<br>
+D$t+D$\<br>
+l$8f+<br>
+;\$L<br>
+;\$L<br>
+D$8f<br>
+l$X3<br>
+;\$L<br>
+;\$L<br>
+T$Df<br>
+t$Hf<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+t$(N<br>
+t$(u<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+l$$M<br>
+l$$u<br>
+;\$L<br>
+;|$Hr<br>
++|$H<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+t$\tZ<br>
+9l$\w`<br>
++D$\<br>
+D$tIt<br>
+9l$tr<br>
+9D$t<br>
+;\$L<br>
+|[^_]<br>
+KERNEL32.DLL<br>
+Sleep<br>
+lstrlenA<br>
+CreateThread<br>
+VirtualFree<br>
+GetModuleFileNameW<br>
+GetTickCount<br>
+ExitProcess<br>
+GetFileSize<br>
+VirtualAlloc<br>
+ReadFile<br>
+CloseHandle<br>
+CreateFileW<br>
+lstrlenW<br>
+MultiByteToWideChar<br>
+ntdll.dll<br>
+memset<br>
+_wtoi<br>
+memcpy<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+SHLWAPI.dll<br>
+StrStrA<br>
+USER32.dll<br>
+wsprintfA<br>
+wsprintfW<br>
+WINHTTP.dll<br>
+WinHttpCrackUrl<br>
+WinHttpOpen<br>
+WinHttpConnect<br>
+WinHttpOpenRequest<br>
+WinHttpSendRequest<br>
+WinHttpQueryHeaders<br>
+WinHttpReadData<br>
+WinHttpCloseHandle<br>
+WinHttpReceiveResponse<br>
+KERNEL32.DLL<br>
+GetModuleFileNameW<br>
+KERNEL32.DLL<br>
+GetModuleHandleA<br>
+LoadLibraryA<br>
+LocalAlloc<br>
+LocalFree<br>
+GetModuleFileNameA<br>
+ExitProcess

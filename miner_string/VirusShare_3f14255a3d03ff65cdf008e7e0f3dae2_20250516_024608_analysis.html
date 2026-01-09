@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_3f14255a3d03ff65cdf008e7e0f3dae2_20250516_024608_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-16 02:46 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_3f14255a3d03ff65cdf008e7e0f3dae2_20250516_024608_analysis.html<br>File Size: 14192<br>
+File Type: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, 3 sections<br>
+Compilation timestamp: 2013-09-11 22:39:41<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    3f14255a3d03ff65cdf008e7e0f3dae2<br>
+SHA1:   7c07aad60ce516268930182a8701349f695c7761<br>
+SHA256: 09f6c9d8bb9afb654a2834d773e9f252deabffb1ddac96109a38512cab0955fe<br>
+SHA512: 11236ef2a1cec9f2b0ed0d752e2f85f0ac56ce164d298e843bd55f6c29152cc82ed56da27a6858019c34a3f9ce5cc6fb7d4700c2062b282234aa3a44a5bff3fa<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x1000<br>Number of Sections: 3<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>.MPRESS1</td>
+                        <td>0x1000</td>
+                        <td>0x3000</td>
+                        <td>4608</td>
+                        <td>3.31 (Not packed)</td></tr>
+<tr><td>.MPRESS2</td>
+                        <td>0x4000</td>
+                        <td>0x1000</td>
+                        <td>1024</td>
+                        <td>5.91 (Not packed)</td></tr>
+<tr><td>.imports</td>
+                        <td>0x5000</td>
+                        <td>0x1000</td>
+                        <td>1024</td>
+                        <td>2.76 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>WININET.dll</b><br>
+0x402054 InternetSetOptionW<br>
+0x402058 HttpSendRequestW<br>
+0x40205c InternetConnectW<br>
+0x402060 InternetReadFile<br>
+0x402064 HttpQueryInfoW<br>
+0x402068 HttpOpenRequestW<br>
+0x40206c InternetQueryOptionW<br>
+0x402070 InternetOpenW<br>
+<b>KERNEL32.dll</b><br>
+0x402000 HeapCreate<br>
+0x402004 GetModuleFileNameW<br>
+0x402008 DeleteFileW<br>
+0x40200c CloseHandle<br>
+0x402010 GetCurrentDirectoryW<br>
+0x402014 GetTempPathW<br>
+0x402018 lstrlenW<br>
+0x40201c lstrcmpW<br>
+0x402020 ExitProcess<br>
+0x402024 GetFileSize<br>
+0x402028 HeapAlloc<br>
+0x40202c GetModuleHandleW<br>
+0x402030 WriteFile<br>
+0x402034 Sleep<br>
+0x402038 ReadFile<br>
+0x40203c CreateFileW<br>
+<b>USER32.dll</b><br>
+0x40204c wsprintfW<br>
+<b>SHELL32.dll</b><br>
+0x402044 ShellExecuteW<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x402054 InternetSetOptionW<br>
+0x402058 HttpSendRequestW<br>
+0x402058 HttpSendRequestW<br>
+0x402058 HttpSendRequestW<br>
+0x40205c InternetConnectW<br>
+0x40205c InternetConnectW<br>
+0x40205c InternetConnectW<br>
+0x402060 InternetReadFile<br>
+0x402060 InternetReadFile<br>
+0x402064 HttpQueryInfoW<br>
+0x402068 HttpOpenRequestW<br>
+0x402068 HttpOpenRequestW<br>
+0x402068 HttpOpenRequestW<br>
+0x40206c InternetQueryOptionW<br>
+0x402070 InternetOpenW<br>
+0x402070 InternetOpenW<br>
+0x402070 InternetOpenW<br>
+0x402000 HeapCreate<br>
+0x402000 HeapCreate<br>
+0x402004 GetModuleFileNameW<br>
+0x402008 DeleteFileW<br>
+0x402008 DeleteFileW<br>
+0x402008 DeleteFileW<br>
+0x40200c CloseHandle<br>
+0x402010 GetCurrentDirectoryW<br>
+0x402014 GetTempPathW<br>
+0x402018 lstrlenW<br>
+0x40201c lstrcmpW<br>
+0x402020 ExitProcess<br>
+0x402024 GetFileSize<br>
+0x402028 HeapAlloc<br>
+0x402028 HeapAlloc<br>
+0x40202c GetModuleHandleW<br>
+0x40202c GetModuleHandleW<br>
+0x40202c GetModuleHandleW<br>
+0x402030 WriteFile<br>
+0x402030 WriteFile<br>
+0x402034 Sleep<br>
+0x402034 Sleep<br>
+0x402038 ReadFile<br>
+0x402038 ReadFile<br>
+0x40203c CreateFileW<br>
+0x40203c CreateFileW<br>
+0x40203c CreateFileW<br>
+0x40204c wsprintfW<br>
+0x402044 ShellExecuteW<br>
+0x402044 ShellExecuteW<br>
+0x402044 ShellExecuteW<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!Win32<br>
+.EXE.<br>
+.MPRESS1<br>
+.MPRESS2<br>
+.imports<br>
+SVW3<br>
+hx<br>
+@<br>
+VVVVh<br>
+=\<br>
+@<br>
+=h<br>
+@<br>
+PVVh,!@<br>
+u*Vh<br>
+PVVh,!@<br>
+VVVV<br>
+Phd!@<br>
+WININET.dll<br>
+InternetSetOptionW<br>
+HttpSendRequestW<br>
+InternetConnectW<br>
+InternetReadFile<br>
+HttpQueryInfoW<br>
+HttpOpenRequestW<br>
+InternetQueryOptionW<br>
+InternetOpenW<br>
+KERNEL32.dll<br>
+HeapCreate<br>
+GetModuleFileNameW<br>
+DeleteFileW<br>
+CloseHandle<br>
+GetCurrentDirectoryW<br>
+GetTempPathW<br>
+lstrlenW<br>
+lstrcmpW<br>
+ExitProcess<br>
+GetFileSize<br>
+HeapAlloc<br>
+GetModuleHandleW<br>
+WriteFile<br>
+Sleep<br>
+ReadFile<br>
+CreateFileW<br>
+USER32.dll<br>
+wsprintfW<br>
+SHELL32.dll<br>
+ShellExecuteW<br>
+8Mue<br>
+KERNEL32<br>
+VirtualProtect<br>
+t<br>
+PTj<br>
+G(XPTPjxW<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+KERNEL32.DLL<br>
+WININET.dll<br>
+InternetOpenW<br>
+USER32.dll<br>
+wsprintfW<br>
+SHELL32.dll<br>
+ShellExecuteW<br>
+t7Kt'Kt<br>
+WININET.dll<br>
+InternetSetOptionW<br>
+HttpSendRequestW<br>
+InternetConnectW<br>
+InternetReadFile<br>
+HttpQueryInfoW<br>
+HttpOpenRequestW<br>
+InternetQueryOptionW<br>
+InternetOpenW<br>
+KERNEL32.dll<br>
+HeapCreate<br>
+GetModuleFileNameW<br>
+DeleteFileW<br>
+CloseHandle<br>
+GetCurrentDirectoryW<br>
+GetTempPathW<br>
+lstrlenW<br>
+lstrcmpW<br>
+ExitProcess<br>
+GetFileSize<br>
+HeapAlloc<br>
+GetModuleHandleW<br>
+WriteFile<br>
+Sleep<br>
+ReadFile<br>
+CreateFileW<br>
+USER32.dll<br>
+wsprintfW<br>
+SHELL32.dll<br>
+ShellExecuteW

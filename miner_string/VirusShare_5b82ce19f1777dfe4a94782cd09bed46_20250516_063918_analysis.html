@@ -1,0 +1,1031 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_5b82ce19f1777dfe4a94782cd09bed46_20250516_063918_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-16 06:39 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_5b82ce19f1777dfe4a94782cd09bed46_20250516_063918_analysis.html<br>File Size: 108086<br>
+File Type: PE32 executable (GUI) Intel 80386, for MS Windows, 2 sections<br>
+Compilation timestamp: 2012-03-31 00:06:08<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    5b82ce19f1777dfe4a94782cd09bed46<br>
+SHA1:   7de706921e02c9b8beee0a5ba104c76ae400647c<br>
+SHA256: b4faab69c44bc4b96390cfb32f428a31a22be1b8e89a1d19fd740a48e86a28ef<br>
+SHA512: a2925fa7a814428f8695a7642247907278ff1dc66fd76082f373af73e528799240341753f65c260df9ca9d502113b7a1393b3b9c067715a8b159285f002f9f1d<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x36df<br>Number of Sections: 2<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>F033kHmQ</td>
+                        <td>0x1000</td>
+                        <td>0xd000</td>
+                        <td>53248</td>
+                        <td>3.85 (Not packed)</td></tr>
+<tr><td>k2K9HbdE</td>
+                        <td>0xe000</td>
+                        <td>0xb000</td>
+                        <td>45056</td>
+                        <td>5.27 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.dll</b><br>
+0x407000 GetModuleFileNameA<br>
+0x407004 GetProcAddress<br>
+0x407008 LoadLibraryA<br>
+0x40700c Sleep<br>
+0x407010 CloseHandle<br>
+0x407014 CreateFileA<br>
+0x407018 ResumeThread<br>
+0x40701c CreateProcessA<br>
+0x407020 SetThreadPriority<br>
+0x407024 GetCurrentThread<br>
+0x407028 SetPriorityClass<br>
+0x40702c GetCurrentProcess<br>
+0x407030 lstrcatA<br>
+0x407034 lstrcpyA<br>
+0x407038 GetSystemDirectoryA<br>
+0x40703c GetShortPathNameA<br>
+0x407040 GetSystemTime<br>
+0x407044 ReadFile<br>
+0x407048 SetFilePointer<br>
+0x40704c WriteFile<br>
+0x407050 lstrlenA<br>
+0x407054 CopyFileA<br>
+0x407058 GetTempPathA<br>
+0x40705c LCMapStringA<br>
+0x407060 HeapReAlloc<br>
+0x407064 VirtualAlloc<br>
+0x407068 ExitProcess<br>
+0x40706c TerminateProcess<br>
+0x407070 GetModuleHandleA<br>
+0x407074 GetStartupInfoA<br>
+0x407078 GetCommandLineA<br>
+0x40707c GetVersion<br>
+0x407080 UnhandledExceptionFilter<br>
+0x407084 FreeEnvironmentStringsA<br>
+0x407088 FreeEnvironmentStringsW<br>
+0x40708c WideCharToMultiByte<br>
+0x407090 GetEnvironmentStrings<br>
+0x407094 GetEnvironmentStringsW<br>
+0x407098 SetHandleCount<br>
+0x40709c GetStdHandle<br>
+0x4070a0 GetFileType<br>
+0x4070a4 GetEnvironmentVariableA<br>
+0x4070a8 GetVersionExA<br>
+0x4070ac HeapDestroy<br>
+0x4070b0 HeapCreate<br>
+0x4070b4 VirtualFree<br>
+0x4070b8 HeapFree<br>
+0x4070bc RtlUnwind<br>
+0x4070c0 MultiByteToWideChar<br>
+0x4070c4 GetStringTypeA<br>
+0x4070c8 GetStringTypeW<br>
+0x4070cc GetCPInfo<br>
+0x4070d0 GetACP<br>
+0x4070d4 GetOEMCP<br>
+0x4070d8 HeapAlloc<br>
+0x4070dc LCMapStringW<br>
+<b>WININET.dll</b><br>
+0x4070e4 InternetOpenA<br>
+0x4070e8 HttpQueryInfoA<br>
+0x4070ec InternetCheckConnectionA<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x407000 GetModuleFileNameA<br>
+0x407004 GetProcAddress<br>
+0x407004 GetProcAddress<br>
+0x407008 LoadLibraryA<br>
+0x407008 LoadLibraryA<br>
+0x407008 LoadLibraryA<br>
+0x40700c Sleep<br>
+0x40700c Sleep<br>
+0x407010 CloseHandle<br>
+0x407014 CreateFileA<br>
+0x407014 CreateFileA<br>
+0x407014 CreateFileA<br>
+0x407018 ResumeThread<br>
+0x40701c CreateProcessA<br>
+0x40701c CreateProcessA<br>
+0x40701c CreateProcessA<br>
+0x407020 SetThreadPriority<br>
+0x407024 GetCurrentThread<br>
+0x407028 SetPriorityClass<br>
+0x40702c GetCurrentProcess<br>
+0x407030 lstrcatA<br>
+0x407034 lstrcpyA<br>
+0x407038 GetSystemDirectoryA<br>
+0x40703c GetShortPathNameA<br>
+0x407040 GetSystemTime<br>
+0x407044 ReadFile<br>
+0x407044 ReadFile<br>
+0x407048 SetFilePointer<br>
+0x40704c WriteFile<br>
+0x40704c WriteFile<br>
+0x407050 lstrlenA<br>
+0x407054 CopyFileA<br>
+0x407054 CopyFileA<br>
+0x407054 CopyFileA<br>
+0x407058 GetTempPathA<br>
+0x40705c LCMapStringA<br>
+0x407060 HeapReAlloc<br>
+0x407064 VirtualAlloc<br>
+0x407064 VirtualAlloc<br>
+0x407068 ExitProcess<br>
+0x40706c TerminateProcess<br>
+0x40706c TerminateProcess<br>
+0x407070 GetModuleHandleA<br>
+0x407070 GetModuleHandleA<br>
+0x407070 GetModuleHandleA<br>
+0x407074 GetStartupInfoA<br>
+0x407078 GetCommandLineA<br>
+0x40707c GetVersion<br>
+0x407080 UnhandledExceptionFilter<br>
+0x407084 FreeEnvironmentStringsA<br>
+0x407088 FreeEnvironmentStringsW<br>
+0x40708c WideCharToMultiByte<br>
+0x407090 GetEnvironmentStrings<br>
+0x407094 GetEnvironmentStringsW<br>
+0x407098 SetHandleCount<br>
+0x40709c GetStdHandle<br>
+0x4070a0 GetFileType<br>
+0x4070a4 GetEnvironmentVariableA<br>
+0x4070a8 GetVersionExA<br>
+0x4070ac HeapDestroy<br>
+0x4070ac HeapDestroy<br>
+0x4070b0 HeapCreate<br>
+0x4070b0 HeapCreate<br>
+0x4070b4 VirtualFree<br>
+0x4070b4 VirtualFree<br>
+0x4070b8 HeapFree<br>
+0x4070b8 HeapFree<br>
+0x4070bc RtlUnwind<br>
+0x4070c0 MultiByteToWideChar<br>
+0x4070c4 GetStringTypeA<br>
+0x4070c8 GetStringTypeW<br>
+0x4070cc GetCPInfo<br>
+0x4070d0 GetACP<br>
+0x4070d4 GetOEMCP<br>
+0x4070d8 HeapAlloc<br>
+0x4070d8 HeapAlloc<br>
+0x4070dc LCMapStringW<br>
+0x4070e4 InternetOpenA<br>
+0x4070e4 InternetOpenA<br>
+0x4070e4 InternetOpenA<br>
+0x4070e8 HttpQueryInfoA<br>
+0x4070ec InternetCheckConnectionA<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_VERSION</td>
+                                        <td>0xe058</td>
+                                        <td>0x390</td>
+                                        <td>LANG_CHINESE</td>
+                                        <td>SUBLANG_CHINESE_SIMPLIFIED</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!This<br>
+program<br>
+cannot<br>
+be<br>
+run<br>
+in<br>
+DOS<br>
+mode.<br>
+Rich<br>
+F033kHmQ<br>
+k2K9HbdE<br>
+dSVW<br>
+t2j@<br>
+dSVW<br>
+_^[]<br>
+ufjDj<br>
+_9=l<br>
+YYh\<br>
+t&:a<br>
+SUVW<br>
+_^][<br>
+^[_3<br>
+^_[3<br>
+h`C@<br>
+<"u%<br>
+F<"t<br>
+t9UW<br>
+?=t"U<br>
+QQS3<br>
+PSSW<br>
+8"uD<br>
+8"uF@<br>
+8"u,<br>
+@@f9<br>
+@@f9<br>
+SS@SSPVSS<br>
+t#SSUP<br>
+t$$VSS<br>
+_^][YY<br>
+DSUVWh<br>
+_^][<br>
+8MZu<br>
+Ph,q@<br>
+t>j,P<br>
+Yt0@<br>
+SVWUj<br>
+]_^[<br>
+t.;t$$t(<br>
+VC20XC00U<br>
+SVWU<br>
+tEVU<br>
+t3x<<br>
+]_^[<br>
+h@t@<br>
+h`C@<br>
+^Vh8t@<br>
+PVh4t@<br>
+90tr<br>
+Wj@Y3<br>
+t7SW<br>
+@AA;<br>
+Vt6P<br>
+Yt4^<br>
+<Xt<br>
+u,9E<br>
+uiSj<br>
+uY;]<br>
+pD#U<br>
+j<br>
+#M<br>
+j?^;<br>
+SUVWu<br>
+-dp@<br>
+_^][<br>
+QQSV<br>
+sN;E<br>
+u%C@<br>
+VWuBh|t@<br>
+hpt@<br>
+tPh`t@<br>
+hLt@<br>
+tzVS<br>
+GIt%<br>
+t/Ku<br>
+h`C@<br>
+uFWWj<br>
+[Sh8t@<br>
+"WWSh4t@<br>
+9}<br>
+u<br>
+E<br>
+WW<br>
+tMWWS<br>
+t@9}<br>
+VSh<br>
+0123456789ABCDEF<br>
+__GLOBAL_HEAP_SELECTED<br>
+__MSVCRT_HEAP_SELECT<br>
+runtime<br>
+error<br>
+TLOSS<br>
+error<br>
+SING<br>
+error<br>
+DOMAIN<br>
+error<br>
+R6028<br>
+-<br>
+unable<br>
+to<br>
+initialize<br>
+heap<br>
+R6027<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+lowio<br>
+initialization<br>
+R6026<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+stdio<br>
+initialization<br>
+R6025<br>
+-<br>
+pure<br>
+virtual<br>
+function<br>
+call<br>
+R6024<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+_onexit/atexit<br>
+table<br>
+R6019<br>
+-<br>
+unable<br>
+to<br>
+open<br>
+console<br>
+device<br>
+R6018<br>
+-<br>
+unexpected<br>
+heap<br>
+error<br>
+R6017<br>
+-<br>
+unexpected<br>
+multithread<br>
+lock<br>
+error<br>
+R6016<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+thread<br>
+data<br>
+abnormal<br>
+program<br>
+termination<br>
+R6009<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+environment<br>
+R6008<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+arguments<br>
+R6002<br>
+-<br>
+floating<br>
+point<br>
+not<br>
+loaded<br>
+Microsoft<br>
+Visual<br>
+C++<br>
+Runtime<br>
+Library<br>
+Runtime<br>
+Error!<br>
+Program:<br>
+<program<br>
+name<br>
+unknown><br>
+GetLastActivePopup<br>
+GetActiveWindow<br>
+MessageBoxA<br>
+user32.dll<br>
+104116116112058047047119119119046105110101119115051054053046099111109047120109108047105110100101120046104116109108<br>
+104116116112058047047108105115116046098101115116120115115046099111109047117112103114097100101046116120116<br>
+104116116112058047047049055052046049051057046054048046049049047117112100097116101046116120116<br>
+104116116112058047047119119119046105110101119115051054053046099111109047120109108047105110100101120055046104116109108<br>
+104116116112058047047108105115116046098101115116120115115046099111109047117112119105110055046116120116<br>
+083079070084087065082069092077105099114111115111102116092065099116105118101032083101116117112092073110115116097108108101100032067111109112111110101110116115092<br>
+073110116101114110101116082101097100070105108101<br>
+RegSetValueExA<br>
+ADVAPI32.dll<br>
+RegCloseKey<br>
+ADVAPI32.dll<br>
+RegQueryValueExA<br>
+ADVAPI32.dll<br>
+InternetOpenA<br>
+wininet.dll<br>
+InternetOpenUrlA<br>
+wininet.dll<br>
+InternetCloseHandle<br>
+wininet.dll<br>
+HttpQueryInfoA<br>
+wininet.dll<br>
+RegOpenKeyExA<br>
+ADVAPI32.dll<br>
+RegDeleteKeyA<br>
+ADVAPI32.dll<br>
+RegCreateKeyA<br>
+ADVAPI32.dll<br>
+GetVersionExA<br>
+kernel32.dll<br>
+WinExec<br>
+kernel32.dll<br>
+WriteFile<br>
+kernel32.dll<br>
+InternetCheckConnectionA<br>
+wininet.dll<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+6.0;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+SV1;<br>
+.NET<br>
+CLR<br>
+1.1.4322)<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+6.0;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+SV1;<br>
+.NET<br>
+CLR<br>
+1.1.4322)<br>
+http://fucknaver/<br>
+\cmd.exe<br>
+http://gameover/<br>
+/c<br>
+del<br>
+><br>
+nul<br>
+vcapi.exe<br>
+http://dontkillme/<br>
+%SystemRoot%\system32\vcapi.exe<br>
+%SystemRoot%\system32\vcapi.exe<br>
+stubpath<br>
+reg<br>
+delete<br>
+"HKEY_CURRENT_USER\Software\Microsoft\Active<br>
+Setup\Installed<br>
+Components\<br>
+"<br>
+/f<br>
+Software<br>
+\Microsoft\Acti<br>
+ve<br>
+Setup\Installed<br>
+Comp<br>
+onents<br>
+reg<br>
+delete<br>
+"HKEY_LOCAL_MACHINE\Software\Microsoft\Active<br>
+Setup\Installed<br>
+Components\<br>
+"<br>
+/f<br>
+Software<br>
+\Microsoft\Acti<br>
+ve<br>
+Setup\Installed<br>
+Comp<br>
+onents<br>
+\vcapi.exe<br>
+SOFTWARE\Microsoft\Ole<br>
+Version<br>
+SOFTWARE\Microsoft\Ole<br>
+Version<br>
+.exe<br>
+.exe<br>
+http://www.naver.com/<br>
+wininet.dll<br>
+start<br>
+-start<br>
+9wOBome<br>
+9wOBome<br>
+9wOBome<br>
+9wOBome<br>
+9wOBome<br>
+9wOBome<br>
+YGbm<br>
+v%=W$<br>
+:Fn*<br>
+KCCj<br>
+i"lT;<br>
+0gG:<br>
+VYBIZ<br>
+h0n"<br>
+M{1I<br>
+y()=<br>
+.~'X.<br>
+42T#<br>
+fO|PiPTV<br>
+29<br>
+zH<br>
+Xe`VZFe<br>
+Dm?=<br>
+YbO!<br>
+NM`lJ<br>
+l;f'<br>
+#/=0<br>
+cSqt<br>
+=Wqp<br>
+k3gs$<br>
+-$)8<br>
+7]fM<br>
+t^GM<br>
+5}S~fY<br>
+SiE.<br>
+M5N<br>
+WJU*o<br>
+k]0h<br>
+Dw\Z|#<br>
+-{Cmq<br>
+=!<br>
+9<br>
+rnG+_<br>
+!Lh$<br>
+bX~<br>
+$t4G<br>
+;iVuN-<br>
+P`;9<br>
+^k{q<br>
+(aC`<br>
+#XZh<br>
+`zHKa<br>
+F*AE~b<br>
+|gW<br>
+n2#Hue<br>
+=dA=<br>
+Bw&{$<br>
+&@o<br>
+N<br>
+8\<q<br>
+0H^/<br>
+?54'<br>
+AqKQ<br>
+A"jc<br>
+@sGA,u<br>
+q7uM<br>
+L7C:<br>
+MR5OO<br>
+gN9F<br>
+a|N];vG|<br>
++ySvP2<br>
+H<br>
+$0<br>
+hkJp|<br>
+V"vP<br>
+Y(\X%<br>
+~\DOD<br>
+RCH`<br>
+$7;l><br>
+bmdg<br>
+hr9i<br>
+FBe>8<br>
+h]y<<br>
+CT4N<br>
+rMvC~Y<br>
+-.\S<br>
+t`lQ-yu)<br>
+]>Mk<br>
+RGL>t<br>
+]fg*<br>
+)CA&ui<br>
+?'LLv'<br>
+hvtg<br>
+Ih3n?<br>
+u"LGl<br>
+@idvA<br>
+DMMFo<br>
+IVFx<br>
+(<br>
+qE<br>
+0\^Q<br>
+Psv5)<br>
+5I+j<br>
+A@[9u<br>
+PzW1<br>
+{.3H<br>
+MVAk<br>
+3Eo.<br>
+.,i7<br>
+\S'(<br>
+b9xwK<br>
+q)<br>
+a<br>
+n"M9<br>
+9h~?<br>
+z,@m<br>
+o%PU<br>
+al2a<br>
+xg{|<br>
+cH><<br>
+FW8Q<br>
+]=hQ<br>
+.1KFC<br>
+'8K8<br>
+D"%t\]<br>
+i(Xsu<br>
+:orm3<br>
+XKsw<br>
+o;C2<br>
+}un6}<br>
+wU~1Q[<br>
+)EBF<br>
+Y:PP<br>
+|OD@<br>
+C0sr<br>
+z`US(<br>
+hE:(<br>
+H{aL<br>
+-]}I|Y<br>
+^u%r<br>
+_FJ{LK<br>
+YIU_<br>
+XovO<br>
+V6%l<br>
+/qxl<br>
+!9FI<br>
+{$![?<br>
+'"9p<br>
+fie<br>
+WaJ|<br>
+eFKk<br>
+kcgK,<br>
+qMl=<br>
+Tc0\<br>
+`)Pa<br>
+!^7xr<br>
+z'||<br>
+Y{lP<br>
+ML<br>
+W<br>
+&N!3a:<br>
+7{F<br>
+o5Wbcz<br>
++)IB<br>
+xrI<br>
+0#%&<br>
+M4xW<br>
+-3$5<br>
++/?Al<br>
+^7n-<br>
+~~=y<br>
+Z%H}z<br>
+6V<br>
+a<br>
+6R04<br>
+2xL1w<br>
+`j@h<br>
+`VPW<br>
+kernel32.dll<br>
+GetModuleHandleA<br>
+LoadLibraryA<br>
+GetProcAddress<br>
+VirtualAlloc<br>
+VirtualFree<br>
+VirtualProtect<br>
+G2@!<br>
+wm&|$<br>
+Z2.-z<br>
+3n';<br>
+BxJA<br>
+x>uw<br>
+L38y<br>
+tLRt<br>
+(2Xxd<br>
+9dBr\<br>
+G'+5<br>
+2\r<br>
+q=C<br>
+dyI"V<br>
+%jK#<br>
+i;Rp<br>
+r<br>
+Te<br>
+iC.u<br>
+'?{:<br>
+c6U!<br>
+}G*'<br>
+*GS0a@<br>
+wzh]M<br>
+UeOiNC<br>
+(d1.<br>
+/FG|<br>
+@EfR<br>
+z;(~W+<br>
+].`'<br>
+V6l0<br>
+E<br>
+TH<br>
+xNkU<br>
+:h3v<br>
+b]1w<br>
+,dJJ<br>
+N/P7ZG@<br>
+NqW%<<br>
+"\tmd!c<br>
+4gHuV<br>
+)yU+<br>
+Ef'Z<br>
+#WOX<br>
+?`5C<br>
+{Qjpn<br>
+MGd)<br>
+C6%A<br>
+8Mwe<br>
+UP6D<br>
+.wm-<br>
+>-Ja<br>
+LHg#<br>
+HdMp<br>
+k(%R<br>
+"y+UDo<br>
+IDMan8%<br>
+`9zi4<br>
+O,#gA<br>
+9/l?<br>
+hOdT<br>
+Xi~4<br>
+pNg6<br>
+m<br>
+=g\<br>
+9$~O<br>
+^<br>
+Ob<br>
+=m_h<br>
+$u!Wz<br>
+Z0X03<br>
+>0!0<br>
+VeriSign,<br>
+Inc.1+0)<br>
+"VeriSign<br>
+Time<br>
+Stamping<br>
+Services<br>
+CA0<br>
+070615000000Z<br>
+120614235959Z0\1<br>
+KERNEL32.dll<br>
+GetModuleFileNameA<br>
+GetProcAddress<br>
+LoadLibraryA<br>
+Sleep<br>
+CloseHandle<br>
+CreateFileA<br>
+ResumeThread<br>
+CreateProcessA<br>
+SetThreadPriority<br>
+GetCurrentThread<br>
+SetPriorityClass<br>
+GetCurrentProcess<br>
+lstrcatA<br>
+lstrcpyA<br>
+GetSystemDirectoryA<br>
+GetShortPathNameA<br>
+GetSystemTime<br>
+ReadFile<br>
+SetFilePointer<br>
+WriteFile<br>
+lstrlenA<br>
+CopyFileA<br>
+GetTempPathA<br>
+LCMapStringA<br>
+HeapReAlloc<br>
+VirtualAlloc<br>
+ExitProcess<br>
+TerminateProcess<br>
+GetModuleHandleA<br>
+GetStartupInfoA<br>
+GetCommandLineA<br>
+GetVersion<br>
+UnhandledExceptionFilter<br>
+FreeEnvironmentStringsA<br>
+FreeEnvironmentStringsW<br>
+WideCharToMultiByte<br>
+GetEnvironmentStrings<br>
+GetEnvironmentStringsW<br>
+SetHandleCount<br>
+GetStdHandle<br>
+GetFileType<br>
+GetEnvironmentVariableA<br>
+GetVersionExA<br>
+HeapDestroy<br>
+HeapCreate<br>
+VirtualFree<br>
+HeapFree<br>
+RtlUnwind<br>
+MultiByteToWideChar<br>
+GetStringTypeA<br>
+GetStringTypeW<br>
+GetCPInfo<br>
+GetACP<br>
+GetOEMCP<br>
+HeapAlloc<br>
+LCMapStringW<br>
+WININET.dll<br>
+InternetOpenA<br>
+HttpQueryInfoA<br>
+InternetCheckConnectionA<br>
+Z0X03<br>
+>0!0<br>
+VeriSign,<br>
+Inc.1+0)<br>
+"VeriSign<br>
+Time<br>
+Stamping<br>
+Services<br>
+CA0<br>
+070615000000Z<br>
+120614235959Z0\1<br>
+VeriSign,<br>
+Inc.1402<br>
++VeriSign<br>
+Time<br>
+Stamping<br>
+Services<br>
+Signer<br>
+-<br>
+G20<br>
+J[/K<br>
+5TX5<br>
+6^bMRQ4q<br>
+JcEG.k<br>
+(0&0$<br>
+http://ocsp.verisign.com0<br>
+,0*0(<br>
+"http://crl.verisign.com/tss-ca.crl0<br>
+TSA1-20<br>
+u6t:<br>
+!?DA<br>
+y>]r}<br>
+Western<br>
+Cape1<br>
+Durbanville1<br>
+Thawte1<br>
+Thawte<br>
+Certification1<br>
+Thawte<br>
+Timestamping<br>
+CA0<br>
+031204000000Z<br>
+131203235959Z0S1<br>
+VeriSign,<br>
+Inc.1+0)<br>
+"VeriSign<br>
+Time<br>
+Stamping<br>
+Services<br>
+CA0<br>
+_zj1.<br>
+XWou<br>
+(0&0$<br>
+http://ocsp.verisign.com0<br>
+:0806<br>
+0http://crl.verisign.com/ThawteTimestampingCA.crl0<br>
+TSA2048-1-530<br>
+?7!Op1<br>
+VeriSign,<br>
+Inc.1705<br>
+.Class<br>
+3<br>
+Public<br>
+Primary<br>
+Certification<br>
+Authority0<br>
+090521000000Z<br>
+190520235959Z0<br>
+VeriSign,<br>
+Inc.1<br>
+VeriSign<br>
+Trust<br>
+Network1;09<br>
+2Terms<br>
+of<br>
+use<br>
+at<br>
+https://www.verisign.com/rpa<br>
+(c)09100.<br>
+'VeriSign<br>
+Class<br>
+3<br>
+Code<br>
+Signing<br>
+2009-2<br>
+CA0<br>
+|=;%<br>
+'tag'Mj<br>
++G<br>
+D<br>
+:|@T<br>
+`x^{`<br>
+i0g0e<br>
+0V0(<br>
+https://www.verisign.com/cps0*<br>
+https://www.verisign.com/rpa0<br>
+[0Y0W0U<br>
+image/gif0!0<br>
+#http://logo.verisign.com/vslogo.gif0<br>
+(0&0$<br>
+http://ocsp.verisign.com01<br>
+*0(0&<br>
+http://crl.verisign.com/pca3.crl0)<br>
+Class3CA2048-1-550<br>
+xEv1<br>
+VeriSign,<br>
+Inc.1<br>
+VeriSign<br>
+Trust<br>
+Network1;09<br>
+2Terms<br>
+of<br>
+use<br>
+at<br>
+https://www.verisign.com/rpa<br>
+(c)09100.<br>
+'VeriSign<br>
+Class<br>
+3<br>
+Code<br>
+Signing<br>
+2009-2<br>
+CA0<br>
+100126000000Z<br>
+130125235959Z0<br>
+guangdong1<br>
+shenzhen1503<br>
+,Tencent<br>
+Technology(Shenzhen)<br>
+Company<br>
+Limited1>0<<br>
+5Digital<br>
+ID<br>
+Class<br>
+3<br>
+-<br>
+Microsoft<br>
+Software<br>
+Validation<br>
+v21503<br>
+,Tencent<br>
+Technology(Shenzhen)<br>
+Company<br>
+Limited0<br>
+j6QN<br>
+N<br>
+'b<br>
+=0;09<br>
+3http://csc3-2009-2-crl.verisign.com/CSC3-2009-2.crl0D<br>
+=0;09<br>
+0*0(<br>
+https://www.verisign.com/rpa0<br>
+i0g0$<br>
+http://ocsp.verisign.com0?<br>
+3http://csc3-2009-2-aia.verisign.com/CSC3-2009-2.cer0<br>
+lO^X<br>
+H<w8<br>
+v*\t<br>
+VeriSign,<br>
+Inc.1<br>
+VeriSign<br>
+Trust<br>
+Network1;09<br>
+2Terms<br>
+of<br>
+use<br>
+at<br>
+https://www.verisign.com/rpa<br>
+(c)09100.<br>
+'VeriSign<br>
+Class<br>
+3<br>
+Code<br>
+Signing<br>
+2009-2<br>
+CA<br>
+0g0S1<br>
+VeriSign,<br>
+Inc.1+0)<br>
+"VeriSign<br>
+Time<br>
+Stamping<br>
+Services<br>
+CA<br>
+110406074128Z0#<br>
+teQ@|<br>
+{0E8C7211-70AD-0C2E-1212-1394B3735C2F}{394D8181-0DFF-DBE2-7397-F0FD24A47C18}{C5F1FB00-F0FB-9042-B856-AAE9366EB6EE}{68166FE0-E679-38C6-2E2D-2E2FBB33EB9F}{8A1801E8-B7C3-1606-6AA2-0B7BB3109087}

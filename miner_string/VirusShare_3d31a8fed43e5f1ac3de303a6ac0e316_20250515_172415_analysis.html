@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_3d31a8fed43e5f1ac3de303a6ac0e316_20250515_172415_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-15 17:24 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_3d31a8fed43e5f1ac3de303a6ac0e316_20250515_172415_analysis.html<br>File Size: 12872<br>
+File Type: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, 2 sections<br>
+Compilation timestamp: 2014-06-26 06:58:59<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    3d31a8fed43e5f1ac3de303a6ac0e316<br>
+SHA1:   19a83f83fa586d479041f6552aeeedab827e173a<br>
+SHA256: c07fa7f31df3b624a0e731c35ca01e84b59789f2320a6266e75847f787ad045a<br>
+SHA512: eab8e3ff3174eb6f8937dddd26c9d7a153575e69bb274d0afa46ec5ea86c4c48317f9da78814cfc868aca84131ab73519508be885956fc77cb4624dd89b22f3e<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x82bd<br>Number of Sections: 2<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>.MPRESS1</td>
+                        <td>0x1000</td>
+                        <td>0x7000</td>
+                        <td>10752</td>
+                        <td>7.66 (Packed)</td></tr>
+<tr><td>.MPRESS2</td>
+                        <td>0x8000</td>
+                        <td>0x56c</td>
+                        <td>1536</td>
+                        <td>5.24 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.DLL</b><br>
+0x408104 GetModuleHandleA<br>
+0x408108 GetProcAddress<br>
+<b>USER32.dll</b><br>
+0x408110 ReleaseDC<br>
+<b>GDI32.dll</b><br>
+0x408118 BitBlt<br>
+<b>ADVAPI32.dll</b><br>
+0x408120 GetUserNameA<br>
+<b>SHELL32.dll</b><br>
+0x408128 None<br>
+<b>ole32.dll</b><br>
+0x408130 CreateStreamOnHGlobal<br>
+<b>ntdll.dll</b><br>
+0x408138 memcpy<br>
+<b>WININET.dll</b><br>
+0x408140 InternetOpenA<br>
+<b>IPHLPAPI.DLL</b><br>
+0x408148 GetAdaptersInfo<br>
+<b>gdiplus.dll</b><br>
+0x408150 GdiplusStartup<br>
+<b>PSAPI.DLL</b><br>
+0x408158 GetModuleFileNameExA<br>
+<b>MPR.dll</b><br>
+0x408160 WNetCloseEnum<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x408104 GetModuleHandleA<br>
+0x408104 GetModuleHandleA<br>
+0x408104 GetModuleHandleA<br>
+0x408108 GetProcAddress<br>
+0x408108 GetProcAddress<br>
+0x408110 ReleaseDC<br>
+0x408118 BitBlt<br>
+0x408120 GetUserNameA<br>
+0x408130 CreateStreamOnHGlobal<br>
+0x408138 memcpy<br>
+0x408140 InternetOpenA<br>
+0x408140 InternetOpenA<br>
+0x408140 InternetOpenA<br>
+0x408148 GetAdaptersInfo<br>
+0x408150 GdiplusStartup<br>
+0x408158 GetModuleFileNameExA<br>
+0x408160 WNetCloseEnum<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!Win32<br>
+.EXE.<br>
+.MPRESS1<br>
+.MPRESS2l<br>
+v2.19<br>
+y@1y<br>
+P3qU<br>
+SVW3<br>
+F(R<br>
+XE/5<br>
+X[PR<br>
+``},<br>
+O8?"t<br>
+a0I_<br>
+e}!k<br>
+CpDC<br>
+s_G<br>
+Q?_`<br>
+=.c<br>
+=><br>
+N[>@<br>
+8]hO'<br>
+X~d\h<br>
+@]X=<br>
+QVh<br>
+XD^<br>
+a\"r&2U<br>
+PP2TQ2-#15<br>
+"!MR<br>
+Fv!`a<br>
+>=akw<br>
+tQ:<br>
+_^f:><br>
+4SP!i<br>
+3BgpUV<br>
+fTfR'<br>
+@'/T^<br>
+=t&=a<br>
+)#P)<br>
+BWQH1H<br>
+=d)b<br>
+"CQ1T<br>
+WSM<br>
+>>P+<br>
+!OunL<br>
+BUQ<br>
+4BU!fm<br>
+QSS*<br>
+W'<br>
+.T<br>
+l~#t<br>
+3Vfi<br>
+0}C&$#<br>
+5r&$<br>
+W6@M<br>
+*_a6&<br>
+.g0o<br>
+E$'v<br>
+z4nk<br>
+K<br>
+y1U<br>
+'ht)<br>
+VSh<br>
+%DA8<br>
+3!@E<br>
+L$LQ<br>
+b@%(<br>
+,zaX<br>
+c\g`<br>
+1SjV<br>
+dC:`<br>
+L$F$VqFEB<br>
+DTAB<br>
+FEB$<br>
+@L$XQ<br>
+S9?P<br>
+AU9<br>
+8Ga\<br>
+G<br>
+'<br>
+j<br>
+8A$N<br>
+<ujP<br>
+$5LQ<br>
+.a+<br>
+><br>
+xab!><br>
+CG"i<br>
+RjB,g<br>
+z<br>
+#Ggn,0PgA<br>
+1m3M<br>
+*B'+)<br>
+A`$A<br>
+b%ei<br>
++`I<br>
+M<br>
+5r%Cx<br>
+`/2b48<br>
+bOPB<br>
+Bw<br>
+VRj@<br>
+q4h,<br>
+KERNEL32<br>
+.dll<br>
+ateFileW<br>
+FindFir<br>
+st87<br>
+H"Nex\tTF<br>
+owsDir<br>
+ectoryW<br>
+WaitForS<br>
+ingleObj<br>
+Module<br>
+Hand<br>
+f0V67<br>
+N<br>
+am<br>
+2T''<br>
+tError<br>
+stem<br>
+BFreU!Te?mp<br>
+Q9QiA9<br>
+`U&7<br>
+"A!tt<br>
+ributes<br>
+VV+!<br>
+%s)q<br>
+(<br>
+USER<br>
+esktoDpp<br>
+GDCI<br>
+DIBS<br>
+*Mem@b<br>
+Du:pl<br>
+ole<br>
+u76'<br>
+emcpy<br>
+ININEHT<br>
+TSetOpq8<br>
+HttpA<br>
+uest@3U<br>
+ueryq?<br>
+IPHLBPa<br>
+.DLL<br>
+gdiplus<br>
+ncom<br>
+omHBITMAxP<br>
+!WNMC<br>
+Enum4<br>
+$!U6<br>
+G(XPTPT<br>
+#PSm<br>
+"S=P<br>
+VMGrab<br>
+cmd.exe<br>
+/c<br>
+vtapi/v2@/T<br>
+pTDE<br>
+Mozilla/<br>
+5.0<br>
+(&<br>
+ebKit/<br>
+537.36<br>
+(<br>
+KHTML,<br>
+l<br>
+ike<br>
+GV<br>
+Safari<br>
+Obtain<br>
+-data;$<br>
+n<br>
+ke1y"<br>
+f0gV&<br>
+d-&A<br>
+ee14a319<br>
+1ba1afde<br>
+5261326d<br>
+cd7e8179@3b&0&f<br>
+PFcC<br>
+p#6fS&6Ff0cs<br>
+"2;<br>
+4%sQ<br>
+.)`[<br>
+/x-ms<br>
+mult*ip<br>
+n;^<br>
+p<br>
+7q<br>
+0m($N<br>
+pvzo<br>
+3<br>
+0;e:JKR`<br>
+t6SW<br>
+VVVVVhDR@<br>
+hHR@<br>
+VVVVVhDR@<br>
+hHR@<br>
+VVVh<br>
+8@<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+KERNEL32.DLL<br>
+USER32.dll<br>
+ReleaseDC<br>
+GDI32.dll<br>
+BitBlt<br>
+ADVAPI32.dll<br>
+GetUserNameA<br>
+SHELL32.dll<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+ntdll.dll<br>
+memcpy<br>
+WININET.dll<br>
+InternetOpenA<br>
+IPHLPAPI.DLL<br>
+GetAdaptersInfo<br>
+gdiplus.dll<br>
+GdiplusStartup<br>
+PSAPI.DLL<br>
+GetModuleFileNameExA<br>
+MPR.dll<br>
+WNetCloseEnum<br>
+t7Kt'Kt

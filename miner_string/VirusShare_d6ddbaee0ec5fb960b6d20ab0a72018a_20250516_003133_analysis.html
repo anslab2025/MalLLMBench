@@ -1,0 +1,2191 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_d6ddbaee0ec5fb960b6d20ab0a72018a_20250516_003133_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-16 00:31 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_d6ddbaee0ec5fb960b6d20ab0a72018a_20250516_003133_analysis.html<br>File Size: 319120<br>
+File Type: PE32+ executable (GUI) x86-64 (stripped to external PDB), for MS Windows, 3 sections<br>
+Compilation timestamp: 2013-08-06 23:30:31<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    d6ddbaee0ec5fb960b6d20ab0a72018a<br>
+SHA1:   b0ea27db64e0dbfc89035223293d9c84c118b979<br>
+SHA256: d9fcd596ee5ca96caa43fcdf30cb92b6328733c6d911367319ec157ebf6f0472<br>
+SHA512: e3d6a40304976f64c9217e25d8a7d1c28897b408d76e06bfe1c7efcb3189442f14971ed58bff886804eb86950660ed03ba3c724fad4d26ac9c60d9b15c979cf0<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x9480<br>Number of Sections: 3<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>.MPRESS1</td>
+                        <td>0x1000</td>
+                        <td>0x4d000</td>
+                        <td>311808</td>
+                        <td>2.48 (Not packed)</td></tr>
+<tr><td>.MPRESS2</td>
+                        <td>0x4e000</td>
+                        <td>0x1000</td>
+                        <td>4096</td>
+                        <td>5.63 (Not packed)</td></tr>
+<tr><td>.imports</td>
+                        <td>0x4f000</td>
+                        <td>0x1000</td>
+                        <td>2560</td>
+                        <td>4.67 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>ntdll.dll</b><br>
+0x1b3d0 _snprintf<br>
+0x1b3d8 __C_specific_handler<br>
+0x1b3e0 strncpy<br>
+0x1b3e8 ZwQueryVirtualMemory<br>
+0x1b3f0 strcat<br>
+0x1b3f8 ZwQueryInformationProcess<br>
+0x1b400 ZwReadVirtualMemory<br>
+0x1b408 RtlInitUnicodeString<br>
+0x1b410 NtOpenSection<br>
+0x1b418 NtMapViewOfSection<br>
+0x1b420 RtlCompareMemory<br>
+0x1b428 RtlImageNtHeader<br>
+0x1b430 wcscpy<br>
+0x1b438 NtUnmapViewOfSection<br>
+0x1b440 NtClose<br>
+0x1b448 __chkstk<br>
+0x1b450 memcpy<br>
+0x1b458 strlen<br>
+0x1b460 memset<br>
+<b>SHLWAPI.dll</b><br>
+0x1b280 PathAppendA<br>
+0x1b288 StrToIntA<br>
+0x1b290 StrStrIA<br>
+<b>WININET.dll</b><br>
+0x1b378 HttpOpenRequestA<br>
+0x1b380 HttpSendRequestA<br>
+0x1b388 InternetQueryDataAvailable<br>
+0x1b390 InternetReadFile<br>
+0x1b398 InternetOpenA<br>
+0x1b3a0 InternetCrackUrlA<br>
+0x1b3a8 InternetCloseHandle<br>
+0x1b3b0 InternetConnectA<br>
+<b>imagehlp.dll</b><br>
+0x1b3c0 CheckSumMappedFile<br>
+<b>VERSION.dll</b><br>
+0x1b358 GetFileVersionInfoA<br>
+0x1b360 GetFileVersionInfoSizeA<br>
+0x1b368 VerQueryValueA<br>
+<b>KERNEL32.dll</b><br>
+0x1b078 GetWindowsDirectoryA<br>
+0x1b080 lstrcatA<br>
+0x1b088 ExitProcess<br>
+0x1b090 GetCurrentProcessId<br>
+0x1b098 WaitForMultipleObjects<br>
+0x1b0a0 GetFileAttributesA<br>
+0x1b0a8 InitializeProcThreadAttributeList<br>
+0x1b0b0 UpdateProcThreadAttribute<br>
+0x1b0b8 DeleteProcThreadAttributeList<br>
+0x1b0c0 Sleep<br>
+0x1b0c8 GetCurrentThread<br>
+0x1b0d0 SetThreadAffinityMask<br>
+0x1b0d8 SetThreadPriority<br>
+0x1b0e0 SetEvent<br>
+0x1b0e8 LoadLibraryExA<br>
+0x1b0f0 FreeLibrary<br>
+0x1b0f8 GlobalAlloc<br>
+0x1b100 CreateMutexA<br>
+0x1b108 CreateThread<br>
+0x1b110 GlobalReAlloc<br>
+0x1b118 ReleaseMutex<br>
+0x1b120 GlobalFree<br>
+0x1b128 LoadLibraryA<br>
+0x1b130 GetSystemDirectoryA<br>
+0x1b138 GetTickCount<br>
+0x1b140 MoveFileA<br>
+0x1b148 CreateEventA<br>
+0x1b150 CloseHandle<br>
+0x1b158 ReadFile<br>
+0x1b160 LocalAlloc<br>
+0x1b168 GetFileSize<br>
+0x1b170 CreateFileA<br>
+0x1b178 WriteFile<br>
+0x1b180 WaitForSingleObject<br>
+0x1b188 LocalFree<br>
+0x1b190 GetLastError<br>
+0x1b198 Process32Next<br>
+0x1b1a0 OpenProcess<br>
+0x1b1a8 Process32First<br>
+0x1b1b0 CreateToolhelp32Snapshot<br>
+0x1b1b8 GetCurrentProcess<br>
+0x1b1c0 GetVersionExA<br>
+0x1b1c8 GetProcAddress<br>
+0x1b1d0 GetModuleHandleA<br>
+0x1b1d8 VirtualQuery<br>
+0x1b1e0 UnmapViewOfFile<br>
+0x1b1e8 MapViewOfFile<br>
+0x1b1f0 CreateFileMappingW<br>
+0x1b1f8 CreateEventW<br>
+0x1b200 VirtualAlloc<br>
+0x1b208 HeapAlloc<br>
+0x1b210 GetProcessHeap<br>
+0x1b218 HeapFree<br>
+0x1b220 HeapReAlloc<br>
+0x1b228 Process32NextW<br>
+0x1b230 lstrcmpiW<br>
+0x1b238 Process32FirstW<br>
+0x1b240 VirtualFree<br>
+0x1b248 lstrcmpiA<br>
+0x1b250 lstrcmpA<br>
+0x1b258 GetTempPathA<br>
+0x1b260 lstrcpyA<br>
+0x1b268 lstrlenA<br>
+0x1b270 CopyFileA<br>
+<b>USER32.dll</b><br>
+0x1b2a0 EnumWindows<br>
+0x1b2a8 GetWindowThreadProcessId<br>
+0x1b2b0 GetWindowTextA<br>
+0x1b2b8 SendNotifyMessageA<br>
+0x1b2c0 SendMessageA<br>
+0x1b2c8 CreateDesktopA<br>
+0x1b2d0 SetThreadDesktop<br>
+0x1b2d8 GetDC<br>
+0x1b2e0 CloseDesktop<br>
+0x1b2e8 ReleaseDC<br>
+0x1b2f0 UnregisterClassA<br>
+0x1b2f8 SetWindowLongA<br>
+0x1b300 GetWindowLongA<br>
+0x1b308 GetClassNameA<br>
+0x1b310 GetClipboardFormatNameA<br>
+0x1b318 wsprintfA<br>
+0x1b320 RegisterWindowMessageA<br>
+0x1b328 LockWorkStation<br>
+0x1b330 SendInput<br>
+0x1b338 RegisterClassExA<br>
+0x1b340 MessageBoxW<br>
+0x1b348 FindWindowW<br>
+<b>GDI32.dll</b><br>
+0x1b040 CreateRoundRectRgn<br>
+0x1b048 BeginPath<br>
+0x1b050 PolyDraw<br>
+0x1b058 EndPath<br>
+0x1b060 FlattenPath<br>
+0x1b068 DeleteObject<br>
+<b>ADVAPI32.dll</b><br>
+0x1b000 RegOpenKeyA<br>
+0x1b008 RegQueryValueExA<br>
+0x1b010 RegCloseKey<br>
+0x1b018 CreateWellKnownSid<br>
+0x1b020 CheckTokenMembership<br>
+0x1b028 OpenProcessToken<br>
+0x1b030 GetTokenInformation<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x1b3d0 _snprintf<br>
+0x1b3d8 __C_specific_handler<br>
+0x1b3e0 strncpy<br>
+0x1b3e8 ZwQueryVirtualMemory<br>
+0x1b3f0 strcat<br>
+0x1b3f8 ZwQueryInformationProcess<br>
+0x1b400 ZwReadVirtualMemory<br>
+0x1b408 RtlInitUnicodeString<br>
+0x1b410 NtOpenSection<br>
+0x1b418 NtMapViewOfSection<br>
+0x1b418 NtMapViewOfSection<br>
+0x1b420 RtlCompareMemory<br>
+0x1b428 RtlImageNtHeader<br>
+0x1b430 wcscpy<br>
+0x1b438 NtUnmapViewOfSection<br>
+0x1b438 NtUnmapViewOfSection<br>
+0x1b440 NtClose<br>
+0x1b448 __chkstk<br>
+0x1b450 memcpy<br>
+0x1b458 strlen<br>
+0x1b460 memset<br>
+0x1b280 PathAppendA<br>
+0x1b288 StrToIntA<br>
+0x1b290 StrStrIA<br>
+0x1b378 HttpOpenRequestA<br>
+0x1b378 HttpOpenRequestA<br>
+0x1b378 HttpOpenRequestA<br>
+0x1b380 HttpSendRequestA<br>
+0x1b380 HttpSendRequestA<br>
+0x1b380 HttpSendRequestA<br>
+0x1b388 InternetQueryDataAvailable<br>
+0x1b390 InternetReadFile<br>
+0x1b390 InternetReadFile<br>
+0x1b398 InternetOpenA<br>
+0x1b398 InternetOpenA<br>
+0x1b398 InternetOpenA<br>
+0x1b3a0 InternetCrackUrlA<br>
+0x1b3a8 InternetCloseHandle<br>
+0x1b3b0 InternetConnectA<br>
+0x1b3b0 InternetConnectA<br>
+0x1b3b0 InternetConnectA<br>
+0x1b3c0 CheckSumMappedFile<br>
+0x1b358 GetFileVersionInfoA<br>
+0x1b360 GetFileVersionInfoSizeA<br>
+0x1b368 VerQueryValueA<br>
+0x1b078 GetWindowsDirectoryA<br>
+0x1b080 lstrcatA<br>
+0x1b088 ExitProcess<br>
+0x1b090 GetCurrentProcessId<br>
+0x1b098 WaitForMultipleObjects<br>
+0x1b0a0 GetFileAttributesA<br>
+0x1b0a8 InitializeProcThreadAttributeList<br>
+0x1b0b0 UpdateProcThreadAttribute<br>
+0x1b0b8 DeleteProcThreadAttributeList<br>
+0x1b0c0 Sleep<br>
+0x1b0c0 Sleep<br>
+0x1b0c8 GetCurrentThread<br>
+0x1b0d0 SetThreadAffinityMask<br>
+0x1b0d8 SetThreadPriority<br>
+0x1b0e0 SetEvent<br>
+0x1b0e8 LoadLibraryExA<br>
+0x1b0e8 LoadLibraryExA<br>
+0x1b0e8 LoadLibraryExA<br>
+0x1b0e8 LoadLibraryExA<br>
+0x1b0f0 FreeLibrary<br>
+0x1b0f8 GlobalAlloc<br>
+0x1b100 CreateMutexA<br>
+0x1b100 CreateMutexA<br>
+0x1b100 CreateMutexA<br>
+0x1b108 CreateThread<br>
+0x1b108 CreateThread<br>
+0x1b110 GlobalReAlloc<br>
+0x1b118 ReleaseMutex<br>
+0x1b120 GlobalFree<br>
+0x1b128 LoadLibraryA<br>
+0x1b128 LoadLibraryA<br>
+0x1b128 LoadLibraryA<br>
+0x1b130 GetSystemDirectoryA<br>
+0x1b138 GetTickCount<br>
+0x1b138 GetTickCount<br>
+0x1b140 MoveFileA<br>
+0x1b140 MoveFileA<br>
+0x1b140 MoveFileA<br>
+0x1b148 CreateEventA<br>
+0x1b150 CloseHandle<br>
+0x1b158 ReadFile<br>
+0x1b158 ReadFile<br>
+0x1b160 LocalAlloc<br>
+0x1b168 GetFileSize<br>
+0x1b170 CreateFileA<br>
+0x1b170 CreateFileA<br>
+0x1b170 CreateFileA<br>
+0x1b178 WriteFile<br>
+0x1b178 WriteFile<br>
+0x1b180 WaitForSingleObject<br>
+0x1b188 LocalFree<br>
+0x1b190 GetLastError<br>
+0x1b198 Process32Next<br>
+0x1b198 Process32Next<br>
+0x1b1a0 OpenProcess<br>
+0x1b1a0 OpenProcess<br>
+0x1b1a8 Process32First<br>
+0x1b1a8 Process32First<br>
+0x1b1b0 CreateToolhelp32Snapshot<br>
+0x1b1b8 GetCurrentProcess<br>
+0x1b1c0 GetVersionExA<br>
+0x1b1c8 GetProcAddress<br>
+0x1b1c8 GetProcAddress<br>
+0x1b1d0 GetModuleHandleA<br>
+0x1b1d0 GetModuleHandleA<br>
+0x1b1d0 GetModuleHandleA<br>
+0x1b1d8 VirtualQuery<br>
+0x1b1e0 UnmapViewOfFile<br>
+0x1b1e0 UnmapViewOfFile<br>
+0x1b1e8 MapViewOfFile<br>
+0x1b1e8 MapViewOfFile<br>
+0x1b1f0 CreateFileMappingW<br>
+0x1b1f0 CreateFileMappingW<br>
+0x1b1f8 CreateEventW<br>
+0x1b200 VirtualAlloc<br>
+0x1b200 VirtualAlloc<br>
+0x1b208 HeapAlloc<br>
+0x1b208 HeapAlloc<br>
+0x1b210 GetProcessHeap<br>
+0x1b218 HeapFree<br>
+0x1b218 HeapFree<br>
+0x1b220 HeapReAlloc<br>
+0x1b228 Process32NextW<br>
+0x1b228 Process32NextW<br>
+0x1b228 Process32NextW<br>
+0x1b230 lstrcmpiW<br>
+0x1b238 Process32FirstW<br>
+0x1b238 Process32FirstW<br>
+0x1b238 Process32FirstW<br>
+0x1b240 VirtualFree<br>
+0x1b240 VirtualFree<br>
+0x1b248 lstrcmpiA<br>
+0x1b250 lstrcmpA<br>
+0x1b258 GetTempPathA<br>
+0x1b260 lstrcpyA<br>
+0x1b268 lstrlenA<br>
+0x1b270 CopyFileA<br>
+0x1b270 CopyFileA<br>
+0x1b270 CopyFileA<br>
+0x1b2a0 EnumWindows<br>
+0x1b2a8 GetWindowThreadProcessId<br>
+0x1b2b0 GetWindowTextA<br>
+0x1b2b8 SendNotifyMessageA<br>
+0x1b2c0 SendMessageA<br>
+0x1b2c8 CreateDesktopA<br>
+0x1b2d0 SetThreadDesktop<br>
+0x1b2d8 GetDC<br>
+0x1b2e0 CloseDesktop<br>
+0x1b2e8 ReleaseDC<br>
+0x1b2f0 UnregisterClassA<br>
+0x1b2f8 SetWindowLongA<br>
+0x1b300 GetWindowLongA<br>
+0x1b308 GetClassNameA<br>
+0x1b310 GetClipboardFormatNameA<br>
+0x1b318 wsprintfA<br>
+0x1b320 RegisterWindowMessageA<br>
+0x1b328 LockWorkStation<br>
+0x1b330 SendInput<br>
+0x1b338 RegisterClassExA<br>
+0x1b340 MessageBoxW<br>
+0x1b348 FindWindowW<br>
+0x1b040 CreateRoundRectRgn<br>
+0x1b048 BeginPath<br>
+0x1b050 PolyDraw<br>
+0x1b058 EndPath<br>
+0x1b060 FlattenPath<br>
+0x1b068 DeleteObject<br>
+0x1b000 RegOpenKeyA<br>
+0x1b000 RegOpenKeyA<br>
+0x1b000 RegOpenKeyA<br>
+0x1b008 RegQueryValueExA<br>
+0x1b010 RegCloseKey<br>
+0x1b010 RegCloseKey<br>
+0x1b018 CreateWellKnownSid<br>
+0x1b020 CheckTokenMembership<br>
+0x1b028 OpenProcessToken<br>
+0x1b028 OpenProcessToken<br>
+0x1b030 GetTokenInformation<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+0x11690 Inject64End<br>
+0x11740 Inject64Normal<br>
+0x11580 Inject64Start<br>
+0x11720 UacInject64End<br>
+0x116a0 UacInject64Start<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!Win64<br>
+.EXE.<br>
+.MPRESS1<br>
+.MPRESS2<br>
+.imports<br>
+D$pHc@<H<br>
+L$pH<br>
+D$(H<br>
+L$(H<br>
+D$@H<br>
+D$0H<br>
+D$09D$Ps7H<br>
+8.rsru<br>
+L$pH<br>
+D$@H<br>
+L$pH<br>
+D$HL<br>
+T$xH<br>
+D$8H<br>
+D$8H<br>
+D$<br>
+H<br>
+D$@H<br>
+L$hH<br>
+D$hH<br>
+L$LH<br>
+D$pD<br>
+D$hH<br>
+D$HH<br>
+D$@H<br>
+L$HD<br>
+D$pH<br>
+T$hH<br>
+D$<br>
+H<br>
+D$(H<br>
+D$0H<br>
+D$8H<br>
+D$@H<br>
+D$HH<br>
+D$XH<br>
+t\Hc<br>
+L$<br>
+D<br>
+D$`H<br>
+D$<br>
+E3<br>
+D$0H<br>
+D$@H<br>
+D$pD<br>
+T$hH<br>
++D$h<br>
+D$8H<br>
+D$PH<br>
+D$0H<br>
+D$PH<br>
+L$0H<br>
+D$PH<br>
+D$8H<br>
+D$PH<br>
+L$8H<br>
+L$PH<br>
+L$PL<br>
+D$PH<br>
+L$PD<br>
+D$@Hc@<H<br>
+L$@H<br>
+D$(H<br>
+L$@H<br>
+D$<br>
+H<br>
+D$<br>
+H<br>
+D$`G<br>
+D$ae<br>
+D$bt<br>
+D$cT<br>
+D$de<br>
+D$em<br>
+D$fp<br>
+D$gF<br>
+D$hi<br>
+D$il<br>
+D$je<br>
+D$kN<br>
+D$la<br>
+D$mm<br>
+D$ne<br>
+D$oW<br>
+D$Xd<br>
+D$Yl<br>
+D$Zl<br>
+D$[.<br>
+D$\d<br>
+D$]l<br>
+D$^l<br>
+D$HH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+T$`H<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+D$PH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+L$HH<br>
+D$@H<br>
+L$@H<br>
+L$@H<br>
+D$<br>
+L<br>
+T$PH<br>
+L$HH<br>
+T$XH<br>
+L$<br>
+L<br>
+D$0H<br>
+D$30<br>
+D$4L<br>
+D$7H<br>
+D$>H<br>
+D$AH<br>
+D$JH<br>
+D$XH<br>
+D$[X<br>
+D$<br>
+Y<br>
+D$$Z<br>
+D$TA<br>
+D$UX<br>
+D$pX<br>
+D$`L<br>
+D$bL<br>
+D$c$<br>
+D$g~<br>
+D$h\<br>
+D$i$<br>
+T$tH<br>
+D$xH<br>
+L$xH<br>
+L$xH<br>
+T$0H<br>
+T$XH<br>
+T$<br>
+H<br>
+T$$H<br>
+T$TH<br>
+T$pH<br>
+T$`H<br>
+T$PH<br>
+D$(H<br>
+D$<br>
+H<br>
+L$PH<br>
+L$PH<br>
+L$PH<br>
+L$PH<br>
+L$PH<br>
+L$PH<br>
+L$PH<br>
+D$`H<br>
+T$PH<br>
+D$(H<br>
+L$XL<br>
+D$(H<br>
+T$<br>
+H<br>
+D$(H<br>
+D$0H<br>
+D$0H<br>
+D$03<br>
+T$03<br>
+D$<br>
+A<br>
+T$0H<br>
+D$<br>
+%<br>
+D$<br>
+H<br>
+T$(H<br>
+D$hE3<br>
+L$`+<br>
+D$XH<br>
++D$\<br>
+D$\D<br>
+D$XH<br>
+L$@H<br>
+D$HH<br>
+D$XH<br>
+L$@H<br>
+T$HH<br>
+D$XH<br>
+D$XD<br>
+T$XH<br>
+D$PH<br>
+D$x3<br>
+D$pH<br>
+D$@H<br>
+D$@H<br>
+D$PH<br>
+T$(H<br>
+D$$H<br>
+D$<br>
+H<br>
+$Hc@<H<br>
+L$<br>
+H<br>
+L$<br>
+D<br>
+D$(H<br>
+D$pH<br>
+@t9D$pr<br>
+D$pH<br>
+D$pH<br>
+L$xH<br>
+D$0H<br>
+L$`H<br>
+D$(H<br>
+D$pH<br>
+9D$pr<br>
+D$pH<br>
+D$pH<br>
+L$xH<br>
+D$0H<br>
+D$0H<br>
+L$`H<br>
+D$HH<br>
+L$(H<br>
+D$8H<br>
+L$09H<br>
+L$`H<br>
+D$8H<br>
+L$0E3<br>
+D$8H<br>
+D$HH<br>
+9D$H<br>
+D$HH<br>
+D$PH<br>
+D$HH<br>
+D$HH<br>
+D$`H<br>
+L$<br>
+L<br>
+L$@H<br>
+HcD$<br>
+H<br>
+D$XH<br>
+D$PH<br>
+D$PH<br>
+D$HH<br>
+D$XH<br>
+D$XH<br>
+D$PH<br>
+D$PH<br>
+D$<br>
+H<br>
+D$0H<br>
+L$XA<br>
+D$HH<br>
+L$X+<br>
+D$\H<br>
+D$\3<br>
+D$\H<br>
+D$HH<br>
+D$8H<br>
+L$pH<br>
+D$PL<br>
+L$xL<br>
+T$\H<br>
+D$HH<br>
+D$@H<br>
+D$<br>
+H<br>
+D$<br>
+H<br>
+D$(H<br>
+D$(H<br>
+D$(H<br>
+L$8L<br>
+D$<br>
+H<br>
+D$08<br>
+T$0H<br>
+T$\H<br>
+D$83<br>
+T$0H<br>
+D$(H<br>
+L$<br>
+L<br>
+D$PH<br>
+D$(H<br>
+D$hH9D$X<br>
+D$hH<br>
+T$`H<br>
+H;D$hu<br>
+L$h+<br>
+D$<br>
+3<br>
+D$0H<br>
+D$(H<br>
+D$<br>
+H<br>
+L$(H<br>
+H;D$Xv<br>
+D$hH<br>
+T$`H<br>
+H;D$hu<br>
+D$p0<br>
+D$PH<br>
+D$`H<br>
+D$0H<br>
+D$hH<br>
+L$<br>
+H<br>
+9D$(r<br>
+9D$(s<br>
+T$HH<br>
+D$<br>
+H<br>
+T$H+<br>
+L$<br>
+L<br>
+L$XL<br>
+D$PH<br>
+T$HH<br>
+L$<br>
+L<br>
+L$XL<br>
+D$PH<br>
+T$HH<br>
+L$<br>
+L<br>
+L$XL<br>
+T$HH<br>
+L$<br>
+D<br>
+D$<br>
+L<br>
+L$XD<br>
+D$PH<br>
+T$HH<br>
+D$83<br>
+D$@H<br>
+D$(H<br>
+D$(H<br>
+D$pH<br>
+D$pH<br>
+D$hA<br>
+T$hH<br>
+L$<br>
+Hi<br>
+T$0H<br>
+D$<br>
+Hi<br>
+L$0H<br>
+D$<br>
+A<br>
+D$hH<br>
+T$hH<br>
+D$hH9D$pt<br>
+L$0H<br>
+D$<br>
+H<br>
+T$0H<br>
+D$(9D$8sI<br>
+D$8Hi<br>
+L$0H<br>
+T$XH<br>
+D$8Hi<br>
+L$0H<br>
+D$<br>
+H<br>
+D$<br>
+H<br>
+D$0H<br>
+T$<br>
+H<br>
+L$<br>
+H<br>
+L$<br>
+H<br>
+L$<br>
+H<br>
+L$<br>
+H<br>
+L$<br>
+D<br>
+L$<br>
+H<br>
+L$<br>
+D<br>
+D$PA<br>
+D$<br>
+H<br>
+D$PD<br>
+D$<br>
+H<br>
+T$HH<br>
+L$PD<br>
+D$(A<br>
+D$(H<br>
+D$<br>
+0<br>
+L$@E3<br>
+T$0H<br>
+D$<br>
+L<br>
+D$XH<br>
+T$0H<br>
+D$8H<br>
+D$HH<br>
+L$8H<br>
+D$XH<br>
+L$0H<br>
+T$@H<br>
+D$89D$H<br>
+D$HHi<br>
+D$PH<br>
+L$@H<br>
+D$HHi<br>
+T$@H<br>
+L$<br>
+L<br>
+D$HHi<br>
+T$@H<br>
+D$0H<br>
+D$@H<br>
+D$8H<br>
+D$XH<br>
+L$XH<br>
+D$(H<br>
+Hc@<H<br>
+D$<br>
+H<br>
+L$<br>
+H<br>
+D$0H<br>
+D$,9D$<<br>
+L$(9H<br>
+D$PH<br>
+D$PH<br>
+L$PH<br>
+D$PH<br>
+L$PH<br>
+D$8D<br>
+D$`H<br>
+L$`H<br>
+L$HL<br>
+D$0H<br>
+D$<br>
+P<br>
+D$`H<br>
+D$tH<br>
+D$`f<br>
+D$`f<br>
+D$(H<br>
+D$<br>
+E3<br>
+T$0H<br>
+L$<br>
+L<br>
+D$@H<br>
+D$HH<br>
+D$HH<br>
+D$8H<br>
+D$@H<br>
+D$<br>
+H<br>
+D$<br>
+H<br>
+D$0H<br>
+L$<br>
+H<br>
+D$(H<br>
+D$0H<br>
+H;D$(t<br>
+D$8H<br>
+D$8H<br>
+D$0H<br>
+D$8H<br>
+L$(H<br>
+D$@H<br>
+D$@H<br>
+L$@H<br>
+D$xH<br>
+D$@H<br>
+D$ph<br>
+D$0H<br>
+L$\A<br>
+D$\A<br>
+D$\H<br>
+D$`H<br>
+D$(H<br>
+D$\A<br>
+H+D$(H<br>
+L$`H<br>
+H+D$(H<br>
+L$`H<br>
+H+D$(H<br>
+L$`H<br>
+H+D$(H<br>
+L$`H<br>
+H+D$(H<br>
+L$`H<br>
+H+D$(H<br>
+L$`H<br>
+BBBBH<br>
+D$8H<br>
+L$4H<br>
+D$4H<br>
+D$4H<br>
+D$PH<br>
+D$XH<br>
+L$0A<br>
+T$`H<br>
+L$4L<br>
+D$<br>
+L<br>
+D$8H<br>
+T$8H<br>
+T$X3<br>
+D$@H<br>
+|$$ds<br>
+D$<br>
+H<br>
+D$$H<br>
+D$(H<br>
+D$03<br>
+D$8H<br>
+L$$D<br>
+D$(H<br>
+D$8H<br>
+D$PH<br>
+D$XH<br>
+D$<br>
+H<br>
+D$(H<br>
+D$0H<br>
+D$8H<br>
+D$@H<br>
+D$HH<br>
+D$pH<br>
+D$xH<br>
+T$`H<br>
+T$0H<br>
+D$<br>
+H<br>
+D$(H<br>
+L$(H+<br>
+L$<br>
+H<br>
+D$(H<br>
+D$(H<br>
+D$<br>
+H<br>
+L$<br>
+H<br>
+L$<br>
+H<br>
+|$8<br>
+HcD$8Hk<br>
+L$(H<br>
+D$@H<br>
+D$@H<br>
+D$HH<br>
+D$@H9D$H<br>
+L$HH+<br>
+D$PH<br>
+D$pH9D$PuXH<br>
+D$HH<br>
+L$HH<br>
+D$HH<br>
+L$HH<br>
+D$HH<br>
+L$<br>
+L<br>
+L$8H<br>
+L$(H<br>
+T$0H<br>
+D$PH<br>
+D$PH<br>
+D$@H<br>
+D$@H<br>
+D$HA<br>
+D$8H<br>
+D$HH<br>
+D$8H<br>
+L$HH<br>
+D$XH<br>
+D$dH<br>
+D$<br>
+A<br>
+L$HE3<br>
+L$HE3<br>
+D$@H<br>
+D$XH<br>
+D$`H<br>
+L$PA<br>
+D$pH<br>
+D$xH<br>
+D$$H<br>
+T$<br>
+H<br>
+D$$H<br>
+L$`L<br>
+D$0H<br>
+L$0D<br>
+D$$3<br>
+L$@L<br>
+D$PH<br>
+D$\H<br>
+D$\H<br>
+D$\H%<br>
+D$<H<br>
+D$<H%<br>
+|$DyB<br>
+|$D<br>
+N<br>
+|$DhB<br>
+D$03<br>
+D$(H<br>
+D$AH<br>
+D$8H<br>
+D$(@<br>
+L$<br>
+L<br>
+D$@H<br>
+T$@H<br>
+D$0H<br>
+D$0H<br>
+D$0H<br>
+L$<br>
+D<br>
+D$8H<br>
+D$PL<br>
+D$PH<br>
+T$8H<br>
+L$<br>
+L<br>
+D$XH<br>
+T$`H<br>
+L$dD<br>
+D$`H<br>
+T$XH<br>
+D$dH<br>
+L$XH<br>
+D$XH<br>
+D$dH<br>
+D$0H<br>
+D$@H<br>
+L$@H<br>
+D$HH<br>
+L$HH<br>
+L$PL<br>
+D$0H<br>
+D$8H<br>
+L$xH<br>
+L$<br>
+L<br>
+L$pL<br>
+D$0H<br>
+D$,H<br>
+L$8L<br>
+D$<br>
+H<br>
+T$PH<br>
+T$XH<br>
+D$<br>
+H<br>
+D$<br>
+k<br>
+L$@L<br>
+D$(H<br>
+D$<br>
+9D$4<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+D$4H<br>
+L$0H<br>
+T$(L<br>
+D$`A<br>
+D$0H<br>
+D$4H<br>
+D$4H<br>
+D$0H<br>
+D$0H<br>
+D$(H<br>
+D$xH<br>
+D$XH<br>
+D$@H<br>
+T$XH<br>
+T$@H<br>
+D$hH<br>
+D$h3<br>
+D$PH<br>
+D$`H<br>
+D$(H<br>
+D$xH<br>
+D$<br>
+E3<br>
+D$PH<br>
+T$hH<br>
+D$x3<br>
+D$X3<br>
+D$@3<br>
+D$h3<br>
+D$`H<br>
+D$HH<br>
+T$HH<br>
+D$xH<br>
+D$@H<br>
+D$PH<br>
+D$(H<br>
+D$`H<br>
+D$<br>
+E3<br>
+D$@H<br>
+T$xH<br>
+D$`3<br>
+D$H3<br>
+D$pH<br>
+D$xH<br>
+D$XH<br>
+D$@H<br>
+T$XH<br>
+T$@H<br>
+D$PH<br>
+D$hH<br>
+D$h3<br>
+T$PH<br>
+D$h3<br>
+D$HH<br>
+D$`H<br>
+D$(H<br>
+D$xH<br>
+D$<br>
+E3<br>
+D$HH<br>
+D$x3<br>
+D$X3<br>
+D$@3<br>
+D$P3<br>
+D$XH<br>
+T$PH<br>
+D$hD<br>
+D$HH<br>
+L$HD<br>
+D$h3<br>
+L$tL<br>
+D$pH<br>
+D$pH%<br>
+D$@D<br>
+D$`H<br>
+L$<br>
+D<br>
+L$lL<br>
+D$H3<br>
+D$`H<br>
+D$@H<br>
+T$8H<br>
+D$0H<br>
+D$<br>
+D<br>
+D$(H<br>
+T$<br>
+H<br>
+D$8H<br>
+T$8H<br>
+D$83<br>
+D$<br>
+H<br>
+D$0D<br>
+D$8H<br>
+T$0H<br>
+D$(H<br>
+T$(H<br>
+D$(3<br>
+D$<br>
+H<br>
+D$8D<br>
+D$0H<br>
+T$8H<br>
+D$(H<br>
+T$(H<br>
+D$(3<br>
+D$(H<br>
+D$8D<br>
+D$<br>
+H<br>
+T$8H<br>
+D$0H<br>
+T$0H<br>
+D$03<br>
+D$<br>
+H<br>
+D$8D<br>
+D$0H<br>
+T$8H<br>
+D$(H<br>
+T$(H<br>
+D$(3<br>
+T$<br>
+H<br>
+D$<br>
+9D$$<br>
+T$0H<br>
+u;E3<br>
+D$<br>
+0<br>
+T$<br>
+H<br>
+T$<br>
+H<br>
+D$8H<br>
+D$0H<br>
+8Muzj<br>
+KERNEL32<br>
+VirtualProtect<br>
+t+PTAYj<br>
+AXjxZWYH<br>
+G(AXPTAYjxZWY<br>
+(AXZY[^_<br>
+IsWow64Process<br>
+kernel32.dll<br>
+atan<br>
+WriteProcessMemory<br>
+CloseHandle<br>
+MapViewOfFile<br>
+OpenFileMappingW<br>
+CreateThread<br>
+SetWindowLongPtrA<br>
+GetProcAddress<br>
+GetModuleHandleW<br>
+Inject64Start<br>
+Inject64End<br>
+Inject64Normal<br>
+LdrLoadDll<br>
+RtlCreateUnicodeStringFromAsciiz<br>
+LdrGetProcedureAddress<br>
+ntdll.dll<br>
+.cfg<br>
+.cfg<br>
+.text<br>
+.text<br>
+dll.dll<br>
+.rsrc<br>
+LoadLibraryA<br>
+kernel32.dll<br>
+.conf<br>
+\uxtheme.dll<br>
+\uxtheme.dll<br>
+dll.dll<br>
+Software\Microsoft\Windows\CurrentVersion\ThemeManager<br>
+ThemeActive<br>
+uxtheme.dll<br>
+\%.8x.tmp<br>
+\uxtheme.dll<br>
+Global\6f5585c0-fa11-11e2-b778-0800200c9a66<br>
+\%.8x.tmp<br>
+771dca0d-7324-40dd-9f93-4f74a2e95843<br>
+ntdll.dll<br>
+NtQueryIntervalProfile<br>
+NtQuerySystemInformation<br>
+NtReadVirtualMemory<br>
+HalDispatchTable<br>
+PsInitialSystemProcess<br>
+PsReferencePrimaryToken<br>
+PsGetCurrentProcess<br>
+MmUserProbeAddress<br>
+NtSetEaFile<br>
+dll.dll<br>
+Global\6f5585c0-fa11-11e2-b778-0800200c9a66<br>
+NtQuerySystemInformation<br>
+ntdll.dll<br>
+RtlInitUnicodeString<br>
+ntdll.dll<br>
+RtlAnsiStringToUnicodeString<br>
+ntdll.dll<br>
+RtlInitAnsiString<br>
+ntdll.dll<br>
+RtlEqualUnicodeString<br>
+ntdll.dll<br>
+RtlFreeUnicodeString<br>
+ntdll.dll<br>
+\ntoskrnl.exe<br>
+\ntkrnlpa.exe<br>
+\ntkrnlmp.exe<br>
+\ntkrpamp.exe<br>
+\xNtKrnl.exe<br>
+PsGetCurrentThread<br>
+ntoskrnl.exe<br>
+PsLookupProcessByProcessId<br>
+ntoskrnl.exe<br>
+HalDispatchTable<br>
+ntoskrnl.exe<br>
+NtQueryIntervalProfile<br>
+ntdll.dll<br>
+kernel32.dll<br>
+DequeueUmsCompletionListItems<br>
+QueryUmsThreadInformation<br>
+ExecuteUmsThread<br>
+GetNextUmsListItem<br>
+GetThreadContext<br>
+CreateUmsCompletionList<br>
+CreateRemoteThreadEx<br>
+EnterUmsSchedulingMode<br>
+DeleteUmsThreadContext<br>
+DeleteUmsCompletionList<br>
+CreateUmsThreadContext<br>
+NtAllocateVirtualMemory<br>
+ntdll.dll<br>
+dll.dll<br>
+powerloader<br>
+epathobj<br>
+atom<br>
+sysret<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+6.0;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+SV1)<br>
+POST<br>
+Content-Type:<br>
+application/x-www-form-urlencoded<br>
+%s=%s<br>
+%s=%s<br>
+http://93.115.93.16:9007/fv.do<br>
+http://93.115.93.16:9007/ar.do<br>
+http://93.115.93.16:9007/ae.do<br>
+%d.%d.%d.%d<br>
+\system32\win32k.sys<br>
+win32k.sys<br>
+\system32\ntoskrnl.exe<br>
+ntoskrnl.exe<br>
+\system32\ntkrnlpa.exe<br>
+ntkrnlpa.exe<br>
+\system32\ntkrnlmp.exe<br>
+ntkrnlmp.exe<br>
+\system32\ntkrpamp.exe<br>
+ntkrpamp.exe<br>
+#32770<br>
+taskhost.exe<br>
+ntdll.dll<br>
+_snprintf<br>
+__C_specific_handler<br>
+strncpy<br>
+ZwQueryVirtualMemory<br>
+strcat<br>
+ZwQueryInformationProcess<br>
+ZwReadVirtualMemory<br>
+RtlInitUnicodeString<br>
+NtOpenSection<br>
+NtMapViewOfSection<br>
+RtlCompareMemory<br>
+RtlImageNtHeader<br>
+wcscpy<br>
+NtUnmapViewOfSection<br>
+NtClose<br>
+__chkstk<br>
+memcpy<br>
+strlen<br>
+memset<br>
+SHLWAPI.dll<br>
+PathAppendA<br>
+StrToIntA<br>
+StrStrIA<br>
+WININET.dll<br>
+HttpOpenRequestA<br>
+HttpSendRequestA<br>
+InternetQueryDataAvailable<br>
+InternetReadFile<br>
+InternetOpenA<br>
+InternetCrackUrlA<br>
+InternetCloseHandle<br>
+InternetConnectA<br>
+imagehlp.dll<br>
+CheckSumMappedFile<br>
+VERSION.dll<br>
+GetFileVersionInfoA<br>
+GetFileVersionInfoSizeA<br>
+VerQueryValueA<br>
+KERNEL32.dll<br>
+GetWindowsDirectoryA<br>
+lstrcatA<br>
+ExitProcess<br>
+GetCurrentProcessId<br>
+WaitForMultipleObjects<br>
+GetFileAttributesA<br>
+InitializeProcThreadAttributeList<br>
+UpdateProcThreadAttribute<br>
+DeleteProcThreadAttributeList<br>
+Sleep<br>
+GetCurrentThread<br>
+SetThreadAffinityMask<br>
+SetThreadPriority<br>
+SetEvent<br>
+LoadLibraryExA<br>
+FreeLibrary<br>
+GlobalAlloc<br>
+CreateMutexA<br>
+CreateThread<br>
+GlobalReAlloc<br>
+ReleaseMutex<br>
+GlobalFree<br>
+LoadLibraryA<br>
+GetSystemDirectoryA<br>
+GetTickCount<br>
+MoveFileA<br>
+CreateEventA<br>
+CloseHandle<br>
+ReadFile<br>
+LocalAlloc<br>
+GetFileSize<br>
+CreateFileA<br>
+WriteFile<br>
+WaitForSingleObject<br>
+LocalFree<br>
+GetLastError<br>
+Process32Next<br>
+OpenProcess<br>
+Process32First<br>
+CreateToolhelp32Snapshot<br>
+GetCurrentProcess<br>
+GetVersionExA<br>
+GetProcAddress<br>
+GetModuleHandleA<br>
+VirtualQuery<br>
+UnmapViewOfFile<br>
+MapViewOfFile<br>
+CreateFileMappingW<br>
+CreateEventW<br>
+VirtualAlloc<br>
+HeapAlloc<br>
+GetProcessHeap<br>
+HeapFree<br>
+HeapReAlloc<br>
+Process32NextW<br>
+lstrcmpiW<br>
+Process32FirstW<br>
+VirtualFree<br>
+lstrcmpiA<br>
+lstrcmpA<br>
+GetTempPathA<br>
+lstrcpyA<br>
+lstrlenA<br>
+CopyFileA<br>
+USER32.dll<br>
+EnumWindows<br>
+GetWindowThreadProcessId<br>
+GetWindowTextA<br>
+SendNotifyMessageA<br>
+SendMessageA<br>
+CreateDesktopA<br>
+SetThreadDesktop<br>
+GetDC<br>
+CloseDesktop<br>
+ReleaseDC<br>
+UnregisterClassA<br>
+SetWindowLongA<br>
+GetWindowLongA<br>
+GetClassNameA<br>
+GetClipboardFormatNameA<br>
+wsprintfA<br>
+RegisterWindowMessageA<br>
+LockWorkStation<br>
+SendInput<br>
+RegisterClassExA<br>
+MessageBoxW<br>
+FindWindowW<br>
+GDI32.dll<br>
+CreateRoundRectRgn<br>
+BeginPath<br>
+PolyDraw<br>
+EndPath<br>
+FlattenPath<br>
+DeleteObject<br>
+ADVAPI32.dll<br>
+RegOpenKeyA<br>
+RegQueryValueExA<br>
+RegCloseKey<br>
+CreateWellKnownSid<br>
+CheckTokenMembership<br>
+OpenProcessToken<br>
+GetTokenInformation<br>
+d[[[[[<br>
+[[[[[[[[[[[[js<br>
+[RRRR[[[[w|w<br>
+[[p[z<br>
+vv[[[[[[[[[[[<br>
+PPPP<br>
+@@@@AI@@@@LB@@@@@@@@ODS@@@DWC\@`@@@@@@@@@@@@@@dfnk@@jF@@DF@@[D@@<br>
+!Win64<br>
+.DLL.<br>
+.MPRESS1<br>
+.MPRESS2<br>
+v2.19<br>
+USWAUH<br>
+MbPa<br>
+L$P3<br>
+D$Ox<br>
+$d<br>
+`<br>
+;@`0!<br>
+BL$@"<br>
+_AN/<br>
+E`8A<br>
+hJL=<br>
+l$0A<br>
+*v,;?<br>
+0@0><br>
+RGP^<br>
+l$HH<br>
+t$PH<br>
+BX}(E3<br>
+"<0C<br>
+@T!I<br>
+t#H&<br>
+luR0#mEIPH<br>
+G0i`<br>
+=1EL<br>
+0T$@A<br>
+@<\t<br>
+`KXA<br>
+G<br>
+=B<br>
++04L<br>
+QXS0<br>
+EP&<br>
+;<br>
+Si3<br>
+&meL<br>
+9t$,u1D<br>
+P(&1<br>
+WAPI.dll<br>
+itForSin<br>
+gleObjec<br>
+GetLas<br>
+tError01<br>
+P''W<br>
+6V67<br>
+32First<br>
+Open<br>
+Sus0@FC<br>
+Addr<br>
+FileNamH<br>
+FMem<br>
+B"Free<br>
+WideC<br>
+harToMul<br>
+tiByte<br>
+strcmpiA<br>
+Clos<br>
+bU&7<br>
+0UFD<br>
+AUS0ER<br>
+~@LR"eg<br>
+Key,a<br>
+okup<br>
+PrivQ<br>
+alum<br>
+Adju7st<br>
+__chkstk<br>
+ZPY0<br>
+G(AX<br>
+Y[^_<br>
+kern0el<br>
+soft<br>
+ware\vBs<br>
+zKyhVL<br>
+ecVS<br>
+ilman.ex@e<<br>
+c\sR,2#<br>
+pre@p<br>
+6UFT&V'vf<br>
+br$%E<br>
+NtQuery<br>
+Informat<br>
+H3<br>
+.DLL.<br>
+@f(<br>
+%U45<br>
+Qv2.1<br>
+zov-<br>
+<5[iR<br>
+8cHC<br>
+j5v4T<br>
+<ov|/<br>
+2'2T<br>
+9Rd7<br>
+`z^c<br>
+~w(j<br>
+VDESIL<br>
+gnN.<br>
+]IMOU<br>
+j:<)HP%<br>
+I62x<br>
+t2\((zx<br>
+4v2R<br>
+t(a5O3<br>
+)RA=<br>
+m*6w<br>
+>]j<<br>
+vSmc3S<br>
+(agk<br>
+:{RJ<br>
+32&8<br>
+Uz]b<br>
+et<)<br>
+!OM&<br>
+Fb~2<br>
+9z[H<br>
+'><br>
+:(&%<br>
+eS.W<br>
+XZ.7]P<br>
+fRk<br>
+2!Gx<br>
+=V.t<br>
+?[c0<br>
+&dij<br>
+0&K%Fm`<br>
+5OWOH<br>
+PSr%&<br>
+bwSK<br>
+_P_Kc<br>
+'Rh9<br>
+/_gU.-<br>
+Qx@V<br>
+v6l/<br>
+W!M,<br>
+L"h"<br>
+%^@2BH+<br>
+8dj><br>
+pTyH<br>
+vE.-o<br>
++}S4<br>
+'W9(HQ<br>
+pR@=<br>
+a-f+<br>
+%w'b<br>
+"W%3<br>
+qRH]<br>
+S0B-%<br>
+HA:S<br>
+EhAQq<br>
+)W}w<br>
+Ryij+<br>
+Y7@v<br>
+5>^U:^m<br>
++k?,<br>
+?6\p<br>
+D}|o<br>
+W[L]p<br>
+nUPA<br>
+_bSx8<br>
+f,<v><br>
+w??r<br>
+Hs{O<br>
+&_<br>
+v-<br>
+VSZQ<br>
+7n}(<br>
+]AUA<br>
+S<br>
+-#<br>
+R4d-<br>
+fZ[;<br>
+io<br>
+1<br>
+6|_P>ZjG$Y|<br>
+w5@%<br>
+RooQb<br>
+-q_b<br>
+LGfs^h<br>
+>?RR0<br>
+3pB`g+<br>
+snX}<br>
+!prv<br>
+Eg}Hv]E<br>
+Tg@w<br>
+g<br>
+aJr<br>
+BY!(<br>
+m7J.<br>
+rwhS2Jm<br>
+Y{Vg<br>
+g+(H<br>
+7a5eO<br>
+:6&GA<br>
+[Mm^<br>
++z"+^<br>
+5~UX<br>
+ZA^:<br>
+R2HgD<br>
+.tIY<br>
+4'@*/$<br>
+]p%5<br>
+L}YU<br>
+:>a5<br>
+)QMV<br>
+%(<br>
+-[HEvDz!<br>
+#,W'<br>
+p9{C<br>
+#CmA<br>
+dTQ\<br>
+X1qei<br>
+L_8`2<br>
+a*rt<br>
+<:*K<br>
+Tj*cy<br>
+]somf<br>
+q=n!<br>
+'<br>
+{fZ<br>
+7lvb<br>
+R@;2<br>
+]n^5<br>
+]YgG<br>
+~mW3<br>
+l[w>i<br>
+=|1;<<br>
+]K9/<br>
+rZ'!CR3<br>
+~lU#<br>
+Gb.<br>
+v/Zk<br>
+xn|x<br>
+E?D_<br>
+<_o@<br>
+f#wk-><br>
+cJ<0<br>
+qdR,<br>
+`$b!<br>
+9h[v<br>
+5`{z<br>
+XC+!<br>
+n<'Z<br>
+Kk0e<br>
+gw$z]Ze<br>
+!nFX"<br>
+FNY8<br>
+RK1nr<br>
+*cBVXF<br>
+iH:1<br>
+]Zaf<br>
+9ztq=<br>
+&m,,<br>
+1`RL<br>
+yC?+M<br>
+\P/\<br>
+TCL<br>
+~=.b<br>
+yCBR<br>
+Oy<D<br>
+YHVv<br>
+03q:<br>
+{Rd<br>
+$i[|<br>
+]:ucp[*<br>
+n0.q<br>
+5xv7<br>
+?h<br>
+$-W<br>
+2%XD"g<br>
+b?%f<br>
+;(wf<br>
+Z`s|<br>
+Nc>v<br>
+p?yA<br>
+KRrjW<br>
+Mu&?<br>
+^<br>
+g\<br>
+1hpm<br>
+Ebz%d<br>
+9o`R[<br>
+.IDj<br>
+S`Dp<br>
+I6eU<br>
+5yj<br>
+-~YNa<br>
+`~La<br>
+%cKR<br>
+!G0J<br>
+@D!~=[Z<br>
+.GHT<br>
+~bP'<br>
+evSw,7<br>
+|x<u<br>
+4%78t.<br>
+2nRTV<br>
+x31h<br>
+,#ii<br>
+k5!p<br>
+Phub<br>
+uN<br>
+8<br>
+;8M&<br>
+Z.)r<br>
+*;zO<br>
+gk)f<br>
+MYz*t<br>
+AM>S<br>
+;t3@E<br>
+r*b4-<br>
+z[06<br>
+|p{{<br>
+-ob"<br>
+,]=t<br>
+j}fi<br>
+z.|@<br>
+ERj8b<br>
+y0DJ<J<br>
+Qher<br>
+K&SC<br>
+:q2.hjM<br>
+Wkeq<br>
+:zq^A<br>
+HYFY<br>
+5p$X<br>
+P[L\b<br>
+.,PA<br>
+L]Q3<br>
+}4X#<br>
+\p9w~<br>
+aswC<br>
+zfA^<br>
+$T)!1<br>
+;.|pY<br>
+\g8L<br>
+C%%aV<br>
+/T)^<br>
+:{i>)<br>
+U\JM<br>
+c;^q<br>
+<$_e<br>
+!(ab,<br>
+lvJP<br>
+%_(?<br>
+yE\GQiJ<br>
+]f\!<br>
+dfIvy<br>
+9Q&X<br>
+!BFT<br>
+^<br>
+K;<br>
+~JcW<br>
+6Z<br>
+I<br>
+Q5j&<br>
+Z=!<br>
+5)Jj<br>
+:uGT<br>
+q!e^<br>
+o8Mk<br>
+>JFK<br>
+FIFM<br>
+8sF+<br>
+Hx{i9<br>
+O.SG}Wcx+<br>
+2Hg$<br>
+Q{1b<br>
+H`-d\d.<br>
+QPkfRW<br>
+,7l=<br>
+P~~>rb<br>
+3'6*<br>
+RzH(<br>
+5(+Es<br>
+p/=wU<br>
+Y^GL<br>
+g|b^<br>
+PxJA4<br>
+dpN/<br>
+<<C9<br>
+7CEZ<br>
+$wwu<br>
+Dd]aM<br>
+k.6%[?<br>
+/`<br>
+`<br>
+y&b>b<br>
+2,a*<br>
+I""*<br>
+f$m}<<br>
+S&`9L<br>
+(kR3<br>
+C/SP<br>
+;&tk<br>
+inZ1<br>
+]L~d<br>
+zWWe<br>
+`:'w<br>
+vd<br>
+%j:K<br>
+Fb}@<br>
+uL?H<br>
+;$"x:<br>
+jWKa<br>
+OS9]<br>
+hQbi<br>
+ZRBr1<br>
+wwN)<br>
+v]S3!&U^@<br>
+qe-C<br>
+8@,K<br>
+C.;k%&<br>
+lTE#<br>
+J"]$<br>
+r]#I<br>
+Q:g2<br>
+g|'WH<br>
+V<br>
+5!O<br>
++|_5<br>
+=ioR<br>
+LrY81xW<br>
+(;%H<br>
+dJKK<br>
+X7h/k<br>
+gA#<br>
+bhjSO>"<br>
+GUge6<br>
+t;]")<br>
+61r_<br>
+}q)i<br>
+q?fS<br>
+M<br>
+}`<br>
+nr^<br>
+zUa`<br>
+'sv<br>
+"N<br>
+V.c<br>
+C]hA<br>
+&7|x<br>
+&Ql$<br>
+7J=V<br>
+<TK(v<br>
+B>}5<br>
+i<br>
+ir5<br>
+`m.Fa<br>
+b\v*m<br>
+()_\<br>
+Yzyx<br>
+30Lh<br>
+WINI<br>
+NETT<br>
+FURLDo<br>
+wnloadTo<br>
+1CRYPT<br>
+`C<br>
+er<br>
+PQH+<br>
+sT00<br>
+L$<br>
+H<br>
+SUVWAT<br>
+AUAVA<br>
+P<br>
+1-<br>
+U0tvA<br>
+=Q1Q]<br>
+HDB`\<br>
+O'D+<br>
+B="9<br>
+)XD:<br>
+^4?`g<br>
+R<br>
+W]Z<br>
+'<br>
+^M<br>
+B0<br>
++I<br>
+U<br>
+~QL+L$x<br>
+A^A]A\_^<br>
+Hx{i9<br>
+O.SG}Wcx+<br>
+2Hg$<br>
+Q{1b<br>
+H`-d\d.<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+KERNEL32<br>
+SHLWAPI.dll<br>
+StrStrIA<br>
+USER32.dll<br>
+CharLowerA<br>
+ADVAPI32.dll<br>
+RegCloseKey<br>
+ntdll.dll<br>
+memset<br>
+WVSQRAPH<br>
+SUVWATAUAV<br>
+A^A]A\_^][<br>
+loader.dat<br>
+Inject64End<br>
+Inject64Normal<br>
+Inject64Start<br>
+UacInject64End<br>
+UacInject64Start<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+KERNEL32<br>
+ntdll.dll<br>
+strcat<br>
+SHLWAPI.dll<br>
+StrStrIA<br>
+WININET.dll<br>
+InternetOpenA<br>
+imagehlp.dll<br>
+CheckSumMappedFile<br>
+VERSION.dll<br>
+VerQueryValueA<br>
+USER32.dll<br>
+GetDC<br>
+GDI32.dll<br>
+EndPath<br>
+ADVAPI32.dll<br>
+RegOpenKeyA<br>
+WVSQRAPH<br>
+AQU+<br>
+PQH+<br>
+]AY^Z<br>
+L$<br>
+H<br>
+SUVWATAUAVAWH<br>
+s!M;<br>
+D$pI<br>
+L$pD<br>
+,$L;<br>
+s<br>
+M;<br>
+L+L$xL<br>
+(A_A^A]A\_^][<br>
+ntdll.dll<br>
+_snprintf<br>
+__C_specific_handler<br>
+strncpy<br>
+ZwQueryVirtualMemory<br>
+strcat<br>
+ZwQueryInformationProcess<br>
+ZwReadVirtualMemory<br>
+RtlInitUnicodeString<br>
+NtOpenSection<br>
+NtMapViewOfSection<br>
+RtlCompareMemory<br>
+RtlImageNtHeader<br>
+wcscpy<br>
+NtUnmapViewOfSection<br>
+NtClose<br>
+__chkstk<br>
+memcpy<br>
+strlen<br>
+memset<br>
+SHLWAPI.dll<br>
+PathAppendA<br>
+StrToIntA<br>
+StrStrIA<br>
+WININET.dll<br>
+HttpOpenRequestA<br>
+HttpSendRequestA<br>
+InternetQueryDataAvailable<br>
+InternetReadFile<br>
+InternetOpenA<br>
+InternetCrackUrlA<br>
+InternetCloseHandle<br>
+InternetConnectA<br>
+imagehlp.dll<br>
+CheckSumMappedFile<br>
+VERSION.dll<br>
+GetFileVersionInfoA<br>
+GetFileVersionInfoSizeA<br>
+VerQueryValueA<br>
+KERNEL32.dll<br>
+GetWindowsDirectoryA<br>
+lstrcatA<br>
+ExitProcess<br>
+GetCurrentProcessId<br>
+WaitForMultipleObjects<br>
+GetFileAttributesA<br>
+InitializeProcThreadAttributeList<br>
+UpdateProcThreadAttribute<br>
+DeleteProcThreadAttributeList<br>
+Sleep<br>
+GetCurrentThread<br>
+SetThreadAffinityMask<br>
+SetThreadPriority<br>
+SetEvent<br>
+LoadLibraryExA<br>
+FreeLibrary<br>
+GlobalAlloc<br>
+CreateMutexA<br>
+CreateThread<br>
+GlobalReAlloc<br>
+ReleaseMutex<br>
+GlobalFree<br>
+LoadLibraryA<br>
+GetSystemDirectoryA<br>
+GetTickCount<br>
+MoveFileA<br>
+CreateEventA<br>
+CloseHandle<br>
+ReadFile<br>
+LocalAlloc<br>
+GetFileSize<br>
+CreateFileA<br>
+WriteFile<br>
+WaitForSingleObject<br>
+LocalFree<br>
+GetLastError<br>
+Process32Next<br>
+OpenProcess<br>
+Process32First<br>
+CreateToolhelp32Snapshot<br>
+GetCurrentProcess<br>
+GetVersionExA<br>
+GetProcAddress<br>
+GetModuleHandleA<br>
+VirtualQuery<br>
+UnmapViewOfFile<br>
+MapViewOfFile<br>
+CreateFileMappingW<br>
+CreateEventW<br>
+VirtualAlloc<br>
+HeapAlloc<br>
+GetProcessHeap<br>
+HeapFree<br>
+HeapReAlloc<br>
+Process32NextW<br>
+lstrcmpiW<br>
+Process32FirstW<br>
+VirtualFree<br>
+lstrcmpiA<br>
+lstrcmpA<br>
+GetTempPathA<br>
+lstrcpyA<br>
+lstrlenA<br>
+CopyFileA<br>
+USER32.dll<br>
+EnumWindows<br>
+GetWindowThreadProcessId<br>
+GetWindowTextA<br>
+SendNotifyMessageA<br>
+SendMessageA<br>
+CreateDesktopA<br>
+SetThreadDesktop<br>
+GetDC<br>
+CloseDesktop<br>
+ReleaseDC<br>
+UnregisterClassA<br>
+SetWindowLongA<br>
+GetWindowLongA<br>
+GetClassNameA<br>
+GetClipboardFormatNameA<br>
+wsprintfA<br>
+RegisterWindowMessageA<br>
+LockWorkStation<br>
+SendInput<br>
+RegisterClassExA<br>
+MessageBoxW<br>
+FindWindowW<br>
+GDI32.dll<br>
+CreateRoundRectRgn<br>
+BeginPath<br>
+PolyDraw<br>
+EndPath<br>
+FlattenPath<br>
+DeleteObject<br>
+ADVAPI32.dll<br>
+RegOpenKeyA<br>
+RegQueryValueExA<br>
+RegCloseKey<br>
+CreateWellKnownSid<br>
+CheckTokenMembership<br>
+OpenProcessToken<br>
+GetTokenInformation<br>
+H54_IP15.056_W2012R2_Update1_x64_DC1536463380.95H54_IP15.056_W2012R2_Update1_x64_DC1536464647.86H54_IP15.056_W2012R2_Update1_x64_DC1536465856.06

@@ -1,0 +1,1735 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_f6177816534ea93eb4f730eeda894802_20250512_025217_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-12 02:52 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_f6177816534ea93eb4f730eeda894802_20250512_025217_analysis.html<br>File Size: 131744<br>
+File Type: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, 3 sections<br>
+Compilation timestamp: 2014-06-26 06:58:59<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    f6177816534ea93eb4f730eeda894802<br>
+SHA1:   85fc3bc94b16a94a3934460cbdad8a08ec0ad298<br>
+SHA256: 62c8676239c9f4e22c5ac00b696974039f2e6ade4d9602f58619362f25adef06<br>
+SHA512: c5d5ddb7845ac8172ffcf2432fe21ad3fba4feeb677990286df3b323ae75ade6638fb5bb24ce80a5d91f71dadd3b779e9b540b3b5ffffbeea6098850a30226a4<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x12d80<br>Number of Sections: 3<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>.MPRESS1</td>
+                        <td>0x1000</td>
+                        <td>0x20000</td>
+                        <td>124416</td>
+                        <td>5.74 (Not packed)</td></tr>
+<tr><td>.MPRESS2</td>
+                        <td>0x21000</td>
+                        <td>0x1000</td>
+                        <td>4096</td>
+                        <td>5.58 (Not packed)</td></tr>
+<tr><td>.imports</td>
+                        <td>0x22000</td>
+                        <td>0x1000</td>
+                        <td>2560</td>
+                        <td>4.12 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.dll</b><br>
+0x417000 CreateFileW<br>
+0x417004 FindFirstFileW<br>
+0x417008 FindClose<br>
+0x41700c FindNextFileW<br>
+0x417010 GetWindowsDirectoryW<br>
+0x417014 WaitForSingleObject<br>
+0x417018 GetModuleHandleW<br>
+0x41701c GetTickCount<br>
+0x417020 Sleep<br>
+0x417024 CreateProcessA<br>
+0x417028 GetModuleFileNameW<br>
+0x41702c GetStartupInfoA<br>
+0x417030 ReadFile<br>
+0x417034 GetFileSize<br>
+0x417038 DeleteFileA<br>
+0x41703c CreateThread<br>
+0x417040 GetProcAddress<br>
+0x417044 LoadLibraryA<br>
+0x417048 GetCurrentProcess<br>
+0x41704c GetLastError<br>
+0x417050 GetSystemInfo<br>
+0x417054 GetModuleHandleA<br>
+0x417058 GlobalAlloc<br>
+0x41705c GlobalFree<br>
+0x417060 GetTempFileNameA<br>
+0x417064 CreateFileA<br>
+0x417068 CloseHandle<br>
+0x41706c GetVersionExA<br>
+0x417070 CreateToolhelp32Snapshot<br>
+0x417074 GetDiskFreeSpaceA<br>
+0x417078 HeapReAlloc<br>
+0x41707c Process32Next<br>
+0x417080 GetCurrentDirectoryW<br>
+0x417084 GetSystemDirectoryA<br>
+0x417088 GetFileAttributesW<br>
+0x41708c GetVolumeInformationA<br>
+0x417090 OpenProcess<br>
+0x417094 GetDriveTypeA<br>
+0x417098 GetLogicalDrives<br>
+0x41709c Process32First<br>
+0x4170a0 GetDriveTypeW<br>
+0x4170a4 GetComputerNameA<br>
+0x4170a8 GetProcessHeap<br>
+0x4170ac HeapFree<br>
+0x4170b0 HeapAlloc<br>
+0x4170b4 GetTempPathA<br>
+<b>USER32.dll</b><br>
+0x4170bc GetWindowRect<br>
+0x4170c0 GetWindowDC<br>
+0x4170c4 ReleaseDC<br>
+0x4170c8 GetDesktopWindow<br>
+<b>GDI32.dll</b><br>
+0x4170d0 CreateDIBSection<br>
+0x4170d4 CreateCompatibleDC<br>
+0x4170d8 DeleteObject<br>
+0x4170dc DeleteDC<br>
+0x4170e0 BitBlt<br>
+0x4170e4 SelectObject<br>
+<b>ADVAPI32.dll</b><br>
+0x4170ec GetTokenInformation<br>
+0x4170f0 OpenProcessToken<br>
+0x4170f4 GetUserNameA<br>
+0x4170f8 CreateWellKnownSid<br>
+0x4170fc CheckTokenMembership<br>
+0x417100 DuplicateToken<br>
+<b>SHELL32.dll</b><br>
+0x417108 SHGetFolderPathW<br>
+0x41710c None<br>
+<b>ole32.dll</b><br>
+0x417114 CreateStreamOnHGlobal<br>
+<b>ntdll.dll</b><br>
+0x41711c _snwprintf<br>
+0x417120 _wcsicmp<br>
+0x417124 sprintf<br>
+0x417128 memcpy<br>
+0x41712c memset<br>
+<b>WININET.dll</b><br>
+0x417134 InternetReadFile<br>
+0x417138 InternetSetOptionA<br>
+0x41713c HttpOpenRequestA<br>
+0x417140 HttpSendRequestA<br>
+0x417144 InternetOpenA<br>
+0x417148 InternetCloseHandle<br>
+0x41714c HttpQueryInfoA<br>
+0x417150 InternetConnectA<br>
+<b>IPHLPAPI.DLL</b><br>
+0x417158 GetAdaptersInfo<br>
+<b>gdiplus.dll</b><br>
+0x417160 GdipSaveImageToStream<br>
+0x417164 GdipGetImageEncodersSize<br>
+0x417168 GdipDisposeImage<br>
+0x41716c GdipCreateBitmapFromHBITMAP<br>
+0x417170 GdipGetImageEncoders<br>
+0x417174 GdiplusStartup<br>
+<b>PSAPI.DLL</b><br>
+0x41717c GetModuleFileNameExA<br>
+<b>MPR.dll</b><br>
+0x417184 WNetCloseEnum<br>
+0x417188 WNetOpenEnumW<br>
+0x41718c WNetEnumResourceW<br>
+<b>KERNEL32.dll</b><br>
+0x417194 GetModuleFileNameW<br>
+<b>KERNEL32.dll</b><br>
+0x41719c GetModuleHandleA<br>
+0x4171a0 LoadLibraryA<br>
+0x4171a4 LocalAlloc<br>
+0x4171a8 LocalFree<br>
+0x4171ac GetModuleFileNameA<br>
+0x4171b0 ExitProcess<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x417000 CreateFileW<br>
+0x417000 CreateFileW<br>
+0x417000 CreateFileW<br>
+0x417004 FindFirstFileW<br>
+0x417004 FindFirstFileW<br>
+0x417004 FindFirstFileW<br>
+0x417008 FindClose<br>
+0x417008 FindClose<br>
+0x41700c FindNextFileW<br>
+0x41700c FindNextFileW<br>
+0x41700c FindNextFileW<br>
+0x417010 GetWindowsDirectoryW<br>
+0x417014 WaitForSingleObject<br>
+0x417018 GetModuleHandleW<br>
+0x417018 GetModuleHandleW<br>
+0x417018 GetModuleHandleW<br>
+0x41701c GetTickCount<br>
+0x41701c GetTickCount<br>
+0x417020 Sleep<br>
+0x417020 Sleep<br>
+0x417024 CreateProcessA<br>
+0x417024 CreateProcessA<br>
+0x417024 CreateProcessA<br>
+0x417028 GetModuleFileNameW<br>
+0x41702c GetStartupInfoA<br>
+0x417030 ReadFile<br>
+0x417030 ReadFile<br>
+0x417034 GetFileSize<br>
+0x417038 DeleteFileA<br>
+0x417038 DeleteFileA<br>
+0x417038 DeleteFileA<br>
+0x41703c CreateThread<br>
+0x41703c CreateThread<br>
+0x417040 GetProcAddress<br>
+0x417040 GetProcAddress<br>
+0x417044 LoadLibraryA<br>
+0x417044 LoadLibraryA<br>
+0x417044 LoadLibraryA<br>
+0x417048 GetCurrentProcess<br>
+0x41704c GetLastError<br>
+0x417050 GetSystemInfo<br>
+0x417050 GetSystemInfo<br>
+0x417054 GetModuleHandleA<br>
+0x417054 GetModuleHandleA<br>
+0x417054 GetModuleHandleA<br>
+0x417058 GlobalAlloc<br>
+0x41705c GlobalFree<br>
+0x417060 GetTempFileNameA<br>
+0x417064 CreateFileA<br>
+0x417064 CreateFileA<br>
+0x417064 CreateFileA<br>
+0x417068 CloseHandle<br>
+0x41706c GetVersionExA<br>
+0x417070 CreateToolhelp32Snapshot<br>
+0x417074 GetDiskFreeSpaceA<br>
+0x417078 HeapReAlloc<br>
+0x41707c Process32Next<br>
+0x41707c Process32Next<br>
+0x417080 GetCurrentDirectoryW<br>
+0x417084 GetSystemDirectoryA<br>
+0x417088 GetFileAttributesW<br>
+0x41708c GetVolumeInformationA<br>
+0x417090 OpenProcess<br>
+0x417090 OpenProcess<br>
+0x417094 GetDriveTypeA<br>
+0x417098 GetLogicalDrives<br>
+0x41709c Process32First<br>
+0x41709c Process32First<br>
+0x4170a0 GetDriveTypeW<br>
+0x4170a4 GetComputerNameA<br>
+0x4170a8 GetProcessHeap<br>
+0x4170ac HeapFree<br>
+0x4170ac HeapFree<br>
+0x4170b0 HeapAlloc<br>
+0x4170b0 HeapAlloc<br>
+0x4170b4 GetTempPathA<br>
+0x4170bc GetWindowRect<br>
+0x4170c0 GetWindowDC<br>
+0x4170c4 ReleaseDC<br>
+0x4170c8 GetDesktopWindow<br>
+0x4170d0 CreateDIBSection<br>
+0x4170d4 CreateCompatibleDC<br>
+0x4170d8 DeleteObject<br>
+0x4170dc DeleteDC<br>
+0x4170e0 BitBlt<br>
+0x4170e4 SelectObject<br>
+0x4170ec GetTokenInformation<br>
+0x4170f0 OpenProcessToken<br>
+0x4170f0 OpenProcessToken<br>
+0x4170f4 GetUserNameA<br>
+0x4170f8 CreateWellKnownSid<br>
+0x4170fc CheckTokenMembership<br>
+0x417100 DuplicateToken<br>
+0x417108 SHGetFolderPathW<br>
+0x417108 SHGetFolderPathW<br>
+0x417108 SHGetFolderPathW<br>
+0x417114 CreateStreamOnHGlobal<br>
+0x41711c _snwprintf<br>
+0x417120 _wcsicmp<br>
+0x417124 sprintf<br>
+0x417128 memcpy<br>
+0x41712c memset<br>
+0x417134 InternetReadFile<br>
+0x417134 InternetReadFile<br>
+0x417138 InternetSetOptionA<br>
+0x41713c HttpOpenRequestA<br>
+0x41713c HttpOpenRequestA<br>
+0x41713c HttpOpenRequestA<br>
+0x417140 HttpSendRequestA<br>
+0x417140 HttpSendRequestA<br>
+0x417140 HttpSendRequestA<br>
+0x417144 InternetOpenA<br>
+0x417144 InternetOpenA<br>
+0x417144 InternetOpenA<br>
+0x417148 InternetCloseHandle<br>
+0x41714c HttpQueryInfoA<br>
+0x417150 InternetConnectA<br>
+0x417150 InternetConnectA<br>
+0x417150 InternetConnectA<br>
+0x417158 GetAdaptersInfo<br>
+0x417160 GdipSaveImageToStream<br>
+0x417164 GdipGetImageEncodersSize<br>
+0x417168 GdipDisposeImage<br>
+0x41716c GdipCreateBitmapFromHBITMAP<br>
+0x417170 GdipGetImageEncoders<br>
+0x417174 GdiplusStartup<br>
+0x41717c GetModuleFileNameExA<br>
+0x417184 WNetCloseEnum<br>
+0x417188 WNetOpenEnumW<br>
+0x41718c WNetEnumResourceW<br>
+0x417194 GetModuleFileNameW<br>
+0x41719c GetModuleHandleA<br>
+0x41719c GetModuleHandleA<br>
+0x41719c GetModuleHandleA<br>
+0x4171a0 LoadLibraryA<br>
+0x4171a0 LoadLibraryA<br>
+0x4171a0 LoadLibraryA<br>
+0x4171a4 LocalAlloc<br>
+0x4171a8 LocalFree<br>
+0x4171ac GetModuleFileNameA<br>
+0x4171b0 ExitProcess<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!Win32<br>
+.EXE.<br>
+.MPRESS1<br>
+.MPRESS2<br>
+.imports<br>
+KERNEL32.dll<br>
+CreateFileW<br>
+FindFirstFileW<br>
+FindClose<br>
+FindNextFileW<br>
+GetWindowsDirectoryW<br>
+WaitForSingleObject<br>
+GetModuleHandleW<br>
+GetTickCount<br>
+Sleep<br>
+CreateProcessA<br>
+GetModuleFileNameW<br>
+GetStartupInfoA<br>
+ReadFile<br>
+GetFileSize<br>
+DeleteFileA<br>
+CreateThread<br>
+GetProcAddress<br>
+LoadLibraryA<br>
+GetCurrentProcess<br>
+GetLastError<br>
+GetSystemInfo<br>
+GetModuleHandleA<br>
+GlobalAlloc<br>
+GlobalFree<br>
+GetTempFileNameA<br>
+CreateFileA<br>
+CloseHandle<br>
+GetVersionExA<br>
+CreateToolhelp32Snapshot<br>
+GetDiskFreeSpaceA<br>
+HeapReAlloc<br>
+Process32Next<br>
+GetCurrentDirectoryW<br>
+GetSystemDirectoryA<br>
+GetFileAttributesW<br>
+GetVolumeInformationA<br>
+OpenProcess<br>
+GetDriveTypeA<br>
+GetLogicalDrives<br>
+Process32First<br>
+GetDriveTypeW<br>
+GetComputerNameA<br>
+GetProcessHeap<br>
+HeapFree<br>
+HeapAlloc<br>
+GetTempPathA<br>
+USER32.dll<br>
+GetWindowRect<br>
+GetWindowDC<br>
+ReleaseDC<br>
+GetDesktopWindow<br>
+GDI32.dll<br>
+CreateDIBSection<br>
+CreateCompatibleDC<br>
+DeleteObject<br>
+DeleteDC<br>
+BitBlt<br>
+SelectObject<br>
+ADVAPI32.dll<br>
+GetTokenInformation<br>
+OpenProcessToken<br>
+GetUserNameA<br>
+CreateWellKnownSid<br>
+CheckTokenMembership<br>
+DuplicateToken<br>
+SHELL32.dll<br>
+SHGetFolderPathW<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+ntdll.dll<br>
+_snwprintf<br>
+_wcsicmp<br>
+sprintf<br>
+memcpy<br>
+memset<br>
+WININET.dll<br>
+InternetReadFile<br>
+InternetSetOptionA<br>
+HttpOpenRequestA<br>
+HttpSendRequestA<br>
+InternetOpenA<br>
+InternetCloseHandle<br>
+HttpQueryInfoA<br>
+InternetConnectA<br>
+IPHLPAPI.DLL<br>
+GetAdaptersInfo<br>
+gdiplus.dll<br>
+GdipSaveImageToStream<br>
+GdipGetImageEncodersSize<br>
+GdipDisposeImage<br>
+GdipCreateBitmapFromHBITMAP<br>
+GdipGetImageEncoders<br>
+GdiplusStartup<br>
+PSAPI.DLL<br>
+GetModuleFileNameExA<br>
+MPR.dll<br>
+WNetCloseEnum<br>
+WNetOpenEnumW<br>
+WNetEnumResourceW<br>
+KERNEL32.dll<br>
+GetModuleFileNameW<br>
+KERNEL32.dll<br>
+GetModuleHandleA<br>
+LoadLibraryA<br>
+LocalAlloc<br>
+LocalFree<br>
+GetModuleFileNameA<br>
+ExitProcess<br>
+8Mue<br>
+KERNEL32<br>
+VirtualProtect<br>
+t<br>
+PTj<br>
+G(XPTPjxW<br>
++W=T<br>
+_3?g<br>
+,0`<<br>
+D$$}1A<br>
+t$<br>
+f<br>
+$O%p<br>
+evdH<br>
+%lpA<br>
+fwSp<br>
+P.~f<br>
+dn`\t<br>
+4$;J<br>
+t$lH<br>
+rNuD<br>
+kb]i<br>
+YvE}xG<br>
+.bmx<br>
+y<q;<br>
+w1y@<br>
+pY\%z<br>
+|\X_8<br>
+qa<br>
+7<br>
+Nj})<br>
+Gp'{<br>
+!Hs<br>
+c<br>
+9fQ`<br>
+\$8f<br>
+0'040t0<br>
+0/1<1w1<br>
+2<br>
+2,2S2u2<br>
+2A3H3R3Y3<br>
+494@4e4<br>
+5V5]5y5<br>
+7=7C7N7<br>
+8B8I8c8x8<br>
+8/969n9<br>
+9C:I:s:}:<br>
+;U;};<br>
+<%<a<k<}<<br>
+=H=O=`=<br>
+><br>
+>V><br>
+?M?S?a?<br>
+0E0e0<br>
+1P1]1<br>
+1D2Q2<br>
+4w4~4<br>
+6!6W6^6<br>
+7J7c7<br>
+898Q8<br>
+9D9]9o9<br>
+9(:::Q:<br>
+;&;-;@;<br>
+<#<-<6<]<d<n<u<<br>
+=&=0=7={=<br>
+=D>M>[>k><br>
+>.?I?V?o?<br>
+0%0A0[0<br>
+1(1C1.2I2V2o2<br>
+3%3A3[3<br>
+4(4C4<br>
+5<5C5<br>
+6H6L6P6T6X6\6<br>
+7J7W7<br>
+8F8M8p8w8<br>
+9;9L9S9<br>
+9[:b:<br>
+;a;k;v;<br>
+;%</<:<<br>
+<'=.=<br>
+=?>F>P>W><br>
+?a?k?s?~?<br>
+0!0y0<br>
+262z2<br>
+3<br>
+4'404N4Y4s4z4<br>
+5M5T5<br>
+6-6s6z6<br>
+5!6,6Q6g6<br>
+=^>m>[?<br>
+4A4#525C6X6i7<br>
+9T:q:<br>
+yCM=<br>
+3cZr<br>
+*#<Vk<br>
+J<br>
+&*?P<br>
+C|mUO<br>
+jev1<br>
+]O<br>
+8w<br>
+nqi]#<br>
+vV~}<br>
+^=a(<br>
+m~ZU<br>
+yGm\i<br>
+UjZy<br>
+qo2#<br>
+n.iQ<br>
+sIye<br>
+qoJDG<br>
+Jn:i<br>
+~AUwv]8,<br>
+)zy4e<br>
+qnji<br>
+W}aQ<br>
+;.QV<br>
+`,LK><br>
+&fCR<br>
+umn<br>
+pji}<br>
+.)2I<br>
+0v1g<br>
+@oZ)<br>
+y"(`4Lk<br>
+0qkA<br>
+dea)<br>
++y'Xg<br>
+Ykj-BK<3M<br>
+@G6p<br>
+zJa4<br>
+Qq:'<br>
+jzb)<br>
+-P:8h,A{.<br>
+mN/o'<br>
+%,<br>
+aF!X<br>
+aM=&<br>
+GiJ.<br>
+^?z<br>
+CS<br>
+UJ]p<br>
+@f0b<br>
+F}hy:<br>
+i{&|<br>
+-/6P<br>
+g&J.<br>
+/Ms`[<br>
+Q`LA<br>
+?RP;<br>
+5axt|<br>
+'GJv<br>
+2Elpf``<br>
+q*nVy&<br>
+PRLQ<br>
+0f<br>
+f<br>
+`zqM<br>
+1%9e<br>
+?7iz<br>
+5^&Vb<br>
+}Qjny<br>
+7$^!<br>
+jtMG*<br>
+sd{FX<br>
+*pMa&<br>
+JPbS<br>
+SUom<br>
+*#AM;C<br>
+UN)v<br>
+f5P*<br>
+yqUGnP!<br>
+Y9n}7<br>
+/uGd<br>
+1:IT<br>
+roX[<br>
+?o13<br>
+jHEqZ<br>
+kIXjz<br>
+WL}f8`Wof<br>
+H?<br>
+C_<br>
+UE'~<br>
+3'0Nw<br>
+ypes<br>
+5%E9-^><br>
+iK]O1<br>
+2bzi<br>
+A%<br>
+MU<br>
+KPbG<br>
+nb}uo<br>
+w\N6EoJ<br>
+KHk0X<br>
+{oc~<br>
+/JLHGmC<br>
+i|A#<br>
+JM-B<br>
+g/Y-<br>
+\@<br>
+%<br>
+fP)g<br>
+?w)1M<br>
+X.Nb<br>
+b<br>
+<i<br>
+'h(&<br>
+ISUk8TC(7n<br>
+,@1K<br>
+,`Iom<br>
+Z3'B):<br>
+.~Ow&<br>
+0L`!;1<br>
+'Jp3<br>
+:2&K<br>
+*aun<br>
+BKK*<br>
+XZ<br>
+\<br>
+R5)i&*<br>
+~@G3.<br>
+V\rk4!UK*<br>
+OrM$<br>
+K#9{mz<br>
+c$5i<br>
+y!<br>
+&<br>
+B)p=<br>
+FahD<br>
+ouko<br>
+G<br>
+P`Q<br>
+=V{~<br>
+eAN)<br>
+AQUoNP<br>
+10N?<br>
+x?,q<br>
+P)!I<br>
+!7X0g<br>
+p1P<br>
+S<br>
+~WpMk5<br>
+Zz+5a<br>
+Tqio<br>
+C&1px<br>
+*&dr<br>
+a8KrF<br>
+KXH7<br>
+O<br>
+L?<br>
+/jrM9<br>
+':/Tg)<br>
+bs@n<br>
+{h8<br>
+i}b&<br>
+vM2U+j<br>
+^<br>
+aIU<br>
+yH!&Fsl)<br>
+q;$f^<br>
+U#nX<br>
+*^V,<br>
+dprx)5<br>
+@A%%<br>
+.p?d;<br>
+K~fD<br>
+JiKZ<br>
+m[G;<br>
+fkzN<br>
+}y.&U<br>
+rE7(<br>
+_V;+<br>
+KX_"{T<br>
+Uylx<br>
+~1<br>
+{<br>
+Qjd!<br>
+"9U_<br>
+~[t0<br>
+MUs9<br>
+q&ZK<br>
+G%{[T<br>
+jp][|o<br>
+q(,U<br>
+AUO72<br>
+@m^&<br>
+[@,Ph<br>
+?u1"|<br>
+H@z-;<br>
+o?>d<br>
+XHiq<br>
+g4Ey9u<br>
+P8TW<br>
+Qby]<br>
+nR.2e7+<br>
+eZIc9<br>
+YJ[Al<br>
+`hOq<br>
+.ra0<br>
+nA?J'<br>
+(<br>
+[9<br>
+H>.5<br>
+kYx&_<br>
+ViPSp@<br>
+U{j<(<br>
+-"&`<br>
+KM/Z<br>
+E|k0j<br>
+~W{)v<br>
+'Db0<br>
+#UCs<br>
+iD$!<br>
+}\PE<br>
+(:<br>
+oO\<br>
+1i'r<br>
+MT*Kf<br>
+bHL<R<br>
+(U/3yhJk<br>
+#Ulz8<br>
+z<br>
+)5p<br>
+jXVK1<br>
+z3%X&<br>
+P+Gx<br>
+@x5s7<br>
+ZA?MY<br>
+'`ox<br>
+H:Nt0o<br>
+#:1^<br>
+W<br>
+i")U<br>
+%)w/<br>
+;)}l<br>
+'SD8<br>
+i;p0<br>
+h*AZ<br>
+V'o$0<br>
+27R[m<br>
+)mqe'<br>
+!)0=<br>
+qb;G<br>
+%RqY<br>
+@<mY'<br>
+\!iJV"q<br>
+FGqt/<br>
+O~p><br>
+o[r'<br>
+;f8p<br>
+RVaTZ<br>
+Q]au5<br>
+7,jXU<br>
+~e=+<br>
+;^FaS<br>
+p[~y<br>
+Yfmr1<br>
+e1t5<br>
+cspU<br>
+X\D4y>$<br>
+\#mj<br>
+em>X~x8<br>
+n*$0<br>
+[~dRU<br>
+<fFq<br>
+T#Vzb<br>
+dW_n<br>
+miW$Jq<br>
+;lknAe4_<br>
+oJE9<br>
+YGe4mwV<br>
+Gj:Y<br>
+mf5n<br>
+ImGw<br>
+S~Qbg|n<br>
+k4Wi<br>
+mG?9<br>
+*V)e<br>
+'aJk-<br>
+IM'Wq`wz<br>
+RH6e<br>
+4zm(<br>
+DqX5rj<br>
+]A=/<br>
+3pJB9<br>
+]),hgm<br>
+%eRDp<br>
++9{?=h<br>
+]189mQ<br>
+>Cou<br>
+\$(_f<br>
+tW}N<br>
+$vn;E<br>
+LS3K<br>
+f}18<br>
+D$$S<br>
+FI1X<br>
+h4Ri`<br>
+]%Po<br>
+NvA=z<br>
+$uEM<br>
+X)51dNE<br>
+eI>=$Y<br>
+)6|]<br>
+q/2x<br>
+-mh?Co<br>
+v|<br>
+;_<br>
+&dvX<br>
+zZbM<br>
+w~<br>
+E[<br>
+QXj?<br>
+AqahLZ<br>
+rWwU~_=<br>
++`jN<br>
+yYaEQ<br>
+;Ee7<br>
+D}LQd<br>
+Srts&<br>
+0LXz<br>
+Epn(2<br>
+6;wC<br>
+nsak#*<br>
+$djj<br>
+bt7r<br>
+=2gA<br>
+.[VX|<br>
+&uPf<br>
+Gs<br>
+r\<br>
+n[i-<br>
+Xe@<<br>
+hyu_<br>
+YWC)<br>
+d$<`<br>
+,@y#}I<br>
+?f]e#^x<br>
+}Xp8<br>
+#f&8<br>
+VN<br>
+?<br>
+]xH/<br>
+_zkpH<br>
+@_$4<br>
+X{Wn<br>
+(:sN<br>
+$&pz1:<br>
+u"(d{<br>
+`mIU<br>
+\>#s(+<br>
+W{db#7<br>
+ds:k<br>
+m!##<br>
+{.>l<br>
+b}(m<br>
+CVdq<br>
+}.2S<br>
+6Ci<<br>
+Uzk<br>
+\pMR<br>
+iaQV<br>
+6`~N<br>
+D$@hS<br>
+5|Zm<br>
+$uppm<br>
+Agra<br>
+JTzp<br>
+ay%:<br>
+@HuJME<br>
+AV2-<br>
+eIMD<br>
+mvD`G<br>
+t%vZ<br>
+NVbZC<br>
+&+7Y<br>
+a}.2X<br>
+6<T'+<br>
+g.~*<br>
+!mr24I<br>
+bZvnb<br>
+z@ps<br>
+Z0<br>
+;<br>
+FI(&'<br>
+zMi)<br>
+bpe=<br>
+^{`K<br>
+H\1bhC<br>
+N~Au<d<br>
+z$h[<br>
+`h~C<br>
+`PLA<br>
+D}LH<br>
+$&TW<br>
+ueun}s<br>
+vEKrr<br>
+}^sz(9<br>
+SJ<br>
+&;Y*<br>
+an%6<br>
+\^\,=<br>
+zHgk<br>
+Alq/<br>
+d9q/kji<br>
+s_<br>
+gb8V}<br>
+f<br>
+|So<br>
+$*et_lT<br>
+D$(Vf<br>
+0`y@<br>
+8NE^$<br>
+E|Ae<br>
+j^nV"<br>
+xb$!<br>
+h"0[<br>
+o8|T<br>
+O-=tE<br>
+T:c0<br>
+3vj<br>
+_{WZA<br>
+;}44<br>
+^<br>
+O5<br>
+P!0+<br>
+>nHsea<br>
+2+<br>
+\<br>
+yPtOr<br>
+|Xsy<br>
+>o_5<br>
+7o{dkF<br>
+BtzB<br>
+GmosA<br>
+.%*)<br>
+u.%#<br>
+Y-8@<br>
+qUzN<br>
+r7D]mI<br>
+:#&"<z<br>
+clo`<br>
+#uG\o<br>
+dlMs<br>
+Yk#$<br>
+nh*<<br>
+PepE<br>
+bFj|<br>
+YLl<<br>
+v:g=<br>
+WsZb<br>
+!:frkrG<br>
+`dc`h<br>
+3m:}<br>
+y\U_&<br>
+^Fsy<br>
+#4^"<br>
+0pc8"<br>
+<QK<br>
+Z<br>
+n**b*<br>
+[!K`<br>
+}c~A<br>
+A,`'<br>
+r[om/GQp<br>
+kJP?<br>
+Yn08r<br>
+[18j<br>
+#,YN<br>
+j0Y6[<br>
+!'@1c<br>
+)r.I<br>
+N(A4H<br>
+1/[}4Q{&<br>
+cv0(<br>
+3ABK<br>
+CS/K,+<br>
+L0ci<br>
+~=c+40e<br>
+,];m<br>
+/aK<br>
+M7yy<br>
+,9<br>
+C$1.<br>
+0uw<br>
+OogC<br>
+nVJ{<br>
+emQ,<br>
+Oh/q<br>
+[xl@<br>
+y0kQW<br>
+Y!x*<br>
+;SrT<br>
+MKmg<br>
+NNeV,<br>
+1P-PW<br>
+D4xw<br>
+xKF'E{<br>
+qL@.d<br>
+VZJ%`<br>
+OQ1%[<br>
+wu_@"<br>
+s-UJ2<br>
+e0X+<br>
+N2;!u<br>
+[Q,sIK<br>
+@ya1<br>
++3`f<br>
+jh$zK<br>
+1?8$<br>
+IN=<br>
+(]_/<br>
+!PPI<br>
+[Ay!!<br>
+U_-<br>
+eDx'<br>
+962Q<br>
+CZY{<br>
+BeY$0<br>
+0@iW<br>
+EF8XNt<br>
+Gey)<br>
+~%$(<br>
+8[><br>
+)4&<br>
+.0yK4<br>
+~;{/(<br>
+6}*<k<br>
+@>qr<br>
+cFLX9G<br>
+d+BJ!<br>
+)D8GQ<br>
+Pa~<<br>
+C*|+<br>
+E>i<br>
+QXXa<br>
+%eOxICda<br>
+uIG=M-<br>
+d1$_<br>
+CQ&Y<br>
+_b<br>
+7<br>
+As#"B<br>
+mCLa<br>
+yFUg<br>
+f<br>
+ia<br>
+)B$db%Cf<br>
++qUu<br>
+:Z)k<br>
+1Q(L<br>
+}cvi<br>
+u$0!<br>
+dE3BHP<br>
+.]cWau<br>
+$NrIFr<br>
+f1A(c<br>
+m<br>
+0G6/<br>
+q</A<br>
+}eV[xA<br>
+P.Z!<br>
+P[",8<br>
+GhG=+<br>
+]lu/<br>
+Pma)<br>
+[1%(,<br>
+QeiH<br>
+KU[@<br>
+aT^<br>
+,RSO<br>
+ndfas<br>
+wC[z?<br>
+p6A,<br>
+UDW&<br>
+yA[)<br>
+(H.!8m)<br>
+_wg7fNi<br>
+h|0h<br>
+yK$c<br>
+]"_4$B<br>
+{^MT<br>
+4?7J<br>
+N@~n#<br>
+h"Op<br>
+xK4A<br>
+/wK#<br>
+yCTa<br>
+Y&^4yUX(a<br>
+M"e9$<br>
+M,<br>
+LX<br>
+n84Kd!<br>
+eI,U<br>
+1Qpv<br>
+VEcb<br>
+,{$)<br>
+\47OZ<br>
+@L:b<br>
+:ah<br>
+C<br>
+$NF[GI<br>
+k;[;`<br>
+I($u<br>
+y4,r{!-<br>
+y!_(<br>
+/O@umQlk<br>
+iu)U<br>
+LZ;HS/<br>
+,cw<br>
+`1in<br>
+>HNq<br>
+ov^yp.>k<br>
+n!Nh<br>
+8(0$u4N<br>
+!O=f408<br>
+n@o!<br>
+W10q<br>
+[G4&<br>
+)Ju1,0<br>
+UJ,xT!<br>
+k<AKi<br>
+71hA,Ju<br>
+j|m4<br>
+Ym=)[_<br>
+CX_c<br>
+otcv<br>
++Aodm<br>
+RaD"k<br>
+DBt9<br>
+D$0h<br>
+Om.o<br>
+702?L-}xi<br>
+obq^<br>
+<)0f<br>
+7az4<br>
+(yJ(f7<br>
+:s}gsls:<br>
+Gc&2<br>
+t01m<br>
+wSf;E<br>
+11br<br>
+UgC8<br>
+Au@><br>
+qz1:<br>
+]<&&<br>
+_Xua<br>
+=2!4<br>
+AuAI'k~Z<br>
+p'5|M<br>
+a,3R<br>
+|$(S<br>
+Pe{xT<br>
+t$4f<br>
+4$hU<br>
+l|6-]<br>
+==CA<br>
+fgz|<br>
+6sP}xU(<br>
+4.cp<br>
+`atb<br>
+3NX&<br>
+J*>j<br>
+dhqYO<br>
+0"&v<br>
+'~ud<br>
+`HzN<br>
+4`R{<br>
+cQ#~&<br>
+\8~e<br>
+,_#gFBtU<br>
+$_wy<br>
+"Mq!<br>
+7Q~J<br>
+v3M+<br>
+Vs[&<br>
+V{=i<br>
+eYG=<br>
+=/9,<br>
+F@0ksyW<br>
+$eC8a<br>
+K|)l?#<br>
+[2OI<br>
+7wU?R<br>
+2u8P<br>
+!eR|<br>
+gw15<br>
+`I~=-[<br>
+Qk<br>
+UCcU<br>
+i<br>
+wU<br>
+G=SX<br>
+#@^p<br>
+\f0a<br>
+8P8Haz<br>
+AqfY<br>
+r``-]<br>
+f1'7<br>
+CmX='<br>
+h<xM[<br>
+T{/{<br>
+sV/A&E<br>
+vr#2<br>
+)\c}U<br>
+<3mDT<br>
+li.@X<br>
+qQ}5]<br>
+D$$5`A<br>
+;m]4<br>
+Pq'x<br>
+u@y<br>
+?#(,<br>
+@WsB<br>
+6nTfgl<br>
+!>frT<br>
+0Z*3qp'>5<br>
+U7w^<br>
+Y}ZivN*<br>
+{d4C<br>
+=<br>
+wJ<br>
+.F}2<br>
+p<S<br>
+*B9f<br>
+xdp7<br>
+.oNF<br>
+?K\e<br>
+@zU-b<br>
+YD|F<br>
+Uwzo<br>
+Csk/<br>
+s5Po<br>
+_b`P<br>
+zXl|<br>
+F-4V<br>
+t_mA<br>
+p[`Dhu<br>
+4:qz<br>
+{OxG<br>
+Xsx4<br>
+ny][<br>
+zJek<br>
+]i8Q<br>
+user32.dll<br>
+uGI9<br>
+1Rz'<br>
++lrV<br>
+Kt)F<br>
+ad39<br>
+4]fX<br>
+%*)#-<br>
+\tXS<br>
+mko-?<br>
+6j!a<br>
+V2!&<br>
+@[NU<br>
+mrVM<br>
+a})=<br>
+ld`6<br>
+u(`*/<br>
+n#x<mv<<br>
+Y-8Y<br>
+|ZP1<br>
+,sQa<br>
+mM!<<br>
+8tKh<br>
+Wlt,1&#<br>
+0;)<br>
+b%<br>
+D<br>
+M8$;<br>
+IO@l<br>
+Eyli,<br>
+XxR{<br>
+Dyli<br>
+g41G<br>
+{Py@L<br>
+hL=a<br>
+g#=`<br>
+B7*<br>
+X<br>
+ag!W<br>
+VTm*0<br>
+D$(hE<br>
+qr{"c8<br>
+])Q[Nq<br>
+t>aD<br>
+{q]&<br>
+|R]6<br>
+oq2N9<br>
+qQO}<br>
+j/]q<br>
+{XUl<br>
+Qg4~qU<br>
+~~*q<br>
+0Yli<br>
+qac9<br>
+1^mH<br>
+A^etE<br>
+%4n}gqH<br>
+qW&']<br>
+&]q2<br>
+caXf<br>
+i.\t<br>
+ny2Z<br>
+2d$m<br>
+D$,f<br>
+S*F@<br>
+QniW<br>
+M_mM<br>
+d$0P<br>
+-(+Mh<br>
+QQ(4<br>
+M.<y^-<br>
+M|@imI<br>
+^_LoNM<br>
+k?t|<br>
+loT$6sPP<br>
+8^G\<br>
+pE$X<br>
+}KivJ<br>
+e0C8]<br>
+Tf(q<br>
+9BIm8<br>
+Q\Ia]<br>
+!`gq'<br>
+K|Bq<br>
+9Z?-<br>
+@2pT<br>
+v"qG]<br>
+9(m_q<br>
+1h2_<br>
+pmu3<br>
+5sBo<br>
+tqJ*<br>
+u\@H<br>
+7hDq<br>
+rq(f<br>
+7cqU<br>
+quf6<br>
+*a<br>
+t}<br>
+O2{q?<br>
+uqr$<br>
+qdO<br>
+1IBm6<br>
+#<br>
+bmx<br>
++ny}q!<br>
+:2T5&4fea<br>
+;ik'M9<br>
+dK4&<br>
+<mC,<br>
+qr^"<br>
+n_FKu<br>
+yPoq<br>
+Hq@T<br>
+FUOt#<br>
+5h<br>
+_q<br>
+q^*.<br>
+E]L>"n<br>
+9WcF<br>
+w@an<br>
+qje&<br>
+ueyte<br>
+.dT}<br>
+yms}f><br>
+nqy'<br>
+nq\h<br>
+og["<br>
+TW{Z<br>
+\$<br>
+`<br>
+E7P|<br>
+p&*7~O<br>
+Z\3<<br>
+/0R<br>
+dA?f<br>
+D$(f<br>
+T$(V<br>
+t$dRf<br>
+)AU`<br>
+t$<br>
+`<br>
+D$4h<br>
+t$Hf<br>
+4$Nf<br>
+t$(f<br>
+t$0f<br>
+t$(Q<br>
+=:!f<br>
+D$$f<br>
+hkv)B<br>
+t$Lf<br>
+t$`h<br>
+l$4h5<br>
+)h,G<br>
+t$xh<br>
+D$8f<br>
+he13u<br>
+t$,S<br>
+D$(f<br>
+D$$f<br>
+\$<br>
+f<br>
+t$lf<br>
+h`E/<br>
+l$8f<br>
+|$,f<br>
+t$0f<br>
+L$<br>
+`<br>
+t$$^<br>
+D$$]f<br>
+D$<br>
+EEf<br>
+yD%t<br>
+,$`f<br>
+D$<br>
+f<br>
+|$<br>
+`f<br>
+t$hf<br>
+L$<br>
+P<br>
+&.[<br>
+\$4Pf<br>
+D$,f<br>
+h9\B]f<br>
+|hVP<br>
+l$,W8<br>
+t$\f<br>
+t$4`<br>
+l$(]<br>
+t$@f<br>
+D$0f<br>
+t$8f<br>
+h{dW<br>
+4$h}<br>
+\$4f<br>
+D$0f<br>
+l$<Sf<br>
+D$@f<br>
+l$<^f<br>
+D$0f<br>
+\$0f<br>
+D$,f<br>
+D$0f<br>
+\$,f<br>
+t$Xf<br>
+t$8f<br>
+D$4f<br>
+D$HU<br>
+L$<br>
+h<br>
+t$$h<br>
+D$8f<br>
+t$hf<br>
+t$8f<br>
+l$4f<br>
+D$(f<br>
+t$X]f<br>
+l$<f<br>
+D$4f<br>
+`h|$+N<br>
+|$0R<br>
+f-tef<br>
+l$Df<br>
+t$pf<br>
+<$``<br>
+\$,f<br>
+D$(f<br>
+t$X]`N<br>
+l$Df<br>
+t$8f<br>
+l$<f<br>
+D$DS<br>
+\$0f<br>
+|$$f<br>
+D$$M<br>
+\$<br>
+`f<br>
+D$<f<br>
+\$8f<br>
+l$,f<br>
+D$$f<br>
+\$<f<br>
+$]m$?`<br>
+s?<br>
+U<br>
+D$<br>
+f<br>
+D$<]<br>
+l$0f<br>
+Rh84<br>
+T$Df<br>
+D$<f<br>
+D$,hP<br>
+|$8h<br>
+l$<9<br>
+|$(f<br>
+t$T]<br>
+d$<br>
+`[<br>
+|$0h]<br>
+t$0T^<br>
+l$,f<br>
+D$,f<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+KERNEL32.DLL<br>
+USER32.dll<br>
+ReleaseDC<br>
+GDI32.dll<br>
+BitBlt<br>
+ADVAPI32.dll<br>
+GetUserNameA<br>
+SHELL32.dll<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+ntdll.dll<br>
+memcpy<br>
+WININET.dll<br>
+InternetOpenA<br>
+IPHLPAPI.DLL<br>
+GetAdaptersInfo<br>
+gdiplus.dll<br>
+GdiplusStartup<br>
+PSAPI.DLL<br>
+GetModuleFileNameExA<br>
+MPR.dll<br>
+WNetCloseEnum<br>
+UWVS<br>
+9L$ts<br>
+D$xf<br>
+T$L3<br>
+;\$L<br>
+9L$t<br>
+t$t#t$l<br>
+;\$L<br>
+D$Hf<br>
+T$sf<br>
+D$t#D$h<br>
++L$d<br>
+D$t+D$\<br>
+;\$L<br>
+D$Hf<br>
+.)D$H+<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+|$`<br>
+L$H+<br>
+t$`+<br>
+t$8w<br>
+;\$L<br>
+L$xf<br>
+D$X3<br>
+L$8f+<br>
+;\$L<br>
+L$8f<br>
+;\$L<br>
+s`)L$4<br>
+D$t+D$\<br>
+l$8f+<br>
+;\$L<br>
+;\$L<br>
+D$8f<br>
+l$X3<br>
+;\$L<br>
+;\$L<br>
+T$Df<br>
+t$Hf<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+t$(N<br>
+t$(u<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+l$$M<br>
+l$$u<br>
+;\$L<br>
+;|$Hr<br>
++|$H<br>
+;\$L<br>
+D$Hf<br>
+)D$H+<br>
+t$\tZ<br>
+9l$\w`<br>
++D$\<br>
+D$tIt<br>
+9l$tr<br>
+9D$t<br>
+;\$L<br>
+|[^_]<br>
+KERNEL32.dll<br>
+CreateFileW<br>
+FindFirstFileW<br>
+FindClose<br>
+FindNextFileW<br>
+GetWindowsDirectoryW<br>
+WaitForSingleObject<br>
+GetModuleHandleW<br>
+GetTickCount<br>
+Sleep<br>
+CreateProcessA<br>
+GetModuleFileNameW<br>
+GetStartupInfoA<br>
+ReadFile<br>
+GetFileSize<br>
+DeleteFileA<br>
+CreateThread<br>
+GetProcAddress<br>
+LoadLibraryA<br>
+GetCurrentProcess<br>
+GetLastError<br>
+GetSystemInfo<br>
+GetModuleHandleA<br>
+GlobalAlloc<br>
+GlobalFree<br>
+GetTempFileNameA<br>
+CreateFileA<br>
+CloseHandle<br>
+GetVersionExA<br>
+CreateToolhelp32Snapshot<br>
+GetDiskFreeSpaceA<br>
+HeapReAlloc<br>
+Process32Next<br>
+GetCurrentDirectoryW<br>
+GetSystemDirectoryA<br>
+GetFileAttributesW<br>
+GetVolumeInformationA<br>
+OpenProcess<br>
+GetDriveTypeA<br>
+GetLogicalDrives<br>
+Process32First<br>
+GetDriveTypeW<br>
+GetComputerNameA<br>
+GetProcessHeap<br>
+HeapFree<br>
+HeapAlloc<br>
+GetTempPathA<br>
+USER32.dll<br>
+GetWindowRect<br>
+GetWindowDC<br>
+ReleaseDC<br>
+GetDesktopWindow<br>
+GDI32.dll<br>
+CreateDIBSection<br>
+CreateCompatibleDC<br>
+DeleteObject<br>
+DeleteDC<br>
+BitBlt<br>
+SelectObject<br>
+ADVAPI32.dll<br>
+GetTokenInformation<br>
+OpenProcessToken<br>
+GetUserNameA<br>
+CreateWellKnownSid<br>
+CheckTokenMembership<br>
+DuplicateToken<br>
+SHELL32.dll<br>
+SHGetFolderPathW<br>
+ole32.dll<br>
+CreateStreamOnHGlobal<br>
+ntdll.dll<br>
+_snwprintf<br>
+_wcsicmp<br>
+sprintf<br>
+memcpy<br>
+memset<br>
+WININET.dll<br>
+InternetReadFile<br>
+InternetSetOptionA<br>
+HttpOpenRequestA<br>
+HttpSendRequestA<br>
+InternetOpenA<br>
+InternetCloseHandle<br>
+HttpQueryInfoA<br>
+InternetConnectA<br>
+IPHLPAPI.DLL<br>
+GetAdaptersInfo<br>
+gdiplus.dll<br>
+GdipSaveImageToStream<br>
+GdipGetImageEncodersSize<br>
+GdipDisposeImage<br>
+GdipCreateBitmapFromHBITMAP<br>
+GdipGetImageEncoders<br>
+GdiplusStartup<br>
+PSAPI.DLL<br>
+GetModuleFileNameExA<br>
+MPR.dll<br>
+WNetCloseEnum<br>
+WNetOpenEnumW<br>
+WNetEnumResourceW<br>
+KERNEL32.dll<br>
+GetModuleFileNameW<br>
+KERNEL32.dll<br>
+GetModuleHandleA<br>
+LoadLibraryA<br>
+LocalAlloc<br>
+LocalFree<br>
+GetModuleFileNameA<br>
+ExitProcess

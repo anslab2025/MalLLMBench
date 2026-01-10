@@ -1,0 +1,940 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_d541a3ed0657310ea758f29a32e9da62_20250515_214524_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-15 21:45 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_d541a3ed0657310ea758f29a32e9da62_20250515_214524_analysis.html<br>File Size: 63488<br>
+File Type: PE32 executable (GUI) Intel 80386, for MS Windows<br>
+Compilation timestamp: 2017-07-28 04:06:17<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    d541a3ed0657310ea758f29a32e9da62<br>
+SHA1:   87d1536c908857c7f52d29baaa8faea3e274ef07<br>
+SHA256: aba1344b39af8721e8733d373df9615b2b2a3f16a58c6eea75f007b85ddbc41a<br>
+SHA512: aab58aaf7db04ef755466908bbb40b8ec3eed439b0314bafdf3a75dbe6f681783dafb9d63cd7e6d8ecdc791eece8de647c288033b67c08151547262db7ece443<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0xec98<br>Number of Sections: 1<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>kkrunchy</td>
+                        <td>0x1000</td>
+                        <td>0x5fb107</td>
+                        <td>59392</td>
+                        <td>7.97 (Packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.DLL</b><br>
+0x3ef670 LoadLibraryA<br>
+0x3ef674 GetProcAddress<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x3ef670 LoadLibraryA<br>
+0x3ef670 LoadLibraryA<br>
+0x3ef670 LoadLibraryA<br>
+0x3ef674 GetProcAddress<br>
+0x3ef674 GetProcAddress<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49390</td>
+                                        <td>0x100</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49490</td>
+                                        <td>0xf8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49588</td>
+                                        <td>0x60</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x495e8</td>
+                                        <td>0x100</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x496e8</td>
+                                        <td>0xf8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x497e0</td>
+                                        <td>0x60</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49840</td>
+                                        <td>0xf8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49938</td>
+                                        <td>0xf0</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49a28</td>
+                                        <td>0x58</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49a80</td>
+                                        <td>0xec</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49b70</td>
+                                        <td>0xe4</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49c58</td>
+                                        <td>0x4c</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49ca8</td>
+                                        <td>0xf0</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49d98</td>
+                                        <td>0xe8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x49e80</td>
+                                        <td>0x50</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_VERSION</td>
+                                        <td>0x49ed0</td>
+                                        <td>0x3f8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_NEUTRAL</td></tr>
+<tr><td>RT_MANIFEST</td>
+                                        <td>0xf4f0</td>
+                                        <td>0x17d</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_NEUTRAL</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+MZfarbrauschPE<br>
+kkrunchy<br>
+|Y@+<br>
+bU\<br>
+*?<br>
+DWVVOH<br>
+PyD{<br>
+U{||<br>
+v)xJO<br>
+j?]h<br>
+>NfL<br>
+B`mh<br>
+]*I-<br>
+LP$J<br>
+u=ml<br>
+"t$QY<br>
+/x5yG<br>
+1/pD<br>
+babW,^z<br>
+mXX~<br>
+8<br>
+d,Ko<br>
+NA);<br>
+YHP+<br>
+ncQt<br>
+AQ;Y<br>
+.QHX<br>
+Gs2DB<br>
+ot:wGF<br>
+6vUSAE<br>
+K<,{<br>
+Dpl><br>
+MZZq<br>
+UV'_<br>
+O^q5`<br>
+[KAP<br>
+4mi26<br>
+__Y=$ytt<br>
+3Gxb<br>
+r)$x<br>
+[n8d<br>
+V$K49<br>
+61;@<br>
+4&yy<br>
+1HHE<br>
+eP)N<br>
+1I_6<br>
+&NiJ-<br>
+>"]$]_<br>
+V>Z?i}<br>
+TMU.g.<br>
+],Al<br>
+?FHgl<br>
+:+6H<br>
+\,p.q<br>
+>VNAj<br>
+:H?b<br>
+e:Ok<br>
+|N5q<br>
+?'{~<br>
+P:qn<br>
+F*<br>
+X<br>
+O<fF5<br>
+J+<)|d<br>
+xG+.<br>
+,7S/e<br>
+t4zE<br>
+<1Gx<br>
+[Af(<br>
+S|I/3?<br>
+M3yL<br>
+g1#2<br>
+/G#zhP~A<br>
+`M>\<br>
+<l]E<br>
+mqP/<br>
+^m%l<br>
+PxBm<br>
+]{9<br>
+~|zw<br>
+`V%B<br>
+c{9!h<br>
+-qHx<br>
+~5{n<br>
+HRqK<br>
+a?{3:jZ<br>
+%;Fr'$L<br>
+7;}~<br>
+|V]53h<br>
+~Df<<br>
+r58[<br>
+(o<br>
+#<br>
+fZQk<br>
+5/?x.JgG<br>
+$68\<br>
+e=<br>
+rB+<br>
+f~~<<br>
+f.Z}b<br>
+|tw.t7<br>
+Y<br>
+1i<br>
+fi<G<br>
+{sq5<br>
+-&)1<br>
+xs?!2<br>
+n2GRt<br>
+&_1^<br>
+&)BE<br>
+_LPu]<br>
+9*_!V<br>
+MLhg<br>
+zqKlh<br>
+%'o@w<br>
+lE%`<br>
+lGKud+<br>
+.<br>
+*h<br>
+"coJ<br>
+9)n1<br>
+/\2K<br>
+!*k_<br>
+B:^(<br>
+dhs=<br>
+Qu_*<br>
+e8)c<br>
+"\},b<br>
+H%,g;<br>
+q')C;<br>
+M)1l<br>
+s-Jxz<br>
+N:n/<br>
+\+'`EA8<br>
+ZkoZ<br>
+VvfBf's<br>
+X<br>
+IHGuR<br>
+h!'S!b<br>
+2J`1<br>
+up=GQ<br>
+SyJE<br>
+@Y@4<br>
+U@d%<br>
+T{jj<br>
+zK>}L<br>
+`D\-<br>
+,0l0<br>
+#LIkwM<br>
+u0).<br>
+E`&W<br>
+gk;f=nE&<br>
+j:\EDLk<br>
+8XVc<br>
+AW`-<br>
+fR@^YE<br>
+/k6v<br>
+SHdC<br>
+bI_(,g<br>
+ZM+_<br>
+5F~W<br>
+[Lux<br>
+Y<br>
+ymp<br>
+(QX~<br>
+R.-tdL<br>
+~s4SQ<br>
+n.If)o<br>
+k>\_<br>
+"Co\/M<br>
+H|zD<br>
+Q./u<br>
+1U/QQ<br>
+{:U*<br>
+7"D<br>
+TJx\<br>
+ep?Tj<br>
+|4qY<br>
+Efc(:[<br>
+d~{<br>
+*[L~!<br>
+Z8\5!+<br>
+y*W1(Y<br>
+#4*.9<br>
+"WX8<br>
+nFNq,;<br>
+9N0[W<br>
+3R)-<br>
+~76c<br>
+_pvI<br>
+74'<br>
+k'p.<br>
+PsVG<br>
+jM*#m<br>
+.XlO<br>
+e,:w<br>
+l%S<#<br>
+TN5B<br>
+)=M<br>
+=*<br>
+V<br>
+oG4%<br>
++Zsqx<br>
+T;h'8<br>
+\RZ7<br>
+]|;F<br>
+1uhu_c<br>
+9@v(<br>
+1G0J<br>
+3'Ts<br>
+ems{<br>
+bo}0:W9<br>
+N)_!<br>
+CB1><br>
+V{t`<br>
+$f~_<br>
+2^4%<br>
+4Vzd<br>
+l_m<br>
+n%'D8</q<br>
+I<br>
+uV<br>
+Hb!i@<br>
+@6s:R<br>
++WlV<br>
+rEs%<br>
+!~0P<br>
+_{a-4<br>
+phN>D<br>
+-cx<br>
+M<br>
+T9Z$<br>
+Y6!w<br>
+^[P#S<br>
+(keR<br>
+en)L<br>
+l4FO-<br>
+SA\l<br>
+kInyBM<br>
+gn~b<br>
+"Gjt<br>
+g/mM<br>
+%{u(F<br>
+OViuH<br>
+n<br>
+K1<br>
+"}eM.<br>
+3};H4.<br>
+"eS@L~\<br>
+^AW}<br>
+S"$yiP<br>
+R#HIdrc<br>
+u@T4BPV&<br>
+2&}q<br>
+LXFo<br>
+_!8Y<br>
+Sa~-<br>
+\U%p<br>
+);<br>
+@<br>
+R:OZ<br>
+`g3mh<br>
+>knL2<br>
+OWcG<br>
+9lp]<br>
+Jp\D;<br>
+[l[f<br>
+2A}r<br>
+Tj;hvJ<br>
+HY<br>
+">p:<br>
+uhE`<br>
+X83cc<br>
+-1Mct5/id1<br>
+z";}<br>
+]zmQ<br>
+&l1]8z=<br>
+,{*Ov^<br>
+3qtj<br>
+L7;d<br>
++h8}<br>
+]gfy<br>
+>K=k<br>
+j)k6bu}<br>
+@fTs<br>
+5CW0<br>
+Mfej<br>
+sC^{<br>
+S^<%YjE<br>
+6;)N<br>
+~|BZ,N<br>
+p;`0<br>
+AzNqw<br>
+:AN@<br>
+7"9^<br>
+A&Kp<br>
+|q63<br>
+OdvG<br>
+-;]Z<br>
+&mD>(*<br>
+]WPu<br>
+9`"?<br>
+kas6<br>
+;{&^<br>
+L?<Q<br>
+!!a>_<br>
+g1!<"<br>
+5$CCG<br>
+Cw<R<br>
+$Bs3<br>
+*V&1<br>
+j?!\<br>
+zjk-<br>
+%P#x<br>
+b!71<br>
+nrm@<br>
+xrok<br>
+SqU|<br>
+}<br>
+i\P<br>
+i$!E<br>
+cdM$<br>
+D13i<br>
+U^oI"*<br>
+=e%o<br>
+G&0I<br>
++;(r)?dk<br>
+zq>=<br>
+ASw0<br>
+1~Z6<br>
+yx@_<br>
+Y`A'<br>
+Q#b4T<br>
+h)n#<br>
+TIKk<br>
+<";#<br>
+*yoo<br>
+NhRY/<br>
++,{#<br>
+Lm@IOR<br>
+5<br>
+j;GK<br>
+="AQ<br>
+xs!=<br>
+y=-$<br>
+Egv=|<br>
+Hmmy<br>
+H=yFD";<br>
+C$:f<br>
+iXeH<br>
+kvsA<br>
+K<br>
+Gt7C<br>
+4CE+<br>
+8j))<br>
+TXSt<br>
+=G2uL<br>
+bUQ9m<br>
+E0i@<br>
+9<br>
+z_<br>
+qA=Qt&U<<br>
+|Q>h<br>
+Df8<br>
+n9eL)<br>
+^*4N(<br>
+~]9I<br>
+$>C@<br>
+@0lY<br>
+pc2G<br>
+S]iO<br>
+nLDq><br>
+{p,N7Mb<br>
+F!u&pz<br>
+K_sR<br>
+[B!Mj<br>
+=&1+c<br>
+(%4c<br>
+YURP<br>
+^4j4dA<br>
+y)&"\<br>
+FNy3<br>
+ple|<br>
+%j@~<br>
+y!)5<br>
+r}==D<br>
+|rWk<br>
+~'Ib<br>
+q3T{<br>
+d;7l"<br>
+2"IY<br>
+v<I4]u<br>
+AShc<br>
+%Z<br>
+UC<br>
+mHuKW<br>
+3`tk<br>
+0wDy<br>
+CAz~<br>
+ri21<br>
+@=PL;<br>
+b01wQZ<br>
+Fc-t<br>
+\vN%<br>
+a7P:<br>
+K;f}o<br>
++v,<br>
+&-i}<br>
+Cr+uO6h<br>
+nS2oKN<br>
+V]V`<br>
+"UAj<br>
+is,m<br>
+R$<br>
+f<br>
+ZUuKv<br>
+0<br>
+ms[<br>
+il<br>
+.<br>
+(<K]<br>
+U$U?`<br>
+`VS4<br>
+U1_sQf<br>
+DW`~<br>
+qmnp<br>
+v<br>
+aGz*;<br>
+6F4e<br>
+5Tz&<br>
+M4k]<br>
+Jex&G<br>
+Vdog&T<br>
+alVO<br>
+Lc?.#<br>
+g.oF<br>
+i$U?R<br>
+2\{5<br>
+$r-><br>
+$5:W<br>
+0"3^<br>
+{Nu_<br>
+Cedb<br>
+?y4xNn<br>
+R3wW<br>
+K0}Q<br>
+)A*SA<br>
+U"<br>
+P<br>
+;wYx<br>
+k"$?<br>
++8["<br>
+*s}s<br>
+#~$9<br>
+!s(t_p$<br>
+P,wY<br>
+c3CJ<br>
+fm>=<br>
+|$ik(d<br>
+w##L<br>
+[^b?<br>
+!;5r<br>
+[gHf<br>
+eLm{pj(<br>
+i:EL<br>
+.i}L<br>
+8PT?%<br>
+tQJS<br>
+?fJ.x<br>
+W*)}<br>
+*0bZ<br>
+8VzG<br>
+H8*8a<br>
+2|Su<br>
+quXb<br>
+9Nd2<br>
+w0],<br>
+wHu_<br>
+LEZ6<br>
+\Cl2<br>
+l)uE<br>
+]<br>
+^j:<br>
+T|*!<br>
+0HP==a<br>
+AUj;<br>
+rn)`<br>
++9spcb<br>
+9s#<br>
+^l$H<br>
+ns%><br>
++RK-<br>
+Y~g%gc<br>
+X|c-$<br>
+-AE"<br>
+VCCsg6<br>
+bf+r<br>
+ORRGzE;P<br>
+<L}><br>
+JNTYKP<br>
+=*A)<br>
+Z[\Y<br>
+2k0L<br>
+E/Er<br>
+NT]q1K<br>
+jwTO<br>
+a)&[<br>
+0WTN%F<br>
+}B,b<br>
+8%4;6<br>
+PZ7Vy+<br>
+M,40<br>
+OaE7<br>
+Yq_^9<br>
+o{r0*<br>
+se*R{<br>
+t[vx<br>
+.)O8<br>
+|,[v<br>
+,N-^<br>
+?syZSl<br>
+b"T9h<br>
+T%>^<br>
+h3w<<br>
+Jo,Y6v<br>
+rV4{<br>
+th&d<br>
+92zH<br>
+_z1S<br>
+B%cY<br>
++kn{5<br>
+@7$^<br>
+_GY~<br>
+-Fg<br>
+wbEw<br>
+gqXG<br>
+:N>7<br>
+-H0,<br>
+&3j'<br>
+N<br>
+,2<br>
+W1wo`<br>
+(~`g<br>
+Uay<br>
+^<br>
+)]tM<br>
+?~X^<br>
+|;P_<br>
+if!9<br>
+)Rm;<br>
+_=Z=<br>
+F5VW<br>
+q.,uz<br>
+B+2bB<br>
+r%P}Z<br>
+c=_G<br>
+e!qC/<br>
+YjMp<br>
+WG1=<br>
+z@S]<br>
+zD0?<br>
+;h@;<br>
+kc@`F@<br>
+/5`1<br>
+5f,X%<br>
+T1lK<br>
+.Kb?<br>
+Sq!3_s<br>
+PqJS<br>
+x\&$<br>
+})UqO<br>
+W-KkW-v<br>
+$gDY4<br>
+q9X!q<br>
+}JH.<br>
+wvr}.<br>
+R|W.j<br>
+uvP(<br>
+*g9D<br>
+@'1><br>
+m-@~<br>
+*\8X<br>
+H*5`<br>
+r]B[bm<br>
+lFE<br>
+T<br>
+;du^<br>
+g`ni<br>
+O]`q5<br>
+!C/BS<br>
+qW.Y<br>
+]=[)5<br>
+{8O]<br>
+u2W)<br>
+t[hT<br>
+Q11>C<br>
+dM{7<br>
+v_I6<br>
+t#Uw<br>
+9<br>
+v`<br>
+am_d<br>
+QSoY<br>
+V5O],<br>
+d0*n<br>
+7[vyz<br>
+k7kw<br>
+IYei<br>
+](p/<br>
+LlA=<br>
+hAeWtu<br>
+G2Xl<br>
+sCyO<br>
+okMX<br>
+e[`|J<br>
+8kr[<br>
+@rAW<br>
+q^fy<br>
+dbt<br>
+w1^~H<br>
+{x11<br>
+$#Hd'<br>
+Lahp<br>
+R5qG<br>
+-,Sb|7<br>
+,}yh'B<br>
+8WGQ-<br>
+XC'q<br>
+crm|<br>
+vr^bn2<br>
+6VJP<br>
+A:J>9<br>
+mfTZR<br>
+/8(Q<br>
+V,_<br>
+M'{<br>
+B-7b<br>
+e@AFih<br>
+=G(5<br>
+@Iy8C<br>
+"#b%<br>
+Nw1D<br>
+^<br>
+Sz4<br>
+X<><br>
+V<br>
+z#_f<br>
+]41C<br>
+6[qT<br>
+3I4a8<br>
+3tQw<br>
+-A.y<br>
+P:j=<br>
+{V{C<br>
+nIJN<br>
+Y&/V<br>
+(lt)<br>
+>*ko<br>
+W<br>
+V/dk<br>
+<!@Md<br>
+0QzQ<br>
+Rj5|<br>
+RQL_<br>
+Xb`{I<br>
+-/SC<br>
+2"tM<br>
+s0M'<br>
+I]Ol[<br>
+A4+Ww<br>
+<doO<br>
+LFFm<br>
+pXX/<br>
+<C&O<br>
+.a,R<br>
+VVHOh<br>
+4<e[]<br>
+),.a4z<br>
+l5B)<br>
+3]!<<br>
+]:o~<br>
+kX}F<br>
+ZnQ]8<br>
+x;yB<br>
+6sv~9<br>
+cir`<br>
+xNaY<br>
+y}^He"<br>
+1'Cjt'<br>
+go<br>
+jY~n/B|<br>
+3/#<br>
+ZHJw<br>
+<khy)<br>
+`NDn9<br>
+'[Y"<br>
+PR/u<br>
+s-vk<br>
++Zz`TC<br>
+[5D,<br>
+&^?(<br>
+DeNt<br>
+ONYz<br>
+:{P_<br>
+4+6\<br>
+rhT"<br>
+GcEr<<br>
+B=FH<br>
+SY0y<br>
+"u"2<br>
+bnhW^<br>
+8jDf<br>
+QCA9S<br>
+9TRC<br>
+XOnQ/4<br>
+\GUU<br>
+W'%d<br>
+%3WL<br>
++qJK<br>
+$xG#h<br>
+/cYLU<br>
++3$<br>
+>r7IB<br>
+i&VV<br>
+]eI.<br>
+^r!Q<br>
+T}#r<br>
+t&+\<br>
+4^Hs<br>
+%7hvIT<br>
+sLP!<br>
+=HBm<br>
+cp{<br>
+wIj}U_<br>
+[k-t<br>
+^wHN<br>
+z<br>
+vW<br>
+]$M=x<br>
+ce=]<br>
+*(D:<br>
+my|1f<br>
+"x$r<br>
+6kjjAW<br>
+G_+p<br>
+}86$<br>
+=tn.@<br>
++k:}<br>
+H3+{ERC<br>
+{yO"<br>
+R#/oJ<br>
+PgzpC<br>
+=3fjz<br>
+,c^~GO}<br>
+3b!l<br>
+[%bw<br>
+'M4o6sByt<br>
+37zd<br>
+K2%%}<br>
+E!r?<br>
+9N-TJ<br>
+fN;-<br>
+j-%*g<br>
+f<br>
+;ku%<br>
+E|A$<br>
+Mlk;<br>
+@<(v<br>
+;E\u,<br>
+;E(t<br>
+EHj<br>
+YQ<br>
+<?xml<br>
+version='1.0'<br>
+encoding='UTF-8'<br>
+standalone='yes'?><br>
+<assembly<br>
+xmlns='urn:schemas-microsoft-com:asm.v1'<br>
+manifestVersion='1.0'><br>
+<trustInfo<br>
+xmlns="urn:schemas-microsoft-com:asm.v3"><br>
+<security><br>
+<requestedPrivileges><br>
+<requestedExecutionLevel<br>
+level='asInvoker'<br>
+uiAccess='false'<br>
+/><br>
+</requestedPrivileges><br>
+</security><br>
+</trustInfo><br>
+</assembly><br>
+KERNEL32.DLL<br>
+LoadLibraryA<br>
+GetProcAddress

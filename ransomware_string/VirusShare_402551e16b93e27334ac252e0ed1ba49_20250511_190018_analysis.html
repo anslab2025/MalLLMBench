@@ -1,0 +1,928 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_402551e16b93e27334ac252e0ed1ba49_20250511_190018_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-11 19:00 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_402551e16b93e27334ac252e0ed1ba49_20250511_190018_analysis.html<br>File Size: 83456<br>
+File Type: PE32 executable (GUI) Intel 80386, for MS Windows<br>
+Compilation timestamp: 2005-08-04 00:32:02<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    402551e16b93e27334ac252e0ed1ba49<br>
+SHA1:   317a7bd925ca52441ad04a974b4a4225d3e5155a<br>
+SHA256: 2c546128f60bc2fe85dcf05bfb09612f7ab6841a568825228a4588568713e650<br>
+SHA512: 2ae78d8ce63990c26ff99da10c246ebbf0d789ba3d7f24a5a801f3714fcd58a4aec941c63c9de9e3e0cb3ba6f9000c79ffe8abd1706a567cf65fa91be13378d9<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x86b0<br>Number of Sections: 1<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>kkrunchy</td>
+                        <td>0x1000</td>
+                        <td>0x608e87</td>
+                        <td>79360</td>
+                        <td>6.88 (Maybe packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.DLL</b><br>
+0x3f4484 LoadLibraryA<br>
+0x3f4488 GetProcAddress<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x3f4484 LoadLibraryA<br>
+0x3f4484 LoadLibraryA<br>
+0x3f4484 LoadLibraryA<br>
+0x3f4488 GetProcAddress<br>
+0x3f4488 GetProcAddress<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_BITMAP</td>
+                                        <td>0x3d7b0</td>
+                                        <td>0x14a7a</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x9330</td>
+                                        <td>0x330</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x9660</td>
+                                        <td>0x130</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x9790</td>
+                                        <td>0xf0</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x9880</td>
+                                        <td>0xb0</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x9930</td>
+                                        <td>0x668</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x9f98</td>
+                                        <td>0x2e8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xa280</td>
+                                        <td>0x1e8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xa468</td>
+                                        <td>0x128</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xa590</td>
+                                        <td>0xea8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xb438</td>
+                                        <td>0x8a8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xbce0</td>
+                                        <td>0x6c8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xc3a8</td>
+                                        <td>0x568</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xc910</td>
+                                        <td>0x1ca8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xe5b8</td>
+                                        <td>0xca8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xf260</td>
+                                        <td>0x748</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xf9a8</td>
+                                        <td>0x368</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0xfd10</td>
+                                        <td>0x25a8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x122b8</td>
+                                        <td>0x10a8</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x13360</td>
+                                        <td>0x988</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x13ce8</td>
+                                        <td>0x468</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x5d04c</td>
+                                        <td>0x282</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x5d2d0</td>
+                                        <td>0x13a</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x5d40c</td>
+                                        <td>0xe8</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x5d4f4</td>
+                                        <td>0x12e</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x5d624</td>
+                                        <td>0x338</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x5d95c</td>
+                                        <td>0x222</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_STRING</td>
+                                        <td>0x5db80</td>
+                                        <td>0x22c</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_STRING</td>
+                                        <td>0x5ddac</td>
+                                        <td>0x3b2</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_STRING</td>
+                                        <td>0x5e160</td>
+                                        <td>0x212</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_STRING</td>
+                                        <td>0x5e374</td>
+                                        <td>0x27e</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+<tr><td>RT_RCDATA</td>
+                                        <td>0x5e5f4</td>
+                                        <td>0x10</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_NEUTRAL</td></tr>
+<tr><td>RT_GROUP_ICON</td>
+                                        <td>0x14150</td>
+                                        <td>0x11e</td>
+                                        <td>LANG_NEUTRAL</td>
+                                        <td>SUBLANG_DEFAULT</td></tr>
+<tr><td>RT_MANIFEST</td>
+                                        <td>0x14270</td>
+                                        <td>0x213</td>
+                                        <td>LANG_RUSSIAN</td>
+                                        <td>SUBLANG_RUSSIAN</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+MZfarbrauschPE<br>
+kkrunchy<br>
+|Y@+<br>
+bU\<br>
+*?<br>
+DWVVOH<br>
+=4hN<br>
+G[Q*<br>
+/!J.W<br>
+^a[v.<br>
+b+:(<br>
+(I\[<br>
+Ljs9<br>
+/2^fw<br>
+lNr3<br>
+@1"p#]<br>
+7M'#Q<br>
+/o6\xD<br>
+#Xt1<br>
+28;,<br>
+8Sy6]m><br>
+`GM`}GN(<br>
+"<br>
+@T<br>
+gG@v<br>
+tw+!<br>
+@5T7)<br>
+,JK|Q<br>
+M69^<br>
+fXs7<br>
+&c7^<br>
+$S9#]<br>
+~r"S:<br>
+Bh%w$<br>
+HdSi<br>
+$~Tg<br>
+Gw|S<br>
+|/#!<br>
+1vb}Oc<br>
+Yn,S<br>
+f`jK<br>
+@I.(<br>
+iC1"<br>
+JUF5<br>
+GcgH<br>
+st-K`X<br>
+@Htl@<br>
+D3#Q5<br>
+Na-D<br>
+>J{X<br>
+)x$?.@C!?<br>
+XuPn<br>
+(b*6<br>
+oY'4<br>
+Tc_F<br>
+Um>?|<br>
+\9>S{)<br>
+WDP&<br>
+*Q_Ct<br>
+$U:j<br>
+bM+n<br>
+q<br>
+L28t<br>
+$P55<br>
+9y*&|<br>
+L?xN<br>
+9#|Y<br>
+sqW:<br>
+A&+Wc<br>
+Gb?M8<br>
+1W=r<br>
+j:ol8+gz<br>
+7*<br>
+xX*2<br>
+V_zw*<br>
+L.s-r<br>
+^{V!<br>
+,W)[<br>
+-R{A<br>
+n/V$<br>
+447z<br>
+_9:\<br>
+g958<br>
+|i5N<br>
+1Dl}<br>
+{Tsp<br>
+Ruy)<br>
+MEI4<br>
+Vv<br>
+gt<br>
+9~>/<br>
+X^*T<br>
+Zb1X<br>
+uR+I<br>
+`JoL<br>
+T8eN<br>
+uPAT<br>
++@dn<br>
+H~iD<br>
+yyey<br>
+yb1_<br>
+>#l?2<br>
+eu?k<br>
+=_b,<br>
+P+FQ<br>
+b\#3<br>
+[y\}<br>
+/QwW<br>
+(<Cj<br>
+5<br>
+O<br>
+s}):D0`<br>
+n?_(<br>
+n\)/<br>
+`&0nS<br>
+-Rk<br>
+F<br>
+28"l<br>
+4mGfv<br>
+AsPO`G<br>
+h1~o<br>
+?TtP<br>
+*(]=<br>
+L]?Wm<br>
+wxx+^"<br>
+[`As\<br>
+/w9t<br>
+1TE6<br>
+X*,v<br>
+(Tes9@<br>
+Yb!<br>
+qwn9<br>
+Cu1%<br>
+^wBZ<br>
+Wn&4<br>
+RGJ9z<br>
+7tym<br>
+h,2z5U<br>
+,_{6<br>
+]OQD,<br>
+mW]-<br>
+"Nu6<br>
+\JYX<br>
+?f[y<br>
+i&~n<br>
+nCO*<br>
+grtZ<br>
+6u%|<br>
+nU]><br>
+H-MH1<br>
+_f-"%<br>
+@rcKc<br>
+gtir<br>
+RxM+<br>
+D-TI<br>
+%YRL<br>
+1?ahu<br>
+Db@3<br>
+XC3mC.<br>
+7"Mm<br>
+&^}v<br>
+%LpDg<br>
+16br<br>
+Haf-<br>
+rDS!#2<br>
+4bY2<br>
+>[[+g<br>
+c<s><br>
+#<fE.?<br>
+XV#;g<br>
+#)?.<br>
+|$-"1C<br>
+~gqpt<br>
+{e|t<br>
+L[uL<br>
+rU%p<br>
+Pmmiw<br>
+:oy;<<br>
+}r7/<br>
+_apYi%<br>
+?f!7]g+<br>
+Z.2G<br>
+zijA<br>
+{5B]<br>
+P<br>
+2r<br>
+38o{p<br>
+|!?uD<br>
+f<bm<br>
+t7R_<br>
+SskU<br>
+Ggises<br>
+E*X#^,r<br>
+~bHA4<br>
+x&mx<br>
+'4$RV<br>
+p(>d<br>
+t9Yv<br>
+v6:ir;<br>
+{J-'<br>
+Lp{YU<br>
+}/Eo<br>
+1eim)<br>
+qagqh<br>
+$x70<br>
+@U<br>
+j<br>
+-P"/<br>
+:In6<br>
+ozOG<br>
+j}b{F<br>
+4KsF<br>
+byP+<br>
+Q5^=u<br>
+CiL/<br>
+c/X|<br>
+Ub&[nf<br>
+3c3\<br>
+dNXJ<br>
+p/m7<br>
+v7?+y<br>
+g(fo<br>
+Lc)+<br>
+u$kQ<br>
+zGZG<br>
+%y4e<br>
+MPl8f<br>
+5Ry{<br>
+fOiq<br>
+r}_u$J"<br>
+eGNg<br>
+te[F'K\<br>
+Xv6k<br>
+6U584Kn+<br>
+NTY,"2<br>
+`D~p<br>
+7[Y2<br>
+T(Y(<br>
+l:(<br>
+h~LA#j<br>
+Bd](<br>
+u|t^-Y<br>
+7_NH'<br>
+5{_)w<br>
+JB33<br>
+=jx<br>
+?sw+|<br>
+w_2h<br>
+mu4#&<br>
+Yd6<<br>
+)<br>
+mH?<br>
+1-QW'<br>
+m?`b<br>
+FXvb<br>
+$)LZ`x<br>
+!B9f<br>
+Pq,i<br>
+@_e,<br>
+JRSA<br>
+}g{_<br>
+PD$u<br>
+rvZxDt<br>
+mrJ]<br>
+U#w4<br>
+{U<br>
+y&<br>
+DX6|<br>
+L~Rc<br>
+WUG3<br>
+\c&M<br>
+AMpk<br>
+2>7-<br>
+@<br>
+O|0Y<br>
+JmbT$<br>
+/>Z/z<br>
+?HEjp9+<br>
+EW&1<br>
+pf(e<br>
+4~^ku<br>
+5)&Rc<br>
+q}~*<br>
+2)_PSf<br>
+.FLY<br>
+2-{(<br>
+x{|3B<br>
+h$z#<br>
+}pe0^X<br>
+<7,k<br>
+Bbcw<br>
+B.Z.<br>
++\s^<br>
+g;UL<br>
+n`,u<br>
+ORkUyE<br>
+\{OW<br>
+b{'P3<br>
+m,%h<br>
+,Tn!=[xX<br>
+nD'8<br>
+wW!-<br>
+N'<k<br>
+flnO<br>
+:{mZ<br>
+oG>s<br>
+RdeN<br>
+)~<br>
+=<br>
+"Wf><br>
+Af<[<br>
+K^a]<br>
+nL][<br>
+^xF3<br>
+*-TF<br>
+xf}ng<br>
+Vgxo<br>
+L-8J<br>
+sCBP<br>
+<Q+_<br>
+TS^+<br>
+[c'&<br>
+NQ+SIg<br>
+'1T7q><br>
+5+G(<br>
+*Xj<br>
++/U[<br>
+b$e/<br>
+s'.'LA<br>
+4i7=<br>
+i_ZJ<br>
+2ev*<br>
+!U!5~<br>
+uJuS<br>
+zX_n<br>
+^W=I<br>
+i\M8m}<br>
+(P<br>
+;<br>
+(U<br>
+>BE<br>
+Xp6x"<br>
+Wpq)T<br>
+v=MDJ<br>
+,zJc<br>
+@Vvv<br>
+|Nw*<br>
+I?<%Q<br>
+cv<G`B<br>
+aksa<br>
+Cmd-<br>
+BrYt3D<br>
+U5$bq<br>
+lPvU<br>
+??y$<br>
+cvf3<br>
+4Gxo*E!<br>
+6r&<br>
+,gvwp%,<br>
+jAog<br>
+")]<br>
+f6-SU~<br>
+W;wy<br>
+Eq!<br>
+Z\i74<br>
+M'Vu<br>
+!eh)<br>
+>40G<br>
+V[I<br>
+T:lL.<br>
+TAAZ<br>
+5HKMDk<br>
+Ic\/<br>
+gj's<br>
+e;{E<br>
+xC}C#<br>
+kv<M<br>
+xx[N<br>
+P<br>
+<m<br>
+TtPH<br>
+_Kz]<br>
+36G]9<br>
+gDUj<br>
+~fPt<br>
+I{eFYl_<br>
+`><s><br>
++$*W<br>
+1>}1<br>
+r{c6<br>
+:<br>
+`V4x<br>
+3^7:<br>
+WR0N#<br>
+d);H<br>
+Itcdaic<br>
+kE4Z<br>
+~lmY$<br>
+Zv,A^<br>
+w8`<br>
+b7WS<br>
+'WY{<br>
+1:gn<br>
+_.\`avY~<br>
+_-Xj<br>
+uU::<br>
+~S;imj]<br>
+`zc@<br>
+BGTra<br>
+[uom<br>
+OPY|<br>
+}Vs<br>
+iSG3<br>
+=R>p0<br>
+.'C9K<br>
+L1Y'm<br>
+0<br>
+@x<br>
+m0q;G<br>
+nHEt<br>
+eA79EQ<br>
+ho<br>
+R+<br>
+rxzL<br>
+@<(v<br>
+;E\u,<br>
+;E(t<br>
+EHj<br>
+YQ<br>
+wpwx<br>
+w50CWx<br>
+0Bww<br>
+wyyy9<br>
+sQawxx<br>
+Gwxxx<br>
+awww<br>
+xyyy<br>
+yyPW<br>
+ulb`N+<br>
+ULI*<br>
+&8Ch<br>
+ZL/-0.34?AC<br>
+XUIH0.<br>
+&):@<br>
+XLI,<br>
+"!6A<br>
+XUKH-<br>
+XLI-+<br>
+ZUK/+18B<br>
+UKH5?B<br>
+XTQ?E<br>
+h@7B<br>
+|f<'8Ah<br>
+zme1<br>
+!8@C<br>
+{vo_P<br>
+!8=F<br>
+LI,+<br>
+(8=Ch<br>
+UI/*<br>
+(%9Ah<br>
+ULI-<br>
+#6:AE<br>
+XUI0<br>
+(&8=Ah<br>
+'8@D<br>
+#)8=Bh<br>
+ZUIH-<br>
+&):@D<br>
+XLI-<br>
+&6;D<br>
+XUII-<br>
+(8?h<br>
+ZUUMJP5>?F<br>
+YUJ589<br>
+ZTP39<br>
+YR?E<br>
+66<br>
+))<br>
+66<br>
+))<br>
+,<br>
+,,<br>
+,<br>
+,,<br>
+66..<br>
+.))<br>
+,,<br>
+//<br>
+,,<br>
+,,<br>
+//<br>
+,,<br>
+22.<br>
+/<br>
+//<br>
+..)<br>
+22.<br>
+/<br>
+//<br>
+..)<br>
+//<br>
+11<br>
+1<br>
+,<br>
+//<br>
+11<br>
+1<br>
+,<br>
+//<br>
+//<br>
+66<br>
+))<br>
+66<br>
+))<br>
+,<br>
+,,<br>
+,<br>
+,,<br>
+66..<br>
+.))<br>
+66..<br>
+.))<br>
+,,<br>
+//<br>
+,,<br>
+22.<br>
+/<br>
+//<br>
+..)<br>
+22.<br>
+/<br>
+//<br>
+..)<br>
+//<br>
+11<br>
+1<br>
+,<br>
+//<br>
+11<br>
+1<br>
+,<br>
+//<br>
+//<br>
+AL^b7,<br>
+;NeeeeQ4<br>
+E9LbeeejeeeP,<br>
+=HZebelsskjeebI<br>
+U^eeeu<br>
+kee^P3<br>
+eeeks<br>
+peee^.'<br>
+~eek<br>
+ljebV<br>
+zjcB<br>
+@SbbJ3<br>
+C>OeeeeZI<br>
+:8Zbeeeeeb6<br>
+DXTZejr~{lke^J3<br>
+eeeejz<br>
+veeeeZ+<br>
+eeep<br>
+seee^5<br>
+{eel<br>
+tjebW<br>
+,<br>
+,<br>
+6.<br>
+)<br>
+,<br>
+/<br>
+,<br>
+2<br>
+/<br>
+/<br>
+.)<br>
+/<br>
+1<br>
+,<br>
+,<br>
+,<br>
+6.<br>
+2<br>
+/<br>
+/<br>
+.)<br>
+/<br>
+1<br>
+,<br>
+qqqUUU999YYYyyy<br>
+kkkJJJ(((<br>
+...VVV~~~<br>
+/::DXXY{{{<br>
+6<br>
+4113[[[<br>
+;;;sss<br>
+0''GUUg<br>
+c33]OOWiii<br>
+(888\\\<br>
+->>F^^`yyy<br>
+7%%:88>MMMbbbwww<br>
+!!!444GGGbbb<br>
+(<br>
+!<br>
+')).BBBddd<br>
+*,,,AAAVVVlll<br>
+z<br>
+Q<br>
+&&&888YYY{{{<br>
+::A``b<br>
+4..ELLVlll<br>
+I""I99JVVV<br>
+U22JMMM{{{<br>
+~--vMMmooo<br>
+|||eee~~~<br>
+lllOOO222SSSuuu<br>
+gggEEE"""<br>
+(((QQQzzz<br>
+077BSSTrrr<br>
+2,,.TTT<br>
+777ppp<br>
+7%%KQQe||<br>
+f//\HHQccc~~~<br>
+"222XXX}}}<br>
+K;;VYYasss<br>
+}""a33EGGG\\\qqq<br>
+...AAA]]]<br>
+K<br>
+;<br>
+I&&V==i^^<br>
+//s^^<br>
+VVV{{{<br>
+VVf##*NNOvvv<br>
+&%%6FFMoop<br>
+%ddd<br>
+H;;;^^^<br>
+),,6QQT{{{<br>
+A&&IJJ^kkv<br>
+:&&1IIIzzz<br>
+;""3IIQ<br>
+X,,Qlll<br>
+!!kZZZ<br>
+WWi&&.OOSssx<br>
+%$$7DDKkkk<br>
+455?sss<br>
+GCCCeef<br>
+---7NNSvvw<br>
+3%%8KKOlll<br>
+6//8LLNvvv<br>
+F$$BGGWuu}<br>
+cAAd|||<br>
+rAAA<br>
+AAAxxx<br>
+AAAxxx<br>
+a...TTT<br>
+!TTT<br>
+:...ddd<br>
++!!.<br>
+cTTT<br>
+xxx111lll<br>
+%//=YYY<br>
+ddd<br>
+r###AAAxxx<br>
++@@Flll<br>
+'AAA<br>
+B;;O<br>
+]999<br>
+<?xml<br>
+version="1.0"<br>
+encoding="UTF-8"<br>
+standalone="yes"?><br>
+<assembly<br>
+xmlns="urn:schemas-microsoft-com:asm.v1"<br>
+manifestVersion="1.0"><br>
+<assemblyIdentity<br>
+version="1.0.0.0"<br>
+processorArchitecture="X86"<br>
+name="Roshal.WinRAR.WinRAR"<br>
+type="win32"<br>
+/><br>
+<description>WinRAR<br>
+archiver.</description><br>
+<dependency><br>
+<dependentAssembly><br>
+<assemblyIdentity<br>
+type="win32"<br>
+name="Microsoft.Windows.Common-Controls"<br>
+version="6.0.0.0"<br>
+processorArchitecture="X86"<br>
+publicKeyToken="6595b64144ccf1df"<br>
+language="*"<br>
+/><br>
+</dependentAssembly><br>
+</dependency><br>
+</assembly><br>
+KERNEL32.DLL<br>
+LoadLibraryA<br>
+GetProcAddress

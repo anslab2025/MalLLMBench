@@ -1,0 +1,645 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_8c0727536ab005931db54387e7a345e0_20250511_212935_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-11 21:29 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_8c0727536ab005931db54387e7a345e0_20250511_212935_analysis.html<br>File Size: 107520<br>
+File Type: PE32 executable (GUI) Intel 80386, for MS Windows<br>
+Compilation timestamp: 2009-08-25 22:06:30<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    8c0727536ab005931db54387e7a345e0<br>
+SHA1:   0ab3a71a06cc2cca113ce3eee7ba3e64b077e56a<br>
+SHA256: 3b4dbe375c387d1141f5a06b79d0e96c4eeba8c1ca0098531e391bfd5b68430e<br>
+SHA512: f56bb91387f3960f0b108dd706ce1d4e479f357552e3eec4c6086f113dddfd24aa57f33ae349b8fa42f660a56f8357e3364303af29b173c2e7250b811c9922e7<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: <urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。><br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x4eb3<br>Number of Sections: 1<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>kkrunchy</td>
+                        <td>0x1000</td>
+                        <td>0x5ed492</td>
+                        <td>103424</td>
+                        <td>6.14 (Maybe packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.DLL</b><br>
+0x40a33c LoadLibraryA<br>
+0x40a340 GetProcAddress<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x40a33c LoadLibraryA<br>
+0x40a33c LoadLibraryA<br>
+0x40a33c LoadLibraryA<br>
+0x40a340 GetProcAddress<br>
+0x40a340 GetProcAddress<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x552c</td>
+                                        <td>0x10828</td>
+                                        <td>LANG_SERBIAN</td>
+                                        <td>SUBLANG_SERBIAN_LATIN</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x15d54</td>
+                                        <td>0x25a8</td>
+                                        <td>LANG_SERBIAN</td>
+                                        <td>SUBLANG_SERBIAN_LATIN</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x182fc</td>
+                                        <td>0x10a8</td>
+                                        <td>LANG_SERBIAN</td>
+                                        <td>SUBLANG_SERBIAN_LATIN</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x193a4</td>
+                                        <td>0x988</td>
+                                        <td>LANG_SERBIAN</td>
+                                        <td>SUBLANG_SERBIAN_LATIN</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x19d2c</td>
+                                        <td>0x468</td>
+                                        <td>LANG_SERBIAN</td>
+                                        <td>SUBLANG_SERBIAN_LATIN</td></tr>
+<tr><td>RT_GROUP_ICON</td>
+                                        <td>0x1a194</td>
+                                        <td>0x4c</td>
+                                        <td>LANG_SERBIAN</td>
+                                        <td>SUBLANG_SERBIAN_LATIN</td></tr>
+<tr><td>RT_MANIFEST</td>
+                                        <td>0x1a1e0</td>
+                                        <td>0x15a</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+MZfarbrauschPE<br>
+kkrunchy<br>
+{XROsu<br>
+"UbJ<br>
+wUo<br>
+`h<br>
+89<br>
+e#(+U7<br>
+uO`'%<br>
+#e1KJ<br>
+C6:c[<br>
+ifG\<br>
+7X#u<br>
+-1DQ<br>
+}otR<br>
+zlaEx<br>
+PDcT<br>
+lvCt<br>
+OXpgm<br>
+/s%MJ<br>
+$HJs<br>
+o6e2E8<br>
+'nOm<br>
+?H9<br>
+g:<br>
+h)ik<br>
+NA{><br>
+lzrD<br>
+w@,w6Jw<br>
+g+TG<br>
+9,x(<br>
+B8hB<br>
+5h(!<br>
+/bs`l<br>
+oMn)V<br>
+s(8H<br>
+>i`G<br>
+K2p/<br>
+nB'K<br>
+3`MC<br>
+jVOK<br>
+/j`B<br>
+@)@bp<br>
+yMX:<br>
+0<br>
+1Cg<br>
+T-@N<br>
+/&j><br>
+|x>G<br>
+o6CLrk,<br>
+{IZo<br>
+J~Gs<br>
+A!pgs<br>
+rwv%<br>
+'ul&Y<br>
+2J3da<br>
+]wuV<br>
+E3>.<<br>
+=~Pb<br>
+N(+]<br>
+ySv:<br>
+:jI4<br>
+qLx=q<br>
+BST3G%<br>
+`|l<br>
+{)gF<br>
+lZq.<br>
+s<0P<br>
+}X\R<br>
+q>HW<br>
+k"7~>AeA"<br>
+2$'<br>
+0)/s<br>
+<yx~x<br>
+v]B,F<br>
+6ofCJ<br>
+T:rJ\S<br>
+[0>u<br>
+hQtM<br>
+#]O1<br>
+<.NH<br>
+ZX|/<br>
+4pep<br>
+\WO^<br>
+t<br>
+XX<br>
+l1S*<br>
+O:Ok<br>
+hS_r<br>
+3pb6<br>
+beRG,<br>
+AGJ,<br>
+c5$tH<<br>
+x0N-F<br>
+6<br>
+5i;b<br>
+t#@$w<br>
+=LOA<br>
+-"fW<br>
+CsVH&<br>
+/='$<br>
+h0Sv<br>
+ys+D&{gj<br>
+m4-!<br>
+O-C(<br>
+\!w1<br>
+|G=p<br>
+}NpJ<br>
+)['8<br>
+gN_`^<br>
+6?R?<br>
+ybOH<br>
+]D0U<br>
+&L{(<br>
+>CaF<br>
+371v<br>
+g=\qt<br>
+&y_JGO^<br>
+gr']<br>
+8q#dc<br>
+p<br>
+;I/<br>
+0'Ux<br>
+y\8TZ<br>
+[@)}<br>
+WXj`<br>
+.`<br>
+D<br>
+$DaQz<br>
+|9YY<br>
+yF^+<br>
+v%d[a<br>
+*n4U<br>
+9<jJ<br>
+nLq-D<br>
++AEux<br>
+Pc&%<br>
+_F8Q<br>
+g,9xh<br>
+|_VqHhB<br>
+(y}<br>
+'_<br>
+a<`5w<br>
+C8@<Zk<br>
+By|-uS<br>
+MW~){<br>
+>d`#<br>
+f~AOt<br>
+m7"X<br>
+{!r<br>
+KbzJ<br>
+TH]Y<br>
+L<br>
+9}<br>
+F@$i<br>
+[)"]<br>
+Lf{"<br>
+zbJ9g<br>
+41eN<br>
+}#iT:<br>
+wF,r<br>
+rR/8<br>
+>O&"<br>
+m`vUBa<br>
+;JO:<br>
+Fs]Th}<br>
+|W%j<br>
+%+B0<br>
+?Mep<br>
+y{>><br>
+8!tWbY<br>
+`Y2T<br>
+v<<br>
+L<br>
+G5W=<br>
+K8m<U<br>
+wxBt:e<br>
+*W3O<br>
+9[e&J<br>
+[f4m<br>
+9/P{<br>
+d9vs:<br>
+x<br>
+`+T8<br>
+CY[}u<br>
+Y&Vs<br>
+H6cU,<br>
+>=m$|<br>
+]sS\jQ<br>
+JGY}&<br>
+[S67<br>
+}a_6<br>
+'!G<<br>
+5hw<br>
+OM#q@<br>
+jU`><br>
+xs#D<br>
+p`~n<br>
+//D"<br>
+t~5"<br>
+h-$%^<br>
+|/*o<br>
+^UL><br>
+l,:E~Av]D[<br>
+|K<0<br>
+f,f&<br>
+G]yj<br>
+UaBYd<br>
+z^N~<br>
+T.Ot<br>
+lJ:z<br>
+|[+f<br>
+mZ\F<br>
+=Q:&<br>
+.wp%`<br>
+^FRP<br>
+bwyZ?<br>
+u)vb3<br>
+vESg(<br>
+}42SH<br>
+flfHe2<br>
+wWV-<br>
+YU9!<br>
+5$$ck<br>
+W#4ha<br>
+ym=!mSL<br>
+(>;!<br>
+X0+ZR<br>
+-%ZF<br>
+fN#?<br>
+'+w{<br>
+=]?/<br>
+j0k<br>
+#q|Z9Y<br>
+M$GK<br>
+N246<br>
+T%3_<br>
+g!`{<br>
+bn~A<br>
+#$n=<br>
+kfa#@<br>
+^j[K<br>
+p|1V>m<br>
+H/D7B<br>
+kP7=c<br>
+=Ja"<br>
+[+DV,<br>
+EjdS<br>
+V-6{MpjqmnV<br>
+|mL/<br>
+rSu?<br>
+WuN-<br>
+N:EQ<br>
+5$TG^<br>
+WS?<br>
+@<(v<br>
+;E\u,<br>
+;E(t<br>
+EHj<br>
+YQ<br>
+VVV0JJJ@///KGGGZccc~UUU<br>
+\\\o<br>
+T333I]]]8mmm'HHH<br>
+6668:::UGGG<br>
+WWWxJJJMMMM/<br>
+HHHE$$$<br>
+===v```4JJJ<br>
+>>>3TTTsBBB<br>
+PPPZDDD%<br>
+XXXR<<<<br>
+==={UUU@<br>
+MMM1)))t---<br>
+KKK]EEE<br>
+```;GGG<br>
+:::e^^^#<br>
+ttt)???<br>
+OOO[SSS<br>
+[[[^PPP<br>
+FFF`(((<br>
+BBB<www<br>
+LLL)@@@<br>
+MMMu<br>
+UUUl%%%<br>
+KKKFvvv<br>
+ggg$&&&<br>
+WWWc<br>
+VVVM###<br>
+UUU({{{<br>
+iii[<br>
+]]]1BBB<br>
+@@@y<br>
+:::BOOO<br>
+```g<br>
+"111<br>
+SSSixxx<br>
+JJJt\\\<br>
+ttt$!!!<br>
+MMMryyy<br>
+RRRj<br>
+___lZZZ<br>
+FFFCfff<br>
+[[[e<br>
+lll3<br>
+RRRU<br>
+UUU(<br>
+vvv(<br>
+|||<br>
+```]<br>
+EEE|<br>
+RRRFsss<br>
+YYY5<br>
+555n<br>
+CCCu<br>
+]]]>}}}<br>
+}}}2<br>
+iii^<br>
+ggg9<br>
+NNN\<br>
+^^^R<br>
+nnn%<br>
+QQQh{{{<br>
+|||K<br>
+]]]^<br>
+}}}.<br>
+^^^z<br>
+___><br>
+zzz$$$$<br>
+@@@z}}}<br>
+pppY<br>
+ZZZ$<br>
+ggg\<br>
+mmmC<br>
+777x<br>
+[[[><br>
+ggga<br>
+^^^0<br>
+TTTM<br>
+UUUz<br>
+ooo+$$$<br>
+NNN@<br>
+kkkR<br>
+lll+kkkv<br>
+XXX:KKK<br>
+<<<K444<br>
+pppX"""<br>
+hhh|<br>
+iii[BBB<br>
+555M```<br>
+KKK?]]][<br>
+[[[/;;;H<br>
+```0!!!<br>
+mmm<br>
+oooT<br>
+WWWu<br>
+JJJ7<br>
+```H<br>
+nnn&<br>
+bbbD<br>
+TTT_<br>
+LLLnppp<br>
+MMMr<br>
+{{{3<br>
+ggg7<br>
+dddP<br>
+]]]B<br>
+:::r<br>
+VVVk<br>
+WWW/<br>
+qqq<br>
+,,,<br>
+WWWn<br>
+hhh;<br>
+sss#+++<br>
+[[[]<br>
+M$$$<br>
+QQQ^<br>
+MMM6<br>
+KKK^!!!<br>
+XXX)<br>
+XXXoxxx<br>
+{{{4'''<br>
+mmmR%%%<br>
+cccL<br>
+ggg[<br>
+'333<br>
+???x<br>
+-"""<br>
+ZZZC***<br>
+PPPK###<br>
+yyy$<br>
+LLLE!!!<br>
+LLLL(((<br>
+]]]B$$$<br>
+ppp1111<br>
+(===<br>
+ZZZbrrr<br>
+NNNS<br>
+lllR(((<br>
+YYY*___<br>
+ddd4>>><br>
+444}OOO<br>
+TTT^)))<br>
+KKK4bbb<br>
+ggg6...<br>
+VVV{}}}<br>
+^^^L,,,<br>
+kkk2<br>
+III`+++<br>
+DDD====<br>
+]]]%JJJn...<br>
+:::Olll<br>
+YYY!FFFm***<br>
+555I<br>
+SSSD:::<br>
+###qbbb0[[[<br>
+ddd7666o===<br>
+HHH\EEE#^^^<br>
+UUU`<br>
+```@MMM<br>
+ZZZ%QQQI\\\s,,,<br>
+PPP`)))><br>
+\\\0111I111]ZZZ<br>
+eeew???UFFFAqqq'///<br>
+GGGIFFFw???<br>
+IIIrKKKDMMM<br>
+UUU\<<<<br>
+FFFPZZZ<br>
+LLLz111<br>
+BBBkbbb<br>
+NNNd111<br>
+>>>Sjjj<br>
+III'333<br>
+ZZZA!!!<br>
+GGG+<br>
+GGGb<br>
+QQQJ[[[<br>
+@@@`<br>
+OOOK<br>
+UUUE<br>
+WWW,<br>
+TTT-<br>
+DDDr<br>
+PPPS<br>
+EEEj|||<br>
+RRRp<br>
+BBBO<br>
+rrr'<br>
+QQQ`<br>
+FFFC===<br>
+JJJs+++<br>
+IIIx^^^g<br>
+SSSIXXX.$$$<br>
+LLL~(((<br>
+```\<br>
+ddd#///<br>
+RRR{<br>
+qqq%///<br>
+ddde<br>
+nnn====<br>
+eee)<br>
+hhh]@@@<br>
+^^^A<br>
+III{BBB<br>
+PPP`eee<br>
+III{GGG<br>
+___d<br>
+ddd]JJJ<br>
+QQQD>>><br>
+kkk>KKK<br>
+JJJ,<br>
+ZZZsVVV<br>
+WWW&LLL<br>
+RRR$RRR}QQQ<br>
+DDDnGGG<br>
+DDD.UUUgQQQ<br>
+OOO`___&aaa<br>
+999FBBB<br>
+AAAA___<br>
+BBB|"""<br>
+>>>naaa<br>
+ZZZ+<br>
+RRR<br>
+;;;n<br>
+]]]#<br>
+ttt<br>
+FFFW<br>
+DDD@555<br>
+DDD^!!!<br>
+:::Eiii<br>
+ccc+---<br>
+RRR|<br>
+jjj<br>
+ooo+>>><br>
+PPP9BBB<br>
+ooo,<br>
+jjj+LLL<br>
+RRR,SSS<br>
+JJJ#<br>
+NNN^XXX<br>
+TTTWWWW<br>
+777k111<br>
+:::fIII<br>
+???S<br>
+AAAH<br>
+333m<br>
+777`<br>
+:::V<br>
+>>>G<br>
+HHH<br>
+SSS#<br>
+222w<br>
+///f%%%<br>
+;;;|<br>
+555jVVV(%%%<br>
+[[[&111<br>
+]]]c---<br>
+TTTS<br>
+GGG}000<br>
+SSSn<br>
+^^^c???<br>
+MMMV<br>
+XXX&MMM<br>
+WWW<br>
+VVV(RRR|OOO<br>
+XXXwIII"fff<br>
+LLL*+++<br>
+EEE&<br>
+BBB/<br>
+BBB&$$$<br>
+PPP4<br>
+TTT*<br>
+SSS4KKK<br>
+PPP/<br>
+<assembly<br>
+xmlns="urn:schemas-microsoft-com:asm.v1"<br>
+manifestVersion="1.0"><br>
+<trustInfo<br>
+xmlns="urn:schemas-microsoft-com:asm.v3"><br>
+<security><br>
+<requestedPrivileges><br>
+<requestedExecutionLevel<br>
+level="asInvoker"<br>
+uiAccess="false"></requestedExecutionLevel><br>
+</requestedPrivileges><br>
+</security><br>
+</trustInfo><br>
+</assembly><br>
+KERNEL32.DLL<br>
+LoadLibraryA<br>
+GetProcAddress

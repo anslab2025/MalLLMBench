@@ -1,0 +1,1247 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_ab6886d5ba817cae23b348db8098d1e1_20250511_223126_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-11 22:31 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_ab6886d5ba817cae23b348db8098d1e1_20250511_223126_analysis.html<br>File Size: 73728<br>
+File Type: PE32 executable (GUI) Intel 80386, for MS Windows, 4 sections<br>
+Compilation timestamp: 2013-06-26 14:47:48<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    ab6886d5ba817cae23b348db8098d1e1<br>
+SHA1:   39e9cb065dc541bfd0af0bc5b6828f9a3f23b128<br>
+SHA256: 2597ead85d0627ab057eb8606c952c6ae957b505a1da6c59f3a2766bd87b9a40<br>
+SHA512: 477b04c6888def5f727c39fa02f4b13e024d211b53174630befecd7c7db476b8ecb94056c8f9103b7ce93445ded16f7cf7b07956cb3b46e214036ecbe757f7e9<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x34e7<br>Number of Sections: 4<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>!XT3Z2b)</td>
+                        <td>0x1000</td>
+                        <td>0x98b8</td>
+                        <td>40960</td>
+                        <td>6.45 (Maybe packed)</td></tr>
+<tr><td>pK"2O[V&</td>
+                        <td>0xb000</td>
+                        <td>0x29ac</td>
+                        <td>12288</td>
+                        <td>5.01 (Not packed)</td></tr>
+<tr><td>"^_tr '7</td>
+                        <td>0xe000</td>
+                        <td>0xfce4</td>
+                        <td>8192</td>
+                        <td>1.36 (Not packed)</td></tr>
+<tr><td>pfGO- xQ</td>
+                        <td>0x1e000</td>
+                        <td>0x2000</td>
+                        <td>8192</td>
+                        <td>3.65 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.dll</b><br>
+0x40b024 CreateFileA<br>
+0x40b028 CloseHandle<br>
+0x40b02c GetStringTypeW<br>
+0x40b030 GetStringTypeA<br>
+0x40b034 LCMapStringW<br>
+0x40b038 GetLocaleInfoA<br>
+0x40b03c MultiByteToWideChar<br>
+0x40b040 WriteConsoleW<br>
+0x40b044 GetConsoleOutputCP<br>
+0x40b048 WriteConsoleA<br>
+0x40b04c GetOEMCP<br>
+0x40b050 GetACP<br>
+0x40b054 GetCPInfo<br>
+0x40b058 LoadLibraryA<br>
+0x40b05c GetSystemInfo<br>
+0x40b060 GetModuleHandleW<br>
+0x40b064 GetLastError<br>
+0x40b068 CreateMutexW<br>
+0x40b06c GetProcAddress<br>
+0x40b070 LCMapStringA<br>
+0x40b074 GetModuleHandleA<br>
+0x40b078 GetCommandLineA<br>
+0x40b07c HeapFree<br>
+0x40b080 GetVersionExA<br>
+0x40b084 HeapAlloc<br>
+0x40b088 GetProcessHeap<br>
+0x40b08c TerminateProcess<br>
+0x40b090 GetCurrentProcess<br>
+0x40b094 UnhandledExceptionFilter<br>
+0x40b098 SetUnhandledExceptionFilter<br>
+0x40b09c IsDebuggerPresent<br>
+0x40b0a0 SetHandleCount<br>
+0x40b0a4 GetStdHandle<br>
+0x40b0a8 GetFileType<br>
+0x40b0ac GetStartupInfoA<br>
+0x40b0b0 DeleteCriticalSection<br>
+0x40b0b4 SetFilePointer<br>
+0x40b0b8 EnterCriticalSection<br>
+0x40b0bc LeaveCriticalSection<br>
+0x40b0c0 RaiseException<br>
+0x40b0c4 ExitProcess<br>
+0x40b0c8 WriteFile<br>
+0x40b0cc GetModuleFileNameA<br>
+0x40b0d0 FreeEnvironmentStringsA<br>
+0x40b0d4 GetEnvironmentStrings<br>
+0x40b0d8 FreeEnvironmentStringsW<br>
+0x40b0dc WideCharToMultiByte<br>
+0x40b0e0 GetEnvironmentStringsW<br>
+0x40b0e4 TlsGetValue<br>
+0x40b0e8 TlsAlloc<br>
+0x40b0ec TlsSetValue<br>
+0x40b0f0 TlsFree<br>
+0x40b0f4 InterlockedIncrement<br>
+0x40b0f8 SetLastError<br>
+0x40b0fc GetCurrentThreadId<br>
+0x40b100 InterlockedDecrement<br>
+0x40b104 HeapDestroy<br>
+0x40b108 HeapCreate<br>
+0x40b10c VirtualFree<br>
+0x40b110 QueryPerformanceCounter<br>
+0x40b114 GetTickCount<br>
+0x40b118 GetCurrentProcessId<br>
+0x40b11c GetSystemTimeAsFileTime<br>
+0x40b120 InitializeCriticalSection<br>
+0x40b124 Sleep<br>
+0x40b128 SetStdHandle<br>
+0x40b12c RtlUnwind<br>
+0x40b130 GetConsoleCP<br>
+0x40b134 GetConsoleMode<br>
+0x40b138 FlushFileBuffers<br>
+0x40b13c HeapSize<br>
+0x40b140 VirtualAlloc<br>
+0x40b144 HeapReAlloc<br>
+<b>USER32.dll</b><br>
+0x40b14c wsprintfW<br>
+0x40b150 SetFocus<br>
+0x40b154 SetWindowTextW<br>
+0x40b158 FindWindowA<br>
+0x40b15c DefWindowProcW<br>
+0x40b160 ReleaseDC<br>
+0x40b164 SetWindowRgn<br>
+0x40b168 GetDC<br>
+0x40b16c GetWindowRect<br>
+0x40b170 GetCursorPos<br>
+0x40b174 SetWindowTextA<br>
+0x40b178 wsprintfA<br>
+0x40b17c GetWindowTextA<br>
+0x40b180 SendMessageA<br>
+0x40b184 SendMessageW<br>
+0x40b188 MoveWindow<br>
+0x40b18c CreateWindowExA<br>
+0x40b190 UpdateWindow<br>
+0x40b194 ShowWindow<br>
+0x40b198 CreateWindowExW<br>
+0x40b19c RegisterClassExW<br>
+0x40b1a0 LoadCursorW<br>
+0x40b1a4 LoadIconW<br>
+0x40b1a8 DispatchMessageW<br>
+0x40b1ac TranslateMessage<br>
+0x40b1b0 GetMessageW<br>
+0x40b1b4 LoadImageA<br>
+<b>GDI32.dll</b><br>
+0x40b000 BitBlt<br>
+0x40b004 SelectObject<br>
+0x40b008 CreateCompatibleDC<br>
+0x40b00c CreateRoundRectRgn<br>
+0x40b010 GetDeviceCaps<br>
+0x40b014 GetObjectW<br>
+0x40b018 CreateFontIndirectW<br>
+0x40b01c DeleteDC<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x40b024 CreateFileA<br>
+0x40b024 CreateFileA<br>
+0x40b024 CreateFileA<br>
+0x40b028 CloseHandle<br>
+0x40b02c GetStringTypeW<br>
+0x40b030 GetStringTypeA<br>
+0x40b034 LCMapStringW<br>
+0x40b038 GetLocaleInfoA<br>
+0x40b03c MultiByteToWideChar<br>
+0x40b040 WriteConsoleW<br>
+0x40b044 GetConsoleOutputCP<br>
+0x40b048 WriteConsoleA<br>
+0x40b04c GetOEMCP<br>
+0x40b050 GetACP<br>
+0x40b054 GetCPInfo<br>
+0x40b058 LoadLibraryA<br>
+0x40b058 LoadLibraryA<br>
+0x40b058 LoadLibraryA<br>
+0x40b05c GetSystemInfo<br>
+0x40b05c GetSystemInfo<br>
+0x40b060 GetModuleHandleW<br>
+0x40b060 GetModuleHandleW<br>
+0x40b060 GetModuleHandleW<br>
+0x40b064 GetLastError<br>
+0x40b068 CreateMutexW<br>
+0x40b068 CreateMutexW<br>
+0x40b068 CreateMutexW<br>
+0x40b06c GetProcAddress<br>
+0x40b06c GetProcAddress<br>
+0x40b070 LCMapStringA<br>
+0x40b074 GetModuleHandleA<br>
+0x40b074 GetModuleHandleA<br>
+0x40b074 GetModuleHandleA<br>
+0x40b078 GetCommandLineA<br>
+0x40b07c HeapFree<br>
+0x40b07c HeapFree<br>
+0x40b080 GetVersionExA<br>
+0x40b084 HeapAlloc<br>
+0x40b084 HeapAlloc<br>
+0x40b088 GetProcessHeap<br>
+0x40b08c TerminateProcess<br>
+0x40b08c TerminateProcess<br>
+0x40b090 GetCurrentProcess<br>
+0x40b094 UnhandledExceptionFilter<br>
+0x40b098 SetUnhandledExceptionFilter<br>
+0x40b09c IsDebuggerPresent<br>
+0x40b09c IsDebuggerPresent<br>
+0x40b0a0 SetHandleCount<br>
+0x40b0a4 GetStdHandle<br>
+0x40b0a8 GetFileType<br>
+0x40b0ac GetStartupInfoA<br>
+0x40b0b0 DeleteCriticalSection<br>
+0x40b0b4 SetFilePointer<br>
+0x40b0b8 EnterCriticalSection<br>
+0x40b0bc LeaveCriticalSection<br>
+0x40b0c0 RaiseException<br>
+0x40b0c4 ExitProcess<br>
+0x40b0c8 WriteFile<br>
+0x40b0c8 WriteFile<br>
+0x40b0cc GetModuleFileNameA<br>
+0x40b0d0 FreeEnvironmentStringsA<br>
+0x40b0d4 GetEnvironmentStrings<br>
+0x40b0d8 FreeEnvironmentStringsW<br>
+0x40b0dc WideCharToMultiByte<br>
+0x40b0e0 GetEnvironmentStringsW<br>
+0x40b0e4 TlsGetValue<br>
+0x40b0e8 TlsAlloc<br>
+0x40b0ec TlsSetValue<br>
+0x40b0f0 TlsFree<br>
+0x40b0f4 InterlockedIncrement<br>
+0x40b0f8 SetLastError<br>
+0x40b0fc GetCurrentThreadId<br>
+0x40b100 InterlockedDecrement<br>
+0x40b104 HeapDestroy<br>
+0x40b104 HeapDestroy<br>
+0x40b108 HeapCreate<br>
+0x40b108 HeapCreate<br>
+0x40b10c VirtualFree<br>
+0x40b10c VirtualFree<br>
+0x40b110 QueryPerformanceCounter<br>
+0x40b114 GetTickCount<br>
+0x40b114 GetTickCount<br>
+0x40b118 GetCurrentProcessId<br>
+0x40b11c GetSystemTimeAsFileTime<br>
+0x40b120 InitializeCriticalSection<br>
+0x40b124 Sleep<br>
+0x40b124 Sleep<br>
+0x40b128 SetStdHandle<br>
+0x40b12c RtlUnwind<br>
+0x40b130 GetConsoleCP<br>
+0x40b134 GetConsoleMode<br>
+0x40b138 FlushFileBuffers<br>
+0x40b13c HeapSize<br>
+0x40b140 VirtualAlloc<br>
+0x40b140 VirtualAlloc<br>
+0x40b144 HeapReAlloc<br>
+0x40b14c wsprintfW<br>
+0x40b150 SetFocus<br>
+0x40b154 SetWindowTextW<br>
+0x40b158 FindWindowA<br>
+0x40b15c DefWindowProcW<br>
+0x40b160 ReleaseDC<br>
+0x40b164 SetWindowRgn<br>
+0x40b168 GetDC<br>
+0x40b16c GetWindowRect<br>
+0x40b170 GetCursorPos<br>
+0x40b174 SetWindowTextA<br>
+0x40b178 wsprintfA<br>
+0x40b17c GetWindowTextA<br>
+0x40b180 SendMessageA<br>
+0x40b184 SendMessageW<br>
+0x40b188 MoveWindow<br>
+0x40b18c CreateWindowExA<br>
+0x40b190 UpdateWindow<br>
+0x40b194 ShowWindow<br>
+0x40b198 CreateWindowExW<br>
+0x40b19c RegisterClassExW<br>
+0x40b1a0 LoadCursorW<br>
+0x40b1a4 LoadIconW<br>
+0x40b1a8 DispatchMessageW<br>
+0x40b1ac TranslateMessage<br>
+0x40b1b0 GetMessageW<br>
+0x40b1b4 LoadImageA<br>
+0x40b000 BitBlt<br>
+0x40b004 SelectObject<br>
+0x40b008 CreateCompatibleDC<br>
+0x40b00c CreateRoundRectRgn<br>
+0x40b010 GetDeviceCaps<br>
+0x40b014 GetObjectW<br>
+0x40b018 CreateFontIndirectW<br>
+0x40b01c DeleteDC<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_BITMAP</td>
+                                        <td>0x1e130</td>
+                                        <td>0xde6</td>
+                                        <td>LANG_CHINESE</td>
+                                        <td>SUBLANG_CHINESE_SIMPLIFIED</td></tr>
+<tr><td>RT_MENU</td>
+                                        <td>0x1ef18</td>
+                                        <td>0x3e</td>
+                                        <td>LANG_CHINESE</td>
+                                        <td>SUBLANG_CHINESE_SIMPLIFIED</td></tr>
+<tr><td>RT_VERSION</td>
+                                        <td>0x1ef58</td>
+                                        <td>0x308</td>
+                                        <td>LANG_CHINESE</td>
+                                        <td>SUBLANG_CHINESE_SIMPLIFIED</td></tr>
+<tr><td>RT_MANIFEST</td>
+                                        <td>0x1f260</td>
+                                        <td>0x16a</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!This<br>
+program<br>
+cannot<br>
+be<br>
+run<br>
+in<br>
+DOS<br>
+mode.<br>
+?,<br>
+e0q<br>
+?,<br>
+Rich<br>
+!XT3Z2b)<br>
+`pK"2O[V&<br>
+@"^_tr<br>
+'7<br>
+pfGO-<br>
+xQ<br>
+D$(k<br>
+D$+n<br>
+D$-l<br>
+D$.3<br>
+D$/2<br>
+D$0.<br>
+D$1d<br>
+D$2l<br>
+D$3l<br>
+D$\u<br>
+D$]s<br>
+D$`3<br>
+D$a2<br>
+D$b.<br>
+D$cd<br>
+D$dl<br>
+D$el<br>
+D$hw<br>
+D$ii<br>
+D$jn<br>
+D$ki<br>
+D$ln<br>
+D$o.<br>
+D$pd<br>
+D$ql<br>
+D$rl<br>
+D$DS<br>
+D$GT<br>
+D$Hi<br>
+D$Im<br>
+D$(P<br>
+D$<R<br>
+D$>a<br>
+D$?d<br>
+D$@F<br>
+D$Ai<br>
+D$Bl<br>
+D$xC<br>
+D$yl<br>
+D$zo<br>
+D${s<br>
+D$}H<br>
+D$~a<br>
+L$|S<br>
+T$`RS<br>
+D$hT<br>
+D$ih<br>
+D$ju<br>
+D$km<br>
+D$lb<br>
+D$ms<br>
+D$n.<br>
+D$od<br>
+D$pb<br>
+_^[3<br>
+D$hj<br>
+L$dQ<br>
+D$(j<br>
+Wj0R<br>
+D$,PQ<br>
+T$@RP<br>
+L$8Q<br>
+T$(R<br>
+D$,h4<br>
+L$`Q<br>
+D$"w<br>
+D$#j<br>
+D$%q<br>
+D$&.<br>
+D$'a<br>
+D$)p<br>
+D$*?<br>
+D$+U<br>
+D$/&<br>
+D$0N<br>
+D$4&<br>
+D$5W<br>
+D$$PQVW<br>
+SQRj<br>
+\$8]<br>
+L$8PQSW<br>
+UWRV<br>
+T$RSR<br>
+D$0f<br>
+D$>h<br>
+D$Pf<br>
+D$0T<br>
+D$2X<br>
+D$4G<br>
+T$8f<br>
+D$:F<br>
+L$@f<br>
+D$Bd<br>
+D$Da<br>
+D$Ft<br>
+T$Hf<br>
+L$Lf<br>
+L$&f<br>
+L$,f<br>
+L$@f<br>
+|$(f<br>
+|$:f<br>
+D$<x<br>
+|$@f<br>
+\$Bf<br>
+D$De<br>
+D$FL<br>
+|$Hf<br>
+D$Js<br>
+D$N.<br>
+D$Pd<br>
+D$Ra<br>
+T$$R<br>
+D$(S<br>
+D$)h<br>
+D$*e<br>
+D$-_<br>
+D$.T<br>
+D$/r<br>
+D$0a<br>
+D$1y<br>
+D$2W<br>
+D$3n<br>
+D$4d<br>
+_]^[3<br>
+SUWRV<br>
+T$tRj<br>
+D$LP<br>
+D$P3<br>
+;D$X<br>
+T$4RWP<br>
+T$$RSUVP<br>
+2;1u<br>
+t$x+<br>
+;|$X<br>
+_][3<br>
+SURV<br>
+T$$j<br>
+D$<br>
+<<br>
+T$<br>
+Rj<br>
+D$|=<br>
+D$\M<br>
+D$]i<br>
+D$^c<br>
+D$as<br>
+D$cf<br>
+D$e<br>
+D$fI<br>
+D$gn<br>
+D$kn<br>
+D$n<br>
+D$oE<br>
+D$px<br>
+D$qp<br>
+D$rl<br>
+L$lQ<br>
+T$8j<br>
+D$DRPV<br>
+L$Lj<br>
+T$4j<br>
+SVWP<br>
+D$(f<br>
+D$,f<br>
+D$$P<br>
+D$4T<br>
+D$6h<br>
+D$8u<br>
+D$:m<br>
+D$>s<br>
+D$@.<br>
+D$Bd<br>
+L$$QWVS<br>
+T$,S<br>
+T$=j<br>
+D4AP<br>
+_^[3<br>
+tR:Q<br>
+t<:Q<br>
+t&:Q<br>
+MZu3<br>
+j(j<br>
+^V<br>
+Rj(j<br>
+VVVVV<br>
+Y__^[<br>
+\$<br>
+UV<br>
+_^][<br>
+9csm<br>
+T$(j<br>
+D$,9h<br>
+~,WPV<br>
+98t^<br>
+tVPV<br>
+t/9U<br>
+QSUVW<br>
+YYr|<br>
+YYt+<br>
+_^][Y<br>
+VVVVV<br>
+VVVVV<br>
+YYuTVWhcM@<br>
+VVVVV<br>
+u&h(<br>
+PPPPP<br>
+<Yv8V<br>
+VVVVV<br>
+VVVVV<br>
+VVVVV<br>
+]_^[Y<br>
+S99t<br>
+~du<br>
+>=Yt/j<br>
+tJVUP<br>
+SSSSS<br>
+Y]_^[<br>
+>"u&<br>
+<<br>
+tK<<br>
+tG<br>
+SUVW<br>
+SSS+<br>
+@PVSS<br>
+t#SSUP<br>
+t$$VSS<br>
+_^][YY<br>
+t$h\<br>
+YYt:V<br>
+F\=@<br>
+Y;=H<br>
+YYt4V<br>
+VVVVV<br>
+VVVVV<br>
+WWWWW<br>
+Yu'9<br>
+YYu-9D$<br>
+t<br>
+VP<br>
+VW|[;<br>
+VVVVV<br>
+URPQQhP[@<br>
+L$,3<br>
+UVWS<br>
+[_^]<br>
+SVWj<br>
+_^[]<br>
+9MZt<br>
+VVVVV<br>
+VVVVV<br>
+@@FF<br>
+@@FF<br>
+WWWWW<br>
+SSSSS<br>
+0SSSSS<br>
+t&:a<br>
+WWWWW<br>
+ueSj<br>
+@_^[<br>
+VW}<br>
+j?^;<br>
+8csm<br>
+t+Ht<br>
+PPPPP<br>
+SVW<br>
+SSSSS<br>
+tm95<br>
+SSSSS<br>
+0SSSSS<br>
+_^[]<br>
+0SSSSS<br>
+VVVVV<br>
+SUVW<br>
+_^][<br>
+0A@@Ju<br>
+Fh=8<br>
+Wto=@<br>
+t^9(uZ<br>
+tD9(u@<br>
+Y_^][<br>
+_^][<br>
+Fpt"<br>
+WWWWW<br>
+uaVj<br>
+uL9=T<br>
+wIVSP<br>
+FVSj<br>
+WWWWW<br>
+WWWWW<br>
+SVWUj<br>
+]_^[<br>
+;t$,v-<br>
+UQPXY]Y[<br>
+YYt}<br>
+~%9M<br>
+QVj<br>
+r<br>
+8^<br>
+VVVVV<br>
+u8SS3<br>
+9]$SS<br>
+t)9]<br>
+t"9]<br>
+9]<br>
+u<br>
+9]<br>
+SS<br>
+oV<br>
+f<br>
+o^0f<br>
+of@f<br>
+onPf<br>
+ov`f<br>
+o~pf<br>
+v$;5d<br>
+PPPPPPPP<br>
+PPPPPPPP<br>
+WWWWW<br>
+v<br>
+N+D$<br>
+WWWWV<br>
+t<Vj<br>
+t+WWVPV<br>
+WWWWW<br>
+<Xt<br>
+u,9u<br>
+^_[3<br>
+bad<br>
+allocation<br>
+Unknown<br>
+exception<br>
+CorExitProcess<br>
+mscoree.dll<br>
+runtime<br>
+error<br>
+TLOSS<br>
+error<br>
+SING<br>
+error<br>
+DOMAIN<br>
+error<br>
+R6034<br>
+An<br>
+application<br>
+has<br>
+made<br>
+an<br>
+attempt<br>
+to<br>
+load<br>
+the<br>
+C<br>
+runtime<br>
+library<br>
+incorrectly.<br>
+Please<br>
+contact<br>
+the<br>
+application's<br>
+support<br>
+team<br>
+for<br>
+more<br>
+information.<br>
+R6033<br>
+-<br>
+Attempt<br>
+to<br>
+use<br>
+MSIL<br>
+code<br>
+from<br>
+this<br>
+assembly<br>
+during<br>
+native<br>
+code<br>
+initialization<br>
+This<br>
+indicates<br>
+a<br>
+bug<br>
+in<br>
+your<br>
+application.<br>
+It<br>
+is<br>
+most<br>
+likely<br>
+the<br>
+result<br>
+of<br>
+calling<br>
+an<br>
+MSIL-compiled<br>
+(/clr)<br>
+function<br>
+from<br>
+a<br>
+native<br>
+constructor<br>
+or<br>
+from<br>
+DllMain.<br>
+R6032<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+locale<br>
+information<br>
+R6031<br>
+-<br>
+Attempt<br>
+to<br>
+initialize<br>
+the<br>
+CRT<br>
+more<br>
+than<br>
+once.<br>
+This<br>
+indicates<br>
+a<br>
+bug<br>
+in<br>
+your<br>
+application.<br>
+R6030<br>
+-<br>
+CRT<br>
+not<br>
+initialized<br>
+R6028<br>
+-<br>
+unable<br>
+to<br>
+initialize<br>
+heap<br>
+R6027<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+lowio<br>
+initialization<br>
+R6026<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+stdio<br>
+initialization<br>
+R6025<br>
+-<br>
+pure<br>
+virtual<br>
+function<br>
+call<br>
+R6024<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+_onexit/atexit<br>
+table<br>
+R6019<br>
+-<br>
+unable<br>
+to<br>
+open<br>
+console<br>
+device<br>
+R6018<br>
+-<br>
+unexpected<br>
+heap<br>
+error<br>
+R6017<br>
+-<br>
+unexpected<br>
+multithread<br>
+lock<br>
+error<br>
+R6016<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+thread<br>
+data<br>
+This<br>
+application<br>
+has<br>
+requested<br>
+the<br>
+Runtime<br>
+to<br>
+terminate<br>
+it<br>
+in<br>
+an<br>
+unusual<br>
+way.<br>
+Please<br>
+contact<br>
+the<br>
+application's<br>
+support<br>
+team<br>
+for<br>
+more<br>
+information.<br>
+R6009<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+environment<br>
+R6008<br>
+-<br>
+not<br>
+enough<br>
+space<br>
+for<br>
+arguments<br>
+R6002<br>
+-<br>
+floating<br>
+point<br>
+not<br>
+loaded<br>
+Microsoft<br>
+Visual<br>
+C++<br>
+Runtime<br>
+Library<br>
+<program<br>
+name<br>
+unknown><br>
+Runtime<br>
+Error!<br>
+Program:<br>
+EncodePointer<br>
+KERNEL32.DLL<br>
+DecodePointer<br>
+FlsFree<br>
+FlsSetValue<br>
+FlsGetValue<br>
+FlsAlloc<br>
+InitializeCriticalSectionAndSpinCount<br>
+kernel32.dll<br>
+GetProcessWindowStation<br>
+GetUserObjectInformationA<br>
+GetLastActivePopup<br>
+GetActiveWindow<br>
+MessageBoxA<br>
+USER32.DLL<br>
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~<br>
+Complete<br>
+Object<br>
+Locator'<br>
+Class<br>
+Hierarchy<br>
+Descriptor'<br>
+Base<br>
+Class<br>
+Array'<br>
+Base<br>
+Class<br>
+Descriptor<br>
+at<br>
+(<br>
+Type<br>
+Descriptor'<br>
+`local<br>
+static<br>
+thread<br>
+guard'<br>
+`managed<br>
+vector<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`vector<br>
+vbase<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`vector<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`dynamic<br>
+atexit<br>
+destructor<br>
+for<br>
+'<br>
+`dynamic<br>
+initializer<br>
+for<br>
+'<br>
+`eh<br>
+vector<br>
+vbase<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`managed<br>
+vector<br>
+destructor<br>
+iterator'<br>
+`managed<br>
+vector<br>
+constructor<br>
+iterator'<br>
+`placement<br>
+delete[]<br>
+closure'<br>
+`placement<br>
+delete<br>
+closure'<br>
+`omni<br>
+callsig'<br>
+delete[]<br>
+new[]<br>
+`local<br>
+vftable<br>
+constructor<br>
+closure'<br>
+`local<br>
+vftable'<br>
+`RTTI<br>
+`udt<br>
+returning'<br>
+`copy<br>
+constructor<br>
+closure'<br>
+`eh<br>
+vector<br>
+vbase<br>
+constructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+destructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+constructor<br>
+iterator'<br>
+`virtual<br>
+displacement<br>
+map'<br>
+`vector<br>
+vbase<br>
+constructor<br>
+iterator'<br>
+`vector<br>
+destructor<br>
+iterator'<br>
+`vector<br>
+constructor<br>
+iterator'<br>
+`scalar<br>
+deleting<br>
+destructor'<br>
+`default<br>
+constructor<br>
+closure'<br>
+`vector<br>
+deleting<br>
+destructor'<br>
+`vbase<br>
+destructor'<br>
+`string'<br>
+`local<br>
+static<br>
+guard'<br>
+`typeof'<br>
+`vcall'<br>
+`vbtable'<br>
+`vftable'<br>
+operator<br>
+delete<br>
+new<br>
+__unaligned<br>
+__restrict<br>
+__ptr64<br>
+__clrcall<br>
+__fastcall<br>
+__thiscall<br>
+__stdcall<br>
+__pascal<br>
+__cdecl<br>
+__based(<br>
+!"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~<br>
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~<br>
+HH:mm:ss<br>
+dddd,<br>
+MMMM<br>
+dd,<br>
+yyyy<br>
+MM/dd/yy<br>
+December<br>
+November<br>
+October<br>
+September<br>
+August<br>
+July<br>
+June<br>
+April<br>
+March<br>
+February<br>
+January<br>
+Saturday<br>
+Friday<br>
+Thursday<br>
+Wednesday<br>
+Tuesday<br>
+Monday<br>
+Sunday<br>
+CONOUT$<br>
+SunMonTueWedThuFriSat<br>
+JanFebMarAprMayJunJulAugSepOctNovDec<br>
+RSDS<br>
+f:\TDDOWNLOAD\7z\7z920\C\Util\sa\c\Console\release\Console.pdb<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+CreateMutexW<br>
+GetLastError<br>
+GetModuleHandleW<br>
+GetSystemInfo<br>
+KERNEL32.dll<br>
+LoadImageA<br>
+GetMessageW<br>
+TranslateMessage<br>
+DispatchMessageW<br>
+LoadIconW<br>
+LoadCursorW<br>
+RegisterClassExW<br>
+CreateWindowExW<br>
+ShowWindow<br>
+UpdateWindow<br>
+CreateWindowExA<br>
+MoveWindow<br>
+SendMessageW<br>
+SendMessageA<br>
+GetWindowTextA<br>
+wsprintfA<br>
+SetWindowTextA<br>
+GetCursorPos<br>
+GetWindowRect<br>
+GetDC<br>
+SetWindowRgn<br>
+ReleaseDC<br>
+DefWindowProcW<br>
+FindWindowA<br>
+SetWindowTextW<br>
+SetFocus<br>
+wsprintfW<br>
+USER32.dll<br>
+CreateFontIndirectW<br>
+GetObjectW<br>
+GetDeviceCaps<br>
+CreateRoundRectRgn<br>
+CreateCompatibleDC<br>
+SelectObject<br>
+BitBlt<br>
+DeleteDC<br>
+GDI32.dll<br>
+GetCommandLineA<br>
+HeapFree<br>
+GetVersionExA<br>
+HeapAlloc<br>
+GetProcessHeap<br>
+TerminateProcess<br>
+GetCurrentProcess<br>
+UnhandledExceptionFilter<br>
+SetUnhandledExceptionFilter<br>
+IsDebuggerPresent<br>
+SetHandleCount<br>
+GetStdHandle<br>
+GetFileType<br>
+GetStartupInfoA<br>
+DeleteCriticalSection<br>
+SetFilePointer<br>
+EnterCriticalSection<br>
+LeaveCriticalSection<br>
+RaiseException<br>
+ExitProcess<br>
+WriteFile<br>
+GetModuleFileNameA<br>
+FreeEnvironmentStringsA<br>
+GetEnvironmentStrings<br>
+FreeEnvironmentStringsW<br>
+WideCharToMultiByte<br>
+GetEnvironmentStringsW<br>
+TlsGetValue<br>
+TlsAlloc<br>
+TlsSetValue<br>
+TlsFree<br>
+InterlockedIncrement<br>
+SetLastError<br>
+GetCurrentThreadId<br>
+InterlockedDecrement<br>
+HeapDestroy<br>
+HeapCreate<br>
+VirtualFree<br>
+QueryPerformanceCounter<br>
+GetTickCount<br>
+GetCurrentProcessId<br>
+GetSystemTimeAsFileTime<br>
+InitializeCriticalSection<br>
+Sleep<br>
+SetStdHandle<br>
+RtlUnwind<br>
+GetConsoleCP<br>
+GetConsoleMode<br>
+FlushFileBuffers<br>
+HeapSize<br>
+VirtualAlloc<br>
+HeapReAlloc<br>
+LoadLibraryA<br>
+GetCPInfo<br>
+GetACP<br>
+GetOEMCP<br>
+WriteConsoleA<br>
+GetConsoleOutputCP<br>
+WriteConsoleW<br>
+MultiByteToWideChar<br>
+GetLocaleInfoA<br>
+LCMapStringA<br>
+LCMapStringW<br>
+GetStringTypeA<br>
+GetStringTypeW<br>
+CloseHandle<br>
+CreateFileA<br>
+.?AVbad_alloc@std@@<br>
+.?AVexception@std@@<br>
+.?AVtype_info@@<br>
+abcdefghijklmnopqrstuvwxyz<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+Bome<br>
+QBome<br>
+QBome<br>
+QBome<br>
+QBome<br>
+QBome<br>
+QBome<br>
+QBome<br>
+QBome<br>
+KHHHHHHK<br>
+JJJJJJJJ<br>
+QT#<br>
+"WV!<br>
+!VU&<br>
+&UU*&&&&&&&&*UU(%%%%%%%%(UU)%%%%%%%%)UU.$$$$$$$$.UU1''''''''1UU<br>
+UU0--------0UU+<br>
++UU/++++++++/UU/++++++++/UU3,,,,,,,,3UU3,,,,,,,,3UU6////////6UU6////////6UU7////////7UU9333333339UU9333333339UU9333333339UU9666666669UU4<br>
+4UU5222222225UU5222222225UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU8444444448UU:<br>
+:UU:<br>
+:UU:<br>
+:UU;88888888;UU;88888888;UU;88888888;UU<::::::::<UU<::::::::<UU<::::::::<UU><br>
+>UU><br>
+>UU><br>
+>UU?<<<<<<<<?UU?<<<<<<<<?UU?<<<<<<<<?UUA>>>>>>>>AUU=<br>
+=UU@========@UU@========@UUB<br>
+BUUC@@@@@@@@CUUDBBBBBBBBDUUDBBBBBBBBDUUZDDDDDDDDZUUZDDDDDDDDZUUFEEEEEEEEFUU\FFFFFFFF\UU][[[[[[[[]UU_GGGGGGGG_UU`________`UUgaaaaaaaagUUbggggggggbUUe^^^^^^^^eUUeeeeeeeeeeUUhffffffffhUUkffffffffkUUkkkkkkkkkkUUmjjjjjjjjmUYoniiiiiinoY<br>
+dlppppppld<br>
+XUUUUUUX<br>
+<assembly<br>
+xmlns="urn:schemas-microsoft-com:asm.v1"<br>
+manifestVersion="1.0"><br>
+<dependency><br>
+<dependentAssembly><br>
+<assemblyIdentity<br>
+type="win32"<br>
+name="Microsoft.Windows.Common-Controls"<br>
+version="6.0.0.0"<br>
+processorArchitecture="x86"<br>
+publicKeyToken="6595b64144ccf1df"<br>
+language="*"></assemblyIdentity><br>
+</dependentAssembly><br>
+</dependency><br>
+</assembly>

@@ -1,0 +1,1639 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_66f585bfefcdb2c5c4664c80582fa3d0_20250511_201334_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-11 20:13 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_66f585bfefcdb2c5c4664c80582fa3d0_20250511_201334_analysis.html<br>File Size: 121568<br>
+File Type: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, 3 sections<br>
+Compilation timestamp: 1970-01-01 08:00:00<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    66f585bfefcdb2c5c4664c80582fa3d0<br>
+SHA1:   38d63e70f7112acc9bec37cdb2221565129d7905<br>
+SHA256: 588466e233d348ac36ac15cd741d51090e18e4bea718e6a13dac40e4be53ed0e<br>
+SHA512: 80de9d58c6b0418e978bdd424e2456a0cd8f9eb88df3dab06edc913f3a509cb8f55f5fb3590bdee534ece1aaea8d4fdcbc3c8252d2623bed32ddfe7f5b788819<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x12a0<br>Number of Sections: 3<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>5731wdfw</td>
+                        <td>0x1000</td>
+                        <td>0x13000</td>
+                        <td>77824</td>
+                        <td>6.41 (Maybe packed)</td></tr>
+<tr><td>v784naga</td>
+                        <td>0x14000</td>
+                        <td>0xa000</td>
+                        <td>39936</td>
+                        <td>2.08 (Not packed)</td></tr>
+<tr><td>60l2kzkh</td>
+                        <td>0x1e000</td>
+                        <td>0x1000</td>
+                        <td>3072</td>
+                        <td>2.90 (Not packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.DLL</b><br>
+0x419368 AddAtomA<br>
+0x41936c CloseHandle<br>
+0x419370 CopyFileA<br>
+0x419374 CreateFileA<br>
+0x419378 CreateFileMappingA<br>
+0x41937c CreateMutexA<br>
+0x419380 CreateProcessA<br>
+0x419384 CreateSemaphoreA<br>
+0x419388 CreateThread<br>
+0x41938c CreateToolhelp32Snapshot<br>
+0x419390 DeleteFileA<br>
+0x419394 ExitProcess<br>
+0x419398 FindAtomA<br>
+0x41939c FindClose<br>
+0x4193a0 FindFirstFileA<br>
+0x4193a4 FindNextFileA<br>
+0x4193a8 FreeLibrary<br>
+0x4193ac GetAtomNameA<br>
+0x4193b0 GetCurrentProcess<br>
+0x4193b4 GetCurrentProcessId<br>
+0x4193b8 GetDriveTypeA<br>
+0x4193bc GetFileSize<br>
+0x4193c0 GetFileTime<br>
+0x4193c4 GetLastError<br>
+0x4193c8 GetLocalTime<br>
+0x4193cc GetModuleFileNameA<br>
+0x4193d0 GetModuleHandleA<br>
+0x4193d4 GetProcAddress<br>
+0x4193d8 GetProcessHeap<br>
+0x4193dc GetSystemDirectoryA<br>
+0x4193e0 GetSystemTime<br>
+0x4193e4 GetTickCount<br>
+0x4193e8 GetVersionExA<br>
+0x4193ec GlobalAlloc<br>
+0x4193f0 GlobalFree<br>
+0x4193f4 HeapAlloc<br>
+0x4193f8 HeapFree<br>
+0x4193fc HeapReAlloc<br>
+0x419400 InterlockedDecrement<br>
+0x419404 InterlockedIncrement<br>
+0x419408 IsBadReadPtr<br>
+0x41940c IsDebuggerPresent<br>
+0x419410 LoadLibraryA<br>
+0x419414 MapViewOfFile<br>
+0x419418 OpenProcess<br>
+0x41941c Process32First<br>
+0x419420 Process32Next<br>
+0x419424 ReadFile<br>
+0x419428 ReleaseSemaphore<br>
+0x41942c SetErrorMode<br>
+0x419430 SetFilePointer<br>
+0x419434 SetFileTime<br>
+0x419438 SetLastError<br>
+0x41943c SetUnhandledExceptionFilter<br>
+0x419440 Sleep<br>
+0x419444 TerminateProcess<br>
+0x419448 TerminateThread<br>
+0x41944c TlsAlloc<br>
+0x419450 TlsFree<br>
+0x419454 TlsGetValue<br>
+0x419458 TlsSetValue<br>
+0x41945c UnmapViewOfFile<br>
+0x419460 WaitForSingleObject<br>
+0x419464 WriteFile<br>
+0x419468 lstrcatA<br>
+0x41946c lstrcmpA<br>
+0x419470 lstrcpyA<br>
+0x419474 lstrcpynA<br>
+0x419478 lstrlenA<br>
+<b>ADVAPI32.DLL</b><br>
+0x419328 AdjustTokenPrivileges<br>
+0x41932c CryptAcquireContextA<br>
+0x419330 CryptCreateHash<br>
+0x419334 CryptDestroyHash<br>
+0x419338 CryptGetHashParam<br>
+0x41933c CryptHashData<br>
+0x419340 CryptReleaseContext<br>
+0x419344 LookupPrivilegeValueA<br>
+0x419348 OpenProcessToken<br>
+0x41934c RegCloseKey<br>
+0x419350 RegCreateKeyExA<br>
+0x419354 RegOpenKeyExA<br>
+0x419358 RegQueryValueExA<br>
+0x41935c RegSetValueExA<br>
+<b>DNSAPI.DLL</b><br>
+0x41953c DnsQuery_A<br>
+<b>msvcrt.dll</b><br>
+0x419490 __getmainargs<br>
+0x419494 __p__environ<br>
+0x419498 __p__fmode<br>
+0x41949c __set_app_type<br>
+0x4194a0 _cexit<br>
+0x4194a4 _iob<br>
+0x4194a8 _onexit<br>
+0x4194ac _setmode<br>
+0x4194b0 abort<br>
+0x4194b4 atexit<br>
+0x4194b8 atoi<br>
+0x4194bc fclose<br>
+0x4194c0 fflush<br>
+0x4194c4 fgetc<br>
+0x4194c8 fopen<br>
+0x4194cc fprintf<br>
+0x4194d0 fread<br>
+0x4194d4 free<br>
+0x4194d8 fseek<br>
+0x4194dc ftell<br>
+0x4194e0 malloc<br>
+0x4194e4 memcpy<br>
+0x4194e8 memmove<br>
+0x4194ec memset<br>
+0x4194f0 rand<br>
+0x4194f4 realloc<br>
+0x4194f8 rewind<br>
+0x4194fc signal<br>
+0x419500 sprintf<br>
+0x419504 srand<br>
+0x419508 sscanf<br>
+0x41950c strcat<br>
+0x419510 strchr<br>
+0x419514 strcmp<br>
+0x419518 strcpy<br>
+0x41951c strstr<br>
+0x419520 strtok<br>
+<b>msvcrt.dll</b><br>
+0x419484 _itoa<br>
+<b>USER32.dll</b><br>
+0x41952c CharLowerA<br>
+0x419530 wsprintfA<br>
+<b>WININET.DLL</b><br>
+0x419548 InternetGetConnectedState<br>
+<b>WS2_32.DLL</b><br>
+0x419554 WSAConnect<br>
+0x419558 WSASocketA<br>
+0x41955c WSAStartup<br>
+0x419560 closesocket<br>
+0x419564 connect<br>
+0x419568 gethostbyname<br>
+0x41956c gethostname<br>
+0x419570 htons<br>
+0x419574 inet_addr<br>
+0x419578 inet_ntoa<br>
+0x41957c recv<br>
+0x419580 send<br>
+0x419584 sendto<br>
+0x419588 setsockopt<br>
+0x41958c socket<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x419368 AddAtomA<br>
+0x41936c CloseHandle<br>
+0x419370 CopyFileA<br>
+0x419370 CopyFileA<br>
+0x419370 CopyFileA<br>
+0x419374 CreateFileA<br>
+0x419374 CreateFileA<br>
+0x419374 CreateFileA<br>
+0x419378 CreateFileMappingA<br>
+0x419378 CreateFileMappingA<br>
+0x41937c CreateMutexA<br>
+0x41937c CreateMutexA<br>
+0x41937c CreateMutexA<br>
+0x419380 CreateProcessA<br>
+0x419380 CreateProcessA<br>
+0x419380 CreateProcessA<br>
+0x419384 CreateSemaphoreA<br>
+0x419388 CreateThread<br>
+0x419388 CreateThread<br>
+0x41938c CreateToolhelp32Snapshot<br>
+0x419390 DeleteFileA<br>
+0x419390 DeleteFileA<br>
+0x419390 DeleteFileA<br>
+0x419394 ExitProcess<br>
+0x419398 FindAtomA<br>
+0x41939c FindClose<br>
+0x41939c FindClose<br>
+0x4193a0 FindFirstFileA<br>
+0x4193a0 FindFirstFileA<br>
+0x4193a0 FindFirstFileA<br>
+0x4193a4 FindNextFileA<br>
+0x4193a4 FindNextFileA<br>
+0x4193a4 FindNextFileA<br>
+0x4193a8 FreeLibrary<br>
+0x4193ac GetAtomNameA<br>
+0x4193b0 GetCurrentProcess<br>
+0x4193b4 GetCurrentProcessId<br>
+0x4193b8 GetDriveTypeA<br>
+0x4193bc GetFileSize<br>
+0x4193c0 GetFileTime<br>
+0x4193c4 GetLastError<br>
+0x4193c8 GetLocalTime<br>
+0x4193cc GetModuleFileNameA<br>
+0x4193d0 GetModuleHandleA<br>
+0x4193d0 GetModuleHandleA<br>
+0x4193d0 GetModuleHandleA<br>
+0x4193d4 GetProcAddress<br>
+0x4193d4 GetProcAddress<br>
+0x4193d8 GetProcessHeap<br>
+0x4193dc GetSystemDirectoryA<br>
+0x4193e0 GetSystemTime<br>
+0x4193e4 GetTickCount<br>
+0x4193e4 GetTickCount<br>
+0x4193e8 GetVersionExA<br>
+0x4193ec GlobalAlloc<br>
+0x4193f0 GlobalFree<br>
+0x4193f4 HeapAlloc<br>
+0x4193f4 HeapAlloc<br>
+0x4193f8 HeapFree<br>
+0x4193f8 HeapFree<br>
+0x4193fc HeapReAlloc<br>
+0x419400 InterlockedDecrement<br>
+0x419404 InterlockedIncrement<br>
+0x419408 IsBadReadPtr<br>
+0x41940c IsDebuggerPresent<br>
+0x41940c IsDebuggerPresent<br>
+0x419410 LoadLibraryA<br>
+0x419410 LoadLibraryA<br>
+0x419410 LoadLibraryA<br>
+0x419414 MapViewOfFile<br>
+0x419414 MapViewOfFile<br>
+0x419418 OpenProcess<br>
+0x419418 OpenProcess<br>
+0x41941c Process32First<br>
+0x41941c Process32First<br>
+0x419420 Process32Next<br>
+0x419420 Process32Next<br>
+0x419424 ReadFile<br>
+0x419424 ReadFile<br>
+0x419428 ReleaseSemaphore<br>
+0x41942c SetErrorMode<br>
+0x419430 SetFilePointer<br>
+0x419434 SetFileTime<br>
+0x419438 SetLastError<br>
+0x41943c SetUnhandledExceptionFilter<br>
+0x419440 Sleep<br>
+0x419440 Sleep<br>
+0x419444 TerminateProcess<br>
+0x419444 TerminateProcess<br>
+0x419448 TerminateThread<br>
+0x419448 TerminateThread<br>
+0x41944c TlsAlloc<br>
+0x419450 TlsFree<br>
+0x419454 TlsGetValue<br>
+0x419458 TlsSetValue<br>
+0x41945c UnmapViewOfFile<br>
+0x41945c UnmapViewOfFile<br>
+0x419460 WaitForSingleObject<br>
+0x419464 WriteFile<br>
+0x419464 WriteFile<br>
+0x419468 lstrcatA<br>
+0x41946c lstrcmpA<br>
+0x419470 lstrcpyA<br>
+0x419474 lstrcpynA<br>
+0x419478 lstrlenA<br>
+0x419328 AdjustTokenPrivileges<br>
+0x41932c CryptAcquireContextA<br>
+0x419330 CryptCreateHash<br>
+0x419330 CryptCreateHash<br>
+0x419334 CryptDestroyHash<br>
+0x419338 CryptGetHashParam<br>
+0x41933c CryptHashData<br>
+0x41933c CryptHashData<br>
+0x419340 CryptReleaseContext<br>
+0x419344 LookupPrivilegeValueA<br>
+0x419348 OpenProcessToken<br>
+0x419348 OpenProcessToken<br>
+0x41934c RegCloseKey<br>
+0x41934c RegCloseKey<br>
+0x419350 RegCreateKeyExA<br>
+0x419350 RegCreateKeyExA<br>
+0x419350 RegCreateKeyExA<br>
+0x419350 RegCreateKeyExA<br>
+0x419354 RegOpenKeyExA<br>
+0x419354 RegOpenKeyExA<br>
+0x419354 RegOpenKeyExA<br>
+0x419354 RegOpenKeyExA<br>
+0x419358 RegQueryValueExA<br>
+0x41935c RegSetValueExA<br>
+0x41935c RegSetValueExA<br>
+0x41935c RegSetValueExA<br>
+0x41935c RegSetValueExA<br>
+0x41953c DnsQuery_A<br>
+0x41953c DnsQuery_A<br>
+0x419490 __getmainargs<br>
+0x419494 __p__environ<br>
+0x419498 __p__fmode<br>
+0x41949c __set_app_type<br>
+0x4194a0 _cexit<br>
+0x4194a4 _iob<br>
+0x4194a8 _onexit<br>
+0x4194ac _setmode<br>
+0x4194b0 abort<br>
+0x4194b4 atexit<br>
+0x4194b8 atoi<br>
+0x4194bc fclose<br>
+0x4194c0 fflush<br>
+0x4194c4 fgetc<br>
+0x4194c8 fopen<br>
+0x4194cc fprintf<br>
+0x4194d0 fread<br>
+0x4194d4 free<br>
+0x4194d8 fseek<br>
+0x4194dc ftell<br>
+0x4194e0 malloc<br>
+0x4194e4 memcpy<br>
+0x4194e8 memmove<br>
+0x4194ec memset<br>
+0x4194f0 rand<br>
+0x4194f4 realloc<br>
+0x4194f8 rewind<br>
+0x4194fc signal<br>
+0x419500 sprintf<br>
+0x419504 srand<br>
+0x419508 sscanf<br>
+0x41950c strcat<br>
+0x419510 strchr<br>
+0x419514 strcmp<br>
+0x419518 strcpy<br>
+0x41951c strstr<br>
+0x419520 strtok<br>
+0x419484 _itoa<br>
+0x41952c CharLowerA<br>
+0x419530 wsprintfA<br>
+0x419548 InternetGetConnectedState<br>
+0x419554 WSAConnect<br>
+0x419554 WSAConnect<br>
+0x419558 WSASocketA<br>
+0x41955c WSAStartup<br>
+0x41955c WSAStartup<br>
+0x419560 closesocket<br>
+0x419564 connect<br>
+0x419564 connect<br>
+0x419568 gethostbyname<br>
+0x41956c gethostname<br>
+0x419570 htons<br>
+0x419574 inet_addr<br>
+0x419578 inet_ntoa<br>
+0x41957c recv<br>
+0x41957c recv<br>
+0x419580 send<br>
+0x419580 send<br>
+0x419584 sendto<br>
+0x419584 sendto<br>
+0x419584 sendto<br>
+0x419588 setsockopt<br>
+0x41958c socket<br>
+0x41958c socket<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x1e0d4</td>
+                                        <td>0x2e8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x1e3c0</td>
+                                        <td>0x128</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_GROUP_ICON</td>
+                                        <td>0x1e4ec</td>
+                                        <td>0x22</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+5731wdfw<br>
+v784naga<br>
+60l2kzkh<br>
+|a9s<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+,0<<br>
+w<br>
+[^_]<br>
+?id=<br>
+&s5=<br>
+3159<br>
+&lipf<br>
+&winf<br>
+GET<br>
+HTT<br>
+P/1.<br>
+ost:f<br>
+User<br>
+-Age<br>
+nt:<br>
+expl<br>
+[^_]<br>
+evlk<br>
+rdohf<br>
+\[^_]<br>
+[^_]<br>
+$<br>
+@A<br>
+$<br>
+@A<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+.exe<br>
+?id=<br>
+&s5=<br>
+3159<br>
+&lipf<br>
+&winf<br>
+GET<br>
+HTT<br>
+P/1.<br>
+ost:f<br>
+$@AA<br>
+=$AA<br>
+[^_]<br>
+2wrw<br>
+b=xf<br>
+pav'<br>
+g{sm<br>
+#~gp<br>
+$1-A<br>
+4upy<br>
+l?id<br>
+zyt9<br>
+z~`n<br>
+%|e~<br>
+$4-A<br>
+<y|q<br>
+d;vq<br>
+zvi1<br>
+ss|f<br>
+-piv<br>
+$7-A<br>
+(ohc<br>
+x%gm<br>
+lvl#<br>
+b|d}<br>
+m8e|f<br>
+$:-A<br>
+$@AA<br>
+$@AA<br>
+$@AA<br>
+$@AA<br>
+$@AA<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+t<~<br>
+Z[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+CUNG<br>
+CUNG5<br>
+++C<br>
+[^_]<br>
+CUNG5<br>
+++C<br>
+[^_]<br>
+CUNG5<br>
+++C<br>
+[^_]<br>
+[^_]<br>
+;]<br>
+tI<br>
+M<br>
+9M<br>
+|[^_]<br>
+|[^_]<br>
+[^_]<br>
+B4CUNG<br>
+CUNG5<br>
+++C<br>
+CUNG5<br>
+++C<br>
+CUNG5<br>
+++C<br>
+tD|I<br>
+[^_]<br>
+AAAA<br>
+AAAA<br>
+AAAA<br>
+AAAA<br>
+AAAA<br>
+AAAA<br>
+AAAA<br>
+AAAA<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+[^_]<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/<br>
+n;^<br>
+Qkkbal<br>
+i]Wb<br>
+9a&g<br>
+MGiI<br>
+wn>Jj<br>
+#.zf<br>
++o*7<br>
+.com<br>
+.biz<br>
+.net<br>
+.org<br>
+.info<br>
+The<br>
+message<br>
+cannot<br>
+be<br>
+represented<br>
+in<br>
+7-bit<br>
+ASCII<br>
+encoding<br>
+and<br>
+has<br>
+been<br>
+sent<br>
+as<br>
+a<br>
+binary<br>
+attachment.<br>
+The<br>
+message<br>
+contains<br>
+Unicode<br>
+characters<br>
+and<br>
+has<br>
+been<br>
+sent<br>
+as<br>
+a<br>
+binary<br>
+attachment.<br>
+Your<br>
+account<br>
+in<br>
+System<br>
+is<br>
+successfully<br>
+created,<br>
+please<br>
+read<br>
+the<br>
+instructions.<br>
+Administration<br>
+has<br>
+blocked<br>
+your<br>
+account.<br>
+Your<br>
+account<br>
+on<br>
+the<br>
+System<br>
+was<br>
+removed.<br>
+Your<br>
+account<br>
+on<br>
+the<br>
+system<br>
+successfully<br>
+activated.<br>
+Closure<br>
+of<br>
+your<br>
+account,<br>
+please<br>
+read<br>
+the<br>
+instructions.<br>
+Change<br>
+your<br>
+password,<br>
+please<br>
+read<br>
+the<br>
+instructions.<br>
+Your<br>
+account<br>
+is<br>
+successfully<br>
+created<br>
+on<br>
+the<br>
+site<br>
+BigTits.<br>
+I<br>
+Love<br>
+You<br>
+more<br>
+than<br>
+life,<br>
+read<br>
+at<br>
+verse.<br>
+I<br>
+Wish<br>
+You<br>
+all<br>
+the<br>
+best.<br>
+Instruction<br>
+Readme<br>
+Document<br>
+Message<br>
+Text<br>
+File<br>
+WebMoney<br>
+Instruction<br>
+Administration<br>
+CyberPlat<br>
+PayPal<br>
+Instruction<br>
+RUpay<br>
+Administration<br>
+E-Gold<br>
+Instruction<br>
+EasyPay<br>
+Instruction<br>
+Administration<br>
+WebMoney<br>
+Closure<br>
+of<br>
+your<br>
+account<br>
+Change<br>
+your<br>
+password<br>
+Your<br>
+account<br>
+has<br>
+been<br>
+blocked<br>
+due<br>
+to<br>
+violation<br>
+of<br>
+the<br>
+rules<br>
+Account<br>
+activation<br>
+is<br>
+successful<br>
+You<br>
+have<br>
+successfully<br>
+registered<br>
+on<br>
+the<br>
+site<br>
+BigTits<br>
+Server<br>
+Report<br>
+Mail<br>
+Delivery<br>
+System<br>
+Mail<br>
+Transaction<br>
+Failed<br>
+Your<br>
+IP<br>
+was<br>
+logged<br>
+I<br>
+Love<br>
+You<br>
+Happy<br>
+birthday<br>
+to<br>
+you<br>
+Webmoney<br>
+support@wmtransfer.com<br>
+admin@wmtransfer.com<br>
+support@cyberplat.com<br>
+admin@paypal.com<br>
+support@rbkmoney.ru<br>
+support@e-gold.com<br>
+admin@easypay.com<br>
+@aol.com<br>
+@msn.com<br>
+@yahoo.com<br>
+@hotmail.com<br>
+@gmail.com<br>
+@mail.ru<br>
+@rambler.ru<br>
+@pochta.ru<br>
+@yandex.ru<br>
+alex<br>
+kevin<br>
+julie<br>
+andrew<br>
+linda<br>
+maria<br>
+sandra<br>
+john<br>
+claudia<br>
+anna<br>
+brian<br>
+robert<br>
+fred<br>
+stan<br>
+steve<br>
+jack<br>
+matt<br>
+jimmy<br>
+helen<br>
+Alexey<br>
+Boris<br>
+Denis<br>
+Fyodor<br>
+Matvey<br>
+Nikita<br>
+Oleg<br>
+Nikolai<br>
+Andrei<br>
+Alexander<br>
+Valera<br>
+Lexa<br>
+Sanek<br>
+Vadim<br>
+Anton<br>
+Viktor<br>
+Vladimir<br>
+Slava<br>
+Ruslan<br>
+Egor<br>
+Stepan<br>
+Diman<br>
+Maria<br>
+Yulia<br>
+Margarita<br>
+Larisa<br>
+Ksenia<br>
+Irina<br>
+Valentina<br>
+Nastya<br>
+Natasha<br>
+Khristina<br>
+Sveta<br>
+Masha<br>
+Oksana<br>
+Lena<br>
+milashka<br>
+Tanya<br>
+Alina<br>
+Olga<br>
+Tamara<br>
+Diana<br>
+Galya<br>
+mvcsv.qyy<br>
+.zip<br>
+admin@bigtits.com<br>
+I_Love_You.zip<br>
+Happy_birthday_to_you.zip<br>
+.zip<br>
+mvcsvnd.qyy<br>
+.zip<br>
+symantec<br>
+panda<br>
+winrar<br>
+winzip<br>
+icrosoft<br>
+googl<br>
+fido<br>
+kern<br>
+sopho<br>
+norman<br>
+norton<br>
+noreply<br>
+virus<br>
+secur<br>
+soft<br>
+hotmail<br>
+kasp<br>
+mcafee<br>
+spam<br>
+antivi<br>
+abuse<br>
+bitdefender<br>
+agnitum<br>
+bugs<br>
+rating<br>
+master<br>
+root<br>
+gold-certs<br>
+contact<br>
+support<br>
+news<br>
+help<br>
+borland<br>
+update<br>
+info<br>
+hosting<br>
+linux<br>
+certific<br>
+eset<br>
+clamwin<br>
+perl<br>
+drweb<br>
+admin<br>
+html<br>
+Software\Microsoft\WAB\WAB4\Wab<br>
+File<br>
+Name<br>
+tepbcl.qyy<br>
+Readme.exe<br>
+foto.pif<br>
+Fbsgjner\Zvpebfbsg\Jvaqbjf\PheeragIrefvba\Rkcybere\ihyaiby32\Irefvba<br>
+fgngrz<br>
+vqhfre<br>
+hfonpgvi<br>
+kgbee<br>
+kcnfj<br>
+pafw<br>
+IHYanFuibyan<br>
+Flfgrz\PheeragPbagebyFrg\Freivprf\FunerqNpprff<br>
+Start<br>
+PYFVQ\{R6SO5R20-QR35-11PS-9P87-00NN005127RQ}\VacebpFreire32<br>
+k_fbpxf5nna<br>
+user32.dll<br>
+fureinaf.qyy<br>
+pgszra.rkr<br>
+SeDebugPrivilege<br>
+%2.2x<br>
+virtual<br>
+vmware<br>
+qemu<br>
+vbox<br>
+SYSTEM\ControlSet001\Services\Disk\Enum<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+Fbsgjner\Zvpebfbsg\Jvaqbjf\PheeragIrefvba\Rkcybere\ihyaiby32\Irefvba<br>
+time<br>
+jvavarg.qyy<br>
+f2000<br>
+f2003<br>
+fVISta<br>
+fWinS<br>
+192.168.1.2<br>
+vqhfre<br>
+tepbcl.qyy<br>
+user32.dll<br>
+ICQ<br>
+8.exe<br>
+office_crack_all.exe<br>
+Winrar<br>
+4.exe<br>
+K-Lite<br>
+Codec<br>
+Pack<br>
+7.exe<br>
+DivX<br>
+8.exe<br>
+ACDSee.exe<br>
+Winamp<br>
+7.exe<br>
+serials<br>
+2010.txt.exe<br>
+crack<br>
+windows<br>
+7.exe<br>
+crack<br>
+windows<br>
+8.exe<br>
+my_passwords.exe<br>
+Fbsgjner\Xnmnn\Genafsre<br>
+QyQve0<br>
+Fbsgjner\vZrfu\Trareny<br>
+QbjaybnqQve<br>
+pgszra.rkr<br>
+Fbsgjner\Zvpebfbsg\Jvaqbjf\PheeragIrefvba\Eha<br>
+user32.dll<br>
+3NlrN<br>
+nuCw<br>
+zg,/5>JYk<br>
+v]G4'<br>
+):Neo<br>
+|rkgfhmu<br>
+`sJ5jb}<br>
+$;2#<br>
+Ytov<br>
+,|2<br>
+<<br>
+'1+o<br>
+<b"b<br>
+RnL}<br>
+*"^%O<br>
+\\:@<br>
+LR_&<br>
+R(hI<br>
+R(:l<br>
+X^}:;<br>
+TH6}<br>
+WtoN+<br>
+pnGUK<br>
+g)aI;<br>
+1XiwY<br>
+R5"F<br>
+zHc=0_/<br>
+TI)g<br>
+`\z7|<br>
+CBUh<br>
+j+<br>
+Z{<br>
+`_y><br>
+'P${<br>
+l<br>
+/RMKfk<br>
+8B5-<br>
+'4V)n<br>
+5rOF^<br>
+3DQ"><br>
+,8av<br>
+]<br>
+U^M<br>
+ZZlk<br>
+NFE_<z<br>
+DXt@<br>
+]p,+\<br>
+,,ZN<br>
+bO-o<br>
+DN{Z<br>
+st.+`h<br>
+P>qz1<br>
+v&.A(<br>
++=*u<br>
+E<br>
+qJZH<br>
+Z'9O<br>
+5o_6<br>
+LBQG><br>
+O%!$p]<br>
+J&x)_<br>
+m(G-<br>
+,<0=w<br>
+(I,@Z&<br>
+~Spv_5<br>
+~cNY<br>
+jB[7<br>
+dv^%LZ#<br>
+-WO2cr~<br>
+Sl`TAM&<br>
+Y;}"<br>
+9HF"<br>
+!L~m<br>
+?I6><br>
+yTTyG2<br>
+aS1(jm<br>
+}6|\<br>
+7[T<br>
+rt<br>
+`uz\Ul<br>
+X{<br>
+M<br>
+p=|W<br>
+p\9S3<br>
+Y_M#<br>
+z2cyk<br>
+).a"7*%N<br>
+;umW<br>
+kTkdM<br>
+5{W0<br>
+Hl64z<br>
+l/w3<br>
+%.:I[p<br>
+fM7$<br>
+*>Uo<br>
+ylb[WVX]ep~<br>
+%:Rm<br>
+KKNT]ix<br>
+T|fSC6,<br>
+"'/:H<br>
+p2S9<br>
+6YF<br>
+lC@c<br>
+'3<br>
+=<br>
+;V`!<br>
+^i(K<br>
+FvW><br>
+DfGnVFq<br>
+ou%MuzpS<br>
+qI@^9<br>
+=Mi"<br>
+K(05<br>
+{k^TMIHJOWbp<br>
+,D_}<br>
+]>"<br>
+==@FO[j|<br>
+nXE5(<br>
+3NlrN<br>
+,,/5>JYk<br>
+v]G4&<br>
+):Neo<br>
+|rkgfhmu<br>
+5Zb}<br>
+t5PU!<br>
+orW#<br>
+JiR`<br>
+j)4S.(8<br>
+OYP/yY@<br>
+4vbE6<br>
+F&LQTVl<br>
+T?(MQ<br>
+,|}L<br>
+QLI:L<br>
+}2Io<br>
+<nuh<br>
+'kF3<br>
+T92><br>
+[1[Z<br>
+X~js<br>
+:~.^<br>
+yVq`Zzh\#<br>
+tV;s<br>
+VpzL8YC=<br>
+o"z1<br>
+*zAc`<br>
+ZAG,<br>
+)NhS<br>
+;TS_fn}<br>
+pO9Kf<br>
+AWfncX<br>
+CuTB<e<br>
+,ddN8<br>
+.Dq#<br>
+'Hqw&<br>
+K<br>
+G-_f<br>
+Ql8!|<br>
+=V4I!<br>
+TR|m<br>
+36A9<br>
+G7*<br>
+#.<Max<br>
+~zy{<br>
+k<br>
+a<br>
+:Ibw<br>
+[D#85<br>
+vfYOHDCEJR]k|<br>
+'?Zx<br>
+88;AJVew<br>
+)=nW<br>
+r"---<br>
+%s,<br>
+%d<br>
+%s<br>
+%d<br>
+%d:%d:%d<br>
+GMT<br>
+HELO<br>
+%s<br>
+MAIL<br>
+FROM:<br>
+<%s><br>
+RCPT<br>
+TO:<br>
+<%s><br>
+DATA<br>
+FROM:<br>
+<%s><br>
+TO:<br>
+<%s><br>
+Date:<br>
+%s<br>
+MIME-Version:<br>
+1.0<br>
+Subject:<br>
+%s<br>
+X-Mailer:<br>
+Microsoft<br>
+Outlook<br>
+Express<br>
+6.00.2800.1106<br>
+Content-type:<br>
+Multipart/Mixed;<br>
+boundary=xContext<br>
+--xContext<br>
+Content-type:<br>
+text/plain;<br>
+charset=Windows-1251<br>
+Content-type:<br>
+text/plain;<br>
+charset=ISO-8859-1<br>
+Content-Transfer-Encoding:<br>
+8bit<br>
+Content-type:<br>
+Application/Octet-stream;<br>
+name="%s";<br>
+type:unknown<br>
+Content-Disposition:<br>
+attachment;<br>
+filename="%s"<br>
+Content-Transfer-Encoding:<br>
+base64<br>
+--xContext--<br>
+QUIT<br>
+nhgbeha.vas<br>
+fngbeanf.qyy<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+6.0;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+SV1)<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+6.0;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+Maxthon)<br>
+Mozilla/5.0<br>
+(Windows;<br>
+U;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+ru-RU;<br>
+rv:1.9.1.4)<br>
+Gecko/20091016<br>
+Firefox/3.5.4<br>
+(.NET<br>
+CLR<br>
+3.5.30729)<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+6.0;<br>
+Windows<br>
+NT<br>
+5.2;<br>
+SV1;<br>
+.NET<br>
+CLR<br>
+1.1.4322)<br>
+Opera/9.64<br>
+(Windows<br>
+NT<br>
+5.1;<br>
+U;<br>
+ru)<br>
+Presto/2.1.1<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+8.0;<br>
+Windows<br>
+NT<br>
+5.1;<br>
+Trident/4.0;<br>
+.NET<br>
+CLR<br>
+1.1.4322;<br>
+.NET<br>
+CLR<br>
+2.0.50727;<br>
+InfoPath.1)<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+7.0;<br>
+Windows<br>
+NT<br>
+6.0;)<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+5.01;<br>
+Windows<br>
+NT<br>
+5.0)<br>
+Mozilla/4.0<br>
+(compatible;<br>
+MSIE<br>
+8.0;<br>
+Windows<br>
+NT<br>
+6.0)<br>
+GET<br>
+%s<br>
+HTTP/1.1<br>
+Connection:<br>
+Keep-Alive<br>
+User-Agent:<br>
+%s<br>
+Host:<br>
+%s<br>
+Accept:<br>
+*/*<br>
+urlmon.dll<br>
+URLDownloadToFileA<br>
+donzx.dll<br>
+http<br>
+spamon<br>
+Fbsgjner\Zvpebfbsg\Jvaqbjf\PheeragIrefvba\Rkcybere\ihyaiby32\Irefvba<br>
+fgngrz<br>
+down_file<br>
+pusk<br>
+restart<br>
+fzaff.rkr<br>
+pgszra.rkr<br>
+timeout<br>
+socksa<br>
+pafw<br>
+flash_on<br>
+hfonpgvi<br>
+flash_off<br>
+icmp<br>
+p515p225982son69p76q604qp7s97975<br>
+2317q129n58non7o3148por15qs741r3<br>
+command<br>
+n;^<br>
+Qkkbal<br>
+i]Wb<br>
+9a&g<br>
+MGiI<br>
+wn>Jj<br>
+#.zf<br>
++o*7<br>
+-LIBGCCW32-EH-2-SJLJ-GTHR-MINGW32<br>
+w32_sharedptr->size<br>
+==<br>
+sizeof(W32_EH_SHARED)<br>
+%s:%u:<br>
+failed<br>
+assertion<br>
+`%s'<br>
+../../gcc/gcc/config/i386/w32-shared-ptr.c<br>
+GetAtomNameA<br>
+(atom,<br>
+s,<br>
+sizeof(s))<br>
+!=<br>
+0<br>
+N10__cxxabiv117__class_type_infoE<br>
+N10__cxxabiv120__si_class_type_infoE<br>
+N10__cxxabiv121__vmi_class_type_infoE<br>
+St10bad_typeid<br>
+St13bad_exception<br>
+St8bad_cast<br>
+St9bad_alloc<br>
+St9exception<br>
+St9type_info<br>
+AddAtomA<br>
+CloseHandle<br>
+CopyFileA<br>
+CreateFileA<br>
+CreateFileMappingA<br>
+CreateMutexA<br>
+CreateProcessA<br>
+CreateSemaphoreA<br>
+CreateThread<br>
+CreateToolhelp32Snapshot<br>
+DeleteFileA<br>
+ExitProcess<br>
+FindAtomA<br>
+FindClose<br>
+FindFirstFileA<br>
+FindNextFileA<br>
+FreeLibrary<br>
+GetAtomNameA<br>
+GetCurrentProcess<br>
+GetCurrentProcessId<br>
+GetDriveTypeA<br>
+GetFileSize<br>
+GetFileTime<br>
+GetLastError<br>
+GetLocalTime<br>
+GetModuleFileNameA<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+GetProcessHeap<br>
+GetSystemDirectoryA<br>
+GetSystemTime<br>
+GetTickCount<br>
+GetVersionExA<br>
+GlobalAlloc<br>
+GlobalFree<br>
+HeapAlloc<br>
+HeapFree<br>
+HeapReAlloc<br>
+InterlockedDecrement<br>
+InterlockedIncrement<br>
+IsBadReadPtr<br>
+IsDebuggerPresent<br>
+LoadLibraryA<br>
+MapViewOfFile<br>
+OpenProcess<br>
+Process32First<br>
+Process32Next<br>
+ReadFile<br>
+ReleaseSemaphore<br>
+SetErrorMode<br>
+SetFilePointer<br>
+SetFileTime<br>
+SetLastError<br>
+SetUnhandledExceptionFilter<br>
+Sleep<br>
+TerminateProcess<br>
+TerminateThread<br>
+TlsAlloc<br>
+TlsFree<br>
+TlsGetValue<br>
+TlsSetValue<br>
+UnmapViewOfFile<br>
+WaitForSingleObject<br>
+WriteFile<br>
+lstrcatA<br>
+lstrcmpA<br>
+lstrcpyA<br>
+lstrcpynA<br>
+lstrlenA<br>
+AdjustTokenPrivileges<br>
+CryptAcquireContextA<br>
+CryptCreateHash<br>
+CryptDestroyHash<br>
+CryptGetHashParam<br>
+CryptHashData<br>
+CryptReleaseContext<br>
+LookupPrivilegeValueA<br>
+OpenProcessToken<br>
+RegCloseKey<br>
+RegCreateKeyExA<br>
+RegOpenKeyExA<br>
+RegQueryValueExA<br>
+RegSetValueExA<br>
+DnsQuery_A<br>
+__getmainargs<br>
+__p__environ<br>
+__p__fmode<br>
+__set_app_type<br>
+_cexit<br>
+_iob<br>
+_onexit<br>
+_setmode<br>
+abort<br>
+atexit<br>
+atoi<br>
+fclose<br>
+fflush<br>
+fgetc<br>
+fopen<br>
+fprintf<br>
+fread<br>
+free<br>
+fseek<br>
+ftell<br>
+malloc<br>
+memcpy<br>
+memmove<br>
+memset<br>
+rand<br>
+realloc<br>
+rewind<br>
+signal<br>
+sprintf<br>
+srand<br>
+sscanf<br>
+strcat<br>
+strchr<br>
+strcmp<br>
+strcpy<br>
+strstr<br>
+strtok<br>
+_itoa<br>
+CharLowerA<br>
+wsprintfA<br>
+InternetGetConnectedState<br>
+WSAConnect<br>
+WSASocketA<br>
+WSAStartup<br>
+closesocket<br>
+connect<br>
+gethostbyname<br>
+gethostname<br>
+htons<br>
+inet_addr<br>
+inet_ntoa<br>
+recv<br>
+send<br>
+sendto<br>
+setsockopt<br>
+socket<br>
+.text<br>
+P`.data<br>
+.rdata<br>
+`@.bss<br>
+.idata<br>
+.rsrc<br>
+.<Max<br>
+~zy{<br>
+k<br>
+a<br>
+kN8-<br>
+:Ibw<br>
+[D#8<br>
+YOHDCEJR]k|<br>
+'?Zx<br>
+;AJV<br>
+)=nW<br>
+MaTu<br>
+Friyt<br>
+JaFeb<<br>
+s,<br>
+%d<br>
+HELO<br>
+CAIL<br>
+FRO<br>
+M:<br>
+<<br>
+RCPT<br>
+TO<br>
+l:KIME-<br>
+!Q4<br>
+Outlook<br>
+Ex[<br>
+11066<br>
+-typnM<br>
+/Ex);<br>
+y=x(-+4wxt5<br>
+/Min;<br>
+-1251w3d<br>
+_ISO-:59-1/)<br>
+6<8bi<br>
+^seami[e="5l<br>
+zn1f"{<br>
+QUIT<br>
+5JK:<br>
+FGHIJKY<br>
+eYLMNOPeY<br>
+eQRSTU<br>
+VWXYZnh<br>
+n\hM<br>
+([kX<br>
+SIE-<br>
+SV1)7<br>
+`^th<br>
+U1ru-RQ<br>
+9.1.4)<br>
+G<br>
+Iox/3.L<br>
+4.NE:CLR<br>
+30729m<br>
+2~MF<br>
+M1{322LO<br>
+d(8:iX<br>
+PZh$)<br>
+e-A$<br>
+*/**urlm2<br>
+j;>URLD<br>
+adTo<br>
+U<br>
+pusk<br>
+fzaff<br>
+*a@:f<br>
+82>n69p76q<br>
+604q<br>
+5#2317q129n<br>
+58n7o<br>
+o8qs741r3<br>
+-LIBGCCWEF<br>
+SJLJ-GTHR<br>
+_s<br>
+h<br>
+ze<br>
+==<br>
+__SHARED)<br>
+>S`<br>
+g/i386/<br>
+e--f.c<br>
+,t,ws$<br>
+__cxxa<br>
+ra?1vm@El<br>
+rSt=d,<br>
+9S4do`g?9*<br>
+$<P^p<br>
+4&6R`n<br>
+,<Rf<br>
+*BRfv<br>
+<PbnxM<br>
+iLV^ht<br>
+*4M<br>
+4M<FPZdn@<br>
+4&.:FNc<br>
+AtomADeH<br>
+Mzm'+Q<br>
+Sem/horCTh<br>
+ool:32S<br>
+n(s)txDeleE<br>
+xitT<br>
+%heLib<br>
+yp6[SmO<br>
+TimLa<br>
+odul<br>
+ckCT<br>
+K+4b<br>
+INH3lm<br>
+InsB<br>
+UViewOf<br>
+d5<br>
+lss<br>
+(Poi<br>
+8dE<,<br>
+mI'c<br>
+s;<br>
+Q<br>
+fKre<br>
+mppy<br>
+Pcqu]L<br>
+vRvA<br>
+up<br>
+A<br>
+Key{<br>
+QGoN<br>
+*Dns_<br>
+fmQ(s<br>
+%0ab5<br>
++0ek<br>
+3Zk4H_<br>
+sehr<br>
+?scs(v<<br>
+pystZ<br>
+.wSt&#3TW<br>
+fi)PE<br>
+.r(J<br>
+{lU'<br>
+x@.b<br>
+XPTPSW<br>
+wwwwwwwwwwpp<br>
+wwwww<br>
+KERNEL32.DLL<br>
+ADVAPI32.DLL<br>
+DNSAPI.DLL<br>
+msvcrt.dll<br>
+USER32.dll<br>
+WININET.DLL<br>
+WS2_32.DLL<br>
+LoadLibraryA<br>
+GetProcAddress<br>
+VirtualProtect<br>
+VirtualAlloc<br>
+VirtualFree<br>
+ExitProcess<br>
+RegCloseKey<br>
+DnsQuery_A<br>
+_iob<br>
+wsprintfA<br>
+InternetGetConnectedState<br>
+recv<br>
+l704nybd27bxpcez2755iaid<br>
+5412wwgn5v93kcdt57h4vjga<br>
+e171azloc211xybn6g9izvyl<br>
+3h67auxb3f65cnmfdh05blce<br>
+69l9lnkxg174nvgb7w14kgka<br>
+35k9oafi35jjtyth36x2cxyk

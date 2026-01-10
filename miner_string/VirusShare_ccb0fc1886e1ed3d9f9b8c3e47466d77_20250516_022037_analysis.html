@@ -1,0 +1,2290 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+body { background-color:#E0E0E0; font-family:Arial; font-size: 80%; }
+#toplink { right:0; position:fixed; bottom:0px; }
+td { text-align: center }
+</style>
+ <title>Static Malware Analysis - VirusShare_ccb0fc1886e1ed3d9f9b8c3e47466d77_20250516_022037_analysis.html</title>
+</head>
+<body>
+ <ul>
+<li><a href = '#globals'>File Informations</a></li>
+<li><a href = '#version'>File Version Info</a></li>
+<li><a href = '#checksums'>File Checksums</a></li>
+<li><a href = '#sections'>Sections</a></li>
+<li><a href = '#strings'>Strings</a></li>
+<li><a href = '#imports'>Imports</a></li>
+<li><a href = '#suspicious'>Suspicious APIs</a></li>
+<li><a href = '#exports'>Exports</a></li>
+<li><a href = '#resources'>Resources</a></li>
+<li><a href = '#virus'>VirusTotal</a></li>
+</ul>
+ <div id='toplink'><b><a href="#">TOP</a></b> created 2025-05-16 02:20 </div><b><a id='globals'>File Informations:</a></b><br>File Name: VirusShare_ccb0fc1886e1ed3d9f9b8c3e47466d77_20250516_022037_analysis.html<br>File Size: 197463<br>
+File Type: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, 2 sections<br>
+Compilation timestamp: 2014-10-11 13:06:00<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='version'>File Version Info:</a></b>
+<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='checksums'>File Checksums:</a></b>
+                   <br>
+MD5:    ccb0fc1886e1ed3d9f9b8c3e47466d77<br>
+SHA1:   e750d4b7089a477d9aa76395904ebf61c731b9aa<br>
+SHA256: fd96ce2629502fd7f4f4b271cfbc97b3a3c82c1ec19e299fcb527b788e10eda1<br>
+SHA512: 1fe949ca7df1647c7f6a9ae22f40592b54b0db953549fd7a47adadf24012b78b451148c1bd3034b1972c661c85d83df2d31e2350aba52713e6fcca0904b0b219<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='virus'>VirusTotal Results:</a></b><br>Error: HTTP Error 403: Forbidden<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='sections'>Sections:</a></b><br>
+Entrypoint: 0x627a<br>Number of Sections: 2<br><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>GYSGDTTE</td>
+                        <td>0x1000</td>
+                        <td>0x25000</td>
+                        <td>140288</td>
+                        <td>5.37 (Not packed)</td></tr>
+<tr><td>GYSGDTTE</td>
+                        <td>0x26000</td>
+                        <td>0xe000</td>
+                        <td>55296</td>
+                        <td>7.89 (Packed)</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='imports'>Imports:</a></b><br>
+<b>KERNEL32.dll</b><br>
+0x41401c GetTempPathW<br>
+0x414020 GetSystemDirectoryW<br>
+0x414024 DeleteFileW<br>
+0x414028 GetModuleFileNameW<br>
+0x41402c GetTickCount<br>
+0x414030 GetVersionExW<br>
+0x414034 ReadFile<br>
+0x414038 CreateFileW<br>
+0x41403c DeviceIoControl<br>
+0x414040 GetTempPathA<br>
+0x414044 GetModuleFileNameA<br>
+0x414048 HeapAlloc<br>
+0x41404c GetProcessHeap<br>
+0x414050 HeapFree<br>
+0x414054 MultiByteToWideChar<br>
+0x414058 SetEndOfFile<br>
+0x41405c HeapReAlloc<br>
+0x414060 LCMapStringW<br>
+0x414064 CreateThread<br>
+0x414068 LoadLibraryW<br>
+0x41406c OutputDebugStringW<br>
+0x414070 LoadLibraryExW<br>
+0x414074 WriteConsoleW<br>
+0x414078 FlushFileBuffers<br>
+0x41407c SetStdHandle<br>
+0x414080 CreateEventW<br>
+0x414084 ExitProcess<br>
+0x414088 CloseHandle<br>
+0x41408c Sleep<br>
+0x414090 OpenEventW<br>
+0x414094 GetStringTypeW<br>
+0x414098 GetCPInfo<br>
+0x41409c GetOEMCP<br>
+0x4140a0 GetACP<br>
+0x4140a4 IsValidCodePage<br>
+0x4140a8 RaiseException<br>
+0x4140ac SetFilePointerEx<br>
+0x4140b0 SetFilePointer<br>
+0x4140b4 FreeEnvironmentStringsW<br>
+0x4140b8 GetEnvironmentStringsW<br>
+0x4140bc GetSystemTimeAsFileTime<br>
+0x4140c0 GetCurrentProcessId<br>
+0x4140c4 QueryPerformanceCounter<br>
+0x4140c8 DeleteCriticalSection<br>
+0x4140cc GetFileType<br>
+0x4140d0 GetFileAttributesW<br>
+0x4140d4 GetSystemWindowsDirectoryW<br>
+0x4140d8 IsDebuggerPresent<br>
+0x4140dc IsProcessorFeaturePresent<br>
+0x4140e0 GetCommandLineW<br>
+0x4140e4 GetLastError<br>
+0x4140e8 UnhandledExceptionFilter<br>
+0x4140ec SetUnhandledExceptionFilter<br>
+0x4140f0 SetLastError<br>
+0x4140f4 InitializeCriticalSectionAndSpinCount<br>
+0x4140f8 GetCurrentProcess<br>
+0x4140fc TerminateProcess<br>
+0x414100 TlsAlloc<br>
+0x414104 TlsGetValue<br>
+0x414108 TlsSetValue<br>
+0x41410c TlsFree<br>
+0x414110 GetStartupInfoW<br>
+0x414114 GetModuleHandleW<br>
+0x414118 GetProcAddress<br>
+0x41411c EncodePointer<br>
+0x414120 DecodePointer<br>
+0x414124 EnterCriticalSection<br>
+0x414128 LeaveCriticalSection<br>
+0x41412c RtlUnwind<br>
+0x414130 GetConsoleMode<br>
+0x414134 ReadConsoleW<br>
+0x414138 WriteFile<br>
+0x41413c WideCharToMultiByte<br>
+0x414140 GetConsoleCP<br>
+0x414144 InterlockedIncrement<br>
+0x414148 InterlockedDecrement<br>
+0x41414c GetCurrentThreadId<br>
+0x414150 GetModuleHandleExW<br>
+0x414154 AreFileApisANSI<br>
+0x414158 GetStdHandle<br>
+0x41415c HeapSize<br>
+<b>USER32.dll</b><br>
+0x414170 GetMessageW<br>
+0x414174 TranslateAcceleratorW<br>
+0x414178 TranslateMessage<br>
+0x41417c DispatchMessageW<br>
+0x414180 LoadAcceleratorsW<br>
+0x414184 LoadCursorW<br>
+0x414188 RegisterClassExW<br>
+0x41418c CreateWindowExW<br>
+0x414190 DialogBoxParamW<br>
+0x414194 LoadStringW<br>
+0x414198 wsprintfW<br>
+0x41419c LoadIconW<br>
+0x4141a0 EndDialog<br>
+0x4141a4 PostQuitMessage<br>
+0x4141a8 EndPaint<br>
+0x4141ac BeginPaint<br>
+0x4141b0 DefWindowProcW<br>
+0x4141b4 DestroyWindow<br>
+<b>ADVAPI32.dll</b><br>
+0x414000 RegQueryValueExW<br>
+0x414004 RegSetValueExW<br>
+0x414008 RegCloseKey<br>
+0x41400c RegOpenKeyExW<br>
+<b>SHELL32.dll</b><br>
+0x414164 ShellExecuteA<br>
+0x414168 ShellExecuteW<br>
+<b>WS2_32.dll</b><br>
+0x4141bc WSAStartup<br>
+0x4141c0 htonl<br>
+0x4141c4 gethostbyaddr<br>
+0x4141c8 socket<br>
+0x4141cc gethostbyname<br>
+0x4141d0 inet_addr<br>
+0x4141d4 htons<br>
+0x4141d8 connect<br>
+0x4141dc closesocket<br>
+0x4141e0 send<br>
+0x4141e4 recv<br>
+0x4141e8 WSAGetLastError<br>
+<b>IPHLPAPI.DLL</b><br>
+0x414014 GetAdaptersAddresses<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='suspicious'>Suspicious APIs:</a></b><br>
+0x41401c GetTempPathW<br>
+0x414020 GetSystemDirectoryW<br>
+0x414024 DeleteFileW<br>
+0x414024 DeleteFileW<br>
+0x414024 DeleteFileW<br>
+0x414028 GetModuleFileNameW<br>
+0x41402c GetTickCount<br>
+0x41402c GetTickCount<br>
+0x414030 GetVersionExW<br>
+0x414034 ReadFile<br>
+0x414034 ReadFile<br>
+0x414038 CreateFileW<br>
+0x414038 CreateFileW<br>
+0x414038 CreateFileW<br>
+0x41403c DeviceIoControl<br>
+0x41403c DeviceIoControl<br>
+0x414040 GetTempPathA<br>
+0x414044 GetModuleFileNameA<br>
+0x414048 HeapAlloc<br>
+0x414048 HeapAlloc<br>
+0x41404c GetProcessHeap<br>
+0x414050 HeapFree<br>
+0x414050 HeapFree<br>
+0x414054 MultiByteToWideChar<br>
+0x414058 SetEndOfFile<br>
+0x41405c HeapReAlloc<br>
+0x414060 LCMapStringW<br>
+0x414064 CreateThread<br>
+0x414064 CreateThread<br>
+0x414068 LoadLibraryW<br>
+0x414068 LoadLibraryW<br>
+0x414068 LoadLibraryW<br>
+0x41406c OutputDebugStringW<br>
+0x41406c OutputDebugStringW<br>
+0x41406c OutputDebugStringW<br>
+0x414070 LoadLibraryExW<br>
+0x414070 LoadLibraryExW<br>
+0x414070 LoadLibraryExW<br>
+0x414070 LoadLibraryExW<br>
+0x414074 WriteConsoleW<br>
+0x414078 FlushFileBuffers<br>
+0x41407c SetStdHandle<br>
+0x414080 CreateEventW<br>
+0x414084 ExitProcess<br>
+0x414088 CloseHandle<br>
+0x41408c Sleep<br>
+0x41408c Sleep<br>
+0x414090 OpenEventW<br>
+0x414094 GetStringTypeW<br>
+0x414098 GetCPInfo<br>
+0x41409c GetOEMCP<br>
+0x4140a0 GetACP<br>
+0x4140a4 IsValidCodePage<br>
+0x4140a8 RaiseException<br>
+0x4140ac SetFilePointerEx<br>
+0x4140b0 SetFilePointer<br>
+0x4140b4 FreeEnvironmentStringsW<br>
+0x4140b8 GetEnvironmentStringsW<br>
+0x4140bc GetSystemTimeAsFileTime<br>
+0x4140c0 GetCurrentProcessId<br>
+0x4140c4 QueryPerformanceCounter<br>
+0x4140c8 DeleteCriticalSection<br>
+0x4140cc GetFileType<br>
+0x4140d0 GetFileAttributesW<br>
+0x4140d4 GetSystemWindowsDirectoryW<br>
+0x4140d8 IsDebuggerPresent<br>
+0x4140d8 IsDebuggerPresent<br>
+0x4140dc IsProcessorFeaturePresent<br>
+0x4140e0 GetCommandLineW<br>
+0x4140e4 GetLastError<br>
+0x4140e8 UnhandledExceptionFilter<br>
+0x4140ec SetUnhandledExceptionFilter<br>
+0x4140f0 SetLastError<br>
+0x4140f4 InitializeCriticalSectionAndSpinCount<br>
+0x4140f8 GetCurrentProcess<br>
+0x4140fc TerminateProcess<br>
+0x4140fc TerminateProcess<br>
+0x414100 TlsAlloc<br>
+0x414104 TlsGetValue<br>
+0x414108 TlsSetValue<br>
+0x41410c TlsFree<br>
+0x414110 GetStartupInfoW<br>
+0x414114 GetModuleHandleW<br>
+0x414114 GetModuleHandleW<br>
+0x414114 GetModuleHandleW<br>
+0x414118 GetProcAddress<br>
+0x414118 GetProcAddress<br>
+0x41411c EncodePointer<br>
+0x414120 DecodePointer<br>
+0x414124 EnterCriticalSection<br>
+0x414128 LeaveCriticalSection<br>
+0x41412c RtlUnwind<br>
+0x414130 GetConsoleMode<br>
+0x414134 ReadConsoleW<br>
+0x414138 WriteFile<br>
+0x414138 WriteFile<br>
+0x41413c WideCharToMultiByte<br>
+0x414140 GetConsoleCP<br>
+0x414144 InterlockedIncrement<br>
+0x414148 InterlockedDecrement<br>
+0x41414c GetCurrentThreadId<br>
+0x414150 GetModuleHandleExW<br>
+0x414150 GetModuleHandleExW<br>
+0x414150 GetModuleHandleExW<br>
+0x414150 GetModuleHandleExW<br>
+0x414154 AreFileApisANSI<br>
+0x414158 GetStdHandle<br>
+0x41415c HeapSize<br>
+0x414170 GetMessageW<br>
+0x414174 TranslateAcceleratorW<br>
+0x414178 TranslateMessage<br>
+0x41417c DispatchMessageW<br>
+0x414180 LoadAcceleratorsW<br>
+0x414184 LoadCursorW<br>
+0x414188 RegisterClassExW<br>
+0x41418c CreateWindowExW<br>
+0x414190 DialogBoxParamW<br>
+0x414194 LoadStringW<br>
+0x414198 wsprintfW<br>
+0x41419c LoadIconW<br>
+0x4141a0 EndDialog<br>
+0x4141a4 PostQuitMessage<br>
+0x4141a8 EndPaint<br>
+0x4141ac BeginPaint<br>
+0x4141b0 DefWindowProcW<br>
+0x4141b4 DestroyWindow<br>
+0x414000 RegQueryValueExW<br>
+0x414004 RegSetValueExW<br>
+0x414004 RegSetValueExW<br>
+0x414004 RegSetValueExW<br>
+0x414004 RegSetValueExW<br>
+0x414008 RegCloseKey<br>
+0x414008 RegCloseKey<br>
+0x41400c RegOpenKeyExW<br>
+0x41400c RegOpenKeyExW<br>
+0x41400c RegOpenKeyExW<br>
+0x41400c RegOpenKeyExW<br>
+0x414164 ShellExecuteA<br>
+0x414164 ShellExecuteA<br>
+0x414164 ShellExecuteA<br>
+0x414168 ShellExecuteW<br>
+0x414168 ShellExecuteW<br>
+0x414168 ShellExecuteW<br>
+0x4141bc WSAStartup<br>
+0x4141bc WSAStartup<br>
+0x4141c0 htonl<br>
+0x4141c4 gethostbyaddr<br>
+0x4141c8 socket<br>
+0x4141c8 socket<br>
+0x4141cc gethostbyname<br>
+0x4141d0 inet_addr<br>
+0x4141d4 htons<br>
+0x4141d8 connect<br>
+0x4141d8 connect<br>
+0x4141dc closesocket<br>
+0x4141e0 send<br>
+0x4141e0 send<br>
+0x4141e4 recv<br>
+0x4141e4 recv<br>
+0x4141e8 WSAGetLastError<br>
+0x414014 GetAdaptersAddresses<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='exports'>Exports:</a></b><br>
+No Exports found!<br>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='resources'>Resources:</a></b><br>
+<table><tr><th>Name</th><th>Virtual address</th><th>Virtual size</th><th>Raw size</th><th>Entropy</th></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x1fec8</td>
+                                        <td>0x2e8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_ICON</td>
+                                        <td>0x201b0</td>
+                                        <td>0x8a8</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_MENU</td>
+                                        <td>0x20a80</td>
+                                        <td>0x4a</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_DIALOG</td>
+                                        <td>0x20ae0</td>
+                                        <td>0xc0</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_STRING</td>
+                                        <td>0x20e50</td>
+                                        <td>0x44</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_ACCELERATOR</td>
+                                        <td>0x20ad0</td>
+                                        <td>0x10</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_GROUP_ICON</td>
+                                        <td>0x20a58</td>
+                                        <td>0x22</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_VERSION</td>
+                                        <td>0x20ba0</td>
+                                        <td>0x2ac</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+<tr><td>RT_MANIFEST</td>
+                                        <td>0x26280</td>
+                                        <td>0x17d</td>
+                                        <td>LANG_ENGLISH</td>
+                                        <td>SUBLANG_ENGLISH_US</td></tr>
+</table>
+<hr style="float:left; width:100%; height:1px; border:1px solid; border-color:#2c2c2c;"><br><b><a id='strings'>Strings:</a></b><br>
+!This<br>
+program<br>
+cannot<br>
+be<br>
+run<br>
+in<br>
+DOS<br>
+mode.<br>
+GYSGDTTE<br>
+GYSGDTTE<br>
+hP$@<br>
+MSMPh<br>
+MSMPh<br>
+MSMP<br>
+MSMP<br>
+tvh<br>
+MSMP<br>
+SVW3<br>
+_GBPu<br>
+u6Sj<br>
+_GBPu+<br>
+SVjd<br>
+PSSh<br>
+t'Sh<br>
+GWj<br>
+h<br>
+VWWh@<br>
+SSSPhD<br>
+SVWj<br>
+QSVW<br>
+u<br>
+RRj<br>
+f99thf<br>
+D$(P3<br>
+u(97t<br>
+_^[3<br>
+D$<br>
+f<br>
+92tkSW<br>
+90tmW<br>
+SVW3<br>
+hhBA<br>
+hhBA<br>
+t19}<br>
+q?xD<br>
+woSW<br>
+jxYf;<br>
+jXYf;<br>
+jxYf;<br>
+jXYf;<br>
+uWjAXf;<br>
+Zv2j<br>
+X_^]<br>
+j-Xf<br>
+_[^]<br>
+h4CA<br>
+hHCA<br>
+hhCA<br>
+h8DA<br>
+hLDA<br>
+hhDA<br>
+h|DA<br>
+PPPPP<br>
+[_^]<br>
+8pUA<br>
+j<br>
+Y+<br>
+t/HHt<br>
+j*Xf;<br>
+j*Xf;<br>
+htHjlY;<br>
+HHtXHHt<br>
+jiY;<br>
+nt'joY;<br>
+jgXf;<br>
+YYjgXf9<br>
+RPWQ<br>
+>0t<Nj0X<br>
+j-Xf<br>
+Wj0XP<br>
+j<br>
+Yf<br>
+Wj<br>
+XP<br>
+PWj?<br>
+[_^]<br>
+QQSV<br>
+tRHtC<br>
+t;Ht+<br>
+h$EA<br>
+h8EA<br>
+Y__^[<br>
+8csm<br>
+t6h8<br>
+URPQQh<br>
+L$,3<br>
+UVWS<br>
+[_^]<br>
+SVWj<br>
+_^[]<br>
+t$VW<br>
+Ht#j<br>
+t3f;<br>
+XP_f<br>
+Zf9W<br>
+HtRj<br>
+Xf9E<br>
+Xf9E<br>
+xy;5`<br>
+tWPV<br>
+oF<br>
+f<br>
+oF<br>
+f<br>
+oF<br>
+f<br>
+oV<br>
+f<br>
+o^0f<br>
+of@f<br>
+onPf<br>
+ov`f<br>
+o~pf<br>
+FGIu<br>
+FGIu<br>
+VVhU<br>
+8csm<br>
+~\HEA<br>
+Y;=<<br>
+F\HEA<br>
+~pjCXf<br>
+uPVWh<br>
+5<br>
+AA<br>
+5<br>
+AA<br>
+h$BA<br>
+YYh,BA<br>
+h(BA<br>
+<v5h<br>
+h<br>
+PA<br>
+Ot<br>
+A<br>
+SSSSS<br>
+j@j<br>
+_W<br>
+}<br>
+j@W<br>
+QQSVWh<br>
+f9>u<br>
+PWWV<br>
+j"Xf9<br>
+j"Xf9<br>
+j\Xu;<br>
+j"_f9y<br>
+t"f;E<br>
+j=Yf<br>
+tAVSP<br>
+Y_^[<br>
+PPPPP<br>
+tGS3<br>
+Vj<br>
+^<br>
+"u<br>
+3<br>
+Genuu_<br>
+ineIuV<br>
+nteluM3<br>
+t#=`<br>
+_[^]<br>
+QQS3<br>
+<at-<rt"<wt<br>
+tRHtC<br>
+t;Ht+<br>
+VhpPA<br>
+htPA<br>
+h|PA<br>
+VWj<br>
+5DAA<br>
+_^[]<br>
+Y_^[]<br>
+=HAA<br>
+Npt"<br>
+_^[]<br>
+j0Yf;<br>
+Qvf;<br>
+Qvf;<br>
+Qvf;<br>
+Qvf;<br>
+Qvf;<br>
+Qvf;<br>
+Qvf;<br>
+v<br>
+N+D$<br>
+@uhV<br>
+8pUA<br>
+HHtVHHt<br>
+HHtp<br>
+RPWQ<br>
+>0t-N<br>
+_^[t<br>
+PWj?<br>
+[_^]<br>
+~';_t|%3<br>
+wtVj<br>
+;_tr.<br>
+WVj<br>
+u,9E<br>
+tHHt*Ht#<br>
+uJSSR<br>
+SSSSS<br>
+f;1u<br>
+SVjA[jZ^+<br>
+jAZjZ^+<br>
+ItDf<br>
+t?f;<br>
+_^[]<br>
+Y_^[<br>
+Y_^[<br>
+SVWUj<br>
+]_^[<br>
+;t$,v-<br>
+UQPXY]Y[<br>
+j@j<br>
+5<br>
+AA<br>
+r>PS<br>
+t#Ht<br>
+s<br>
+9q<br>
+t%Ou<br>
+h<br>
+VA<br>
+h<VA<br>
+tO95<br>
+/f;q<br>
+r)f;q<br>
+8f;A<br>
+r2f;A<br>
+_^[t<br>
+t&:a<br>
+9E(j<br>
+t@WV<br>
+PP9E<br>
+u<br>
+SVW3<br>
+9E<br>
+WW<br>
+j<br>
+Y+<br>
+SVW3<br>
+_^[]<br>
+jA[jZZ+<br>
+QVWSj<br>
+D1$$<br>
+D1$$<br>
+_^[u<br>
+%,AA<br>
+WVS3<br>
+bad<br>
+allocation<br>
+FlsAlloc<br>
+FlsFree<br>
+FlsGetValue<br>
+FlsSetValue<br>
+InitializeCriticalSectionEx<br>
+CreateSemaphoreExW<br>
+SetThreadStackGuarantee<br>
+CreateThreadpoolTimer<br>
+SetThreadpoolTimer<br>
+WaitForThreadpoolTimerCallbacks<br>
+CloseThreadpoolTimer<br>
+CreateThreadpoolWait<br>
+SetThreadpoolWait<br>
+CloseThreadpoolWait<br>
+FlushProcessWriteBuffers<br>
+FreeLibraryWhenCallbackReturns<br>
+GetCurrentProcessorNumber<br>
+GetLogicalProcessorInformation<br>
+CreateSymbolicLinkW<br>
+SetDefaultDllDirectories<br>
+EnumSystemLocalesEx<br>
+CompareStringEx<br>
+GetDateFormatEx<br>
+GetLocaleInfoEx<br>
+GetTimeFormatEx<br>
+GetUserDefaultLocaleName<br>
+IsValidLocaleName<br>
+LCMapStringEx<br>
+GetCurrentPackageId<br>
+CorExitProcess<br>
+UTF-8<br>
+UTF-16LE<br>
+UNICODE<br>
+Unknown<br>
+exception<br>
+Sunday<br>
+Monday<br>
+Tuesday<br>
+Wednesday<br>
+Thursday<br>
+Friday<br>
+Saturday<br>
+January<br>
+February<br>
+March<br>
+April<br>
+June<br>
+July<br>
+August<br>
+September<br>
+October<br>
+November<br>
+December<br>
+MM/dd/yy<br>
+dddd,<br>
+MMMM<br>
+dd,<br>
+yyyy<br>
+HH:mm:ss<br>
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~<br>
+(null)<br>
+(<br>
+8PX<br>
+700WP<br>
+`h````<br>
+xpxxxx<br>
+('8PW<br>
+700PP<br>
+`h`hhh<br>
+xppwpp<br>
+CreateFile2<br>
+MessageBoxW<br>
+GetActiveWindow<br>
+GetLastActivePopup<br>
+GetUserObjectInformationW<br>
+GetProcessWindowStation<br>
+!"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~<br>
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~<br>
+__based(<br>
+__cdecl<br>
+__pascal<br>
+__stdcall<br>
+__thiscall<br>
+__fastcall<br>
+__clrcall<br>
+__eabi<br>
+__ptr64<br>
+__restrict<br>
+__unaligned<br>
+restrict(<br>
+new<br>
+delete<br>
+operator<br>
+`vftable'<br>
+`vbtable'<br>
+`vcall'<br>
+`typeof'<br>
+`local<br>
+static<br>
+guard'<br>
+`string'<br>
+`vbase<br>
+destructor'<br>
+`vector<br>
+deleting<br>
+destructor'<br>
+`default<br>
+constructor<br>
+closure'<br>
+`scalar<br>
+deleting<br>
+destructor'<br>
+`vector<br>
+constructor<br>
+iterator'<br>
+`vector<br>
+destructor<br>
+iterator'<br>
+`vector<br>
+vbase<br>
+constructor<br>
+iterator'<br>
+`virtual<br>
+displacement<br>
+map'<br>
+`eh<br>
+vector<br>
+constructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+destructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+vbase<br>
+constructor<br>
+iterator'<br>
+`copy<br>
+constructor<br>
+closure'<br>
+`udt<br>
+returning'<br>
+`RTTI<br>
+`local<br>
+vftable'<br>
+`local<br>
+vftable<br>
+constructor<br>
+closure'<br>
+new[]<br>
+delete[]<br>
+`omni<br>
+callsig'<br>
+`placement<br>
+delete<br>
+closure'<br>
+`placement<br>
+delete[]<br>
+closure'<br>
+`managed<br>
+vector<br>
+constructor<br>
+iterator'<br>
+`managed<br>
+vector<br>
+destructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`eh<br>
+vector<br>
+vbase<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`dynamic<br>
+initializer<br>
+for<br>
+'<br>
+`dynamic<br>
+atexit<br>
+destructor<br>
+for<br>
+'<br>
+`vector<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`vector<br>
+vbase<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`managed<br>
+vector<br>
+copy<br>
+constructor<br>
+iterator'<br>
+`local<br>
+static<br>
+thread<br>
+guard'<br>
+Type<br>
+Descriptor'<br>
+Base<br>
+Class<br>
+Descriptor<br>
+at<br>
+(<br>
+Base<br>
+Class<br>
+Array'<br>
+Class<br>
+Hierarchy<br>
+Descriptor'<br>
+Complete<br>
+Object<br>
+Locator'<br>
+218.54.47.76<br>
+218.54.47.76<br>
+sanfdr.bat<br>
+:Repeat<br>
+del<br>
+"<br>
+if<br>
+exist<br>
+"<br>
+"<br>
+goto<br>
+Repeat<br>
+rmdir<br>
+"<br>
+open<br>
+%d.%d.%d.%d<br>
+218.54.47.74<br>
+218.54.47.76<br>
+GetSystemWindowsDirectoryW<br>
+GetFileAttributesW<br>
+OpenEventW<br>
+Sleep<br>
+CloseHandle<br>
+ExitProcess<br>
+CreateEventW<br>
+CreateThread<br>
+GetTempPathW<br>
+GetSystemDirectoryW<br>
+DeleteFileW<br>
+GetModuleFileNameW<br>
+GetTickCount<br>
+GetVersionExW<br>
+ReadFile<br>
+CreateFileW<br>
+DeviceIoControl<br>
+GetTempPathA<br>
+GetModuleFileNameA<br>
+HeapAlloc<br>
+GetProcessHeap<br>
+HeapFree<br>
+MultiByteToWideChar<br>
+KERNEL32.dll<br>
+wsprintfW<br>
+LoadStringW<br>
+LoadAcceleratorsW<br>
+GetMessageW<br>
+TranslateAcceleratorW<br>
+TranslateMessage<br>
+DispatchMessageW<br>
+LoadIconW<br>
+LoadCursorW<br>
+RegisterClassExW<br>
+CreateWindowExW<br>
+DialogBoxParamW<br>
+DestroyWindow<br>
+DefWindowProcW<br>
+BeginPaint<br>
+EndPaint<br>
+PostQuitMessage<br>
+EndDialog<br>
+USER32.dll<br>
+RegOpenKeyExW<br>
+RegQueryValueExW<br>
+RegCloseKey<br>
+RegSetValueExW<br>
+ADVAPI32.dll<br>
+ShellExecuteW<br>
+ShellExecuteA<br>
+SHELL32.dll<br>
+WS2_32.dll<br>
+GetAdaptersAddresses<br>
+IPHLPAPI.DLL<br>
+IsDebuggerPresent<br>
+IsProcessorFeaturePresent<br>
+GetCommandLineW<br>
+GetLastError<br>
+UnhandledExceptionFilter<br>
+SetUnhandledExceptionFilter<br>
+SetLastError<br>
+InitializeCriticalSectionAndSpinCount<br>
+GetCurrentProcess<br>
+TerminateProcess<br>
+TlsAlloc<br>
+TlsGetValue<br>
+TlsSetValue<br>
+TlsFree<br>
+GetStartupInfoW<br>
+GetModuleHandleW<br>
+GetProcAddress<br>
+EncodePointer<br>
+DecodePointer<br>
+EnterCriticalSection<br>
+LeaveCriticalSection<br>
+RtlUnwind<br>
+GetConsoleMode<br>
+ReadConsoleW<br>
+WriteFile<br>
+WideCharToMultiByte<br>
+GetConsoleCP<br>
+InterlockedIncrement<br>
+InterlockedDecrement<br>
+GetCurrentThreadId<br>
+GetModuleHandleExW<br>
+AreFileApisANSI<br>
+GetStdHandle<br>
+GetFileType<br>
+DeleteCriticalSection<br>
+QueryPerformanceCounter<br>
+GetCurrentProcessId<br>
+GetSystemTimeAsFileTime<br>
+GetEnvironmentStringsW<br>
+FreeEnvironmentStringsW<br>
+SetFilePointer<br>
+SetFilePointerEx<br>
+RaiseException<br>
+IsValidCodePage<br>
+GetACP<br>
+GetOEMCP<br>
+GetCPInfo<br>
+GetStringTypeW<br>
+SetStdHandle<br>
+FlushFileBuffers<br>
+WriteConsoleW<br>
+LoadLibraryExW<br>
+OutputDebugStringW<br>
+LoadLibraryW<br>
+LCMapStringW<br>
+HeapReAlloc<br>
+SetEndOfFile<br>
+HeapSize<br>
+.?AVbad_alloc@std@@<br>
+.?AVexception@std@@<br>
+.?AVtype_info@@<br>
+abcdefghijklmnopqrstuvwxyz<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+abcdefghijklmnopqrstuvwxyz<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+218.54.31.226<br>
+AS101<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwwwwwww<br>
+wwwwww<br>
+wwwwwwww<br>
+wwwwwwwwx<br>
+wwwwx<br>
+wwww<br>
+wwww<br>
+wwww<br>
+0<br>
+1"1.1;1K1d1p1}1<br>
+4<br>
+414B4V4j4{4<br>
+5%535C5<br>
+7*7t7<br>
+868;8`8j8<br>
+9<br>
+9z9<br>
+:(;G;Y;z;<br>
+=(=5=J=f=z=<br>
+>e>j>o><br>
+?&?0?j?<br>
+0&02090E0x0<br>
+2$2G2a2<br>
+4:5y5Z6<br>
+72777_7<br>
+9Z:_:x:<br>
+<G=o=<br>
+>-?x?<br>
+D0Y0<br>
+2<br>
+383<br>
+4<br>
+5.5H5U5b5x5<br>
+:4:`:<br>
+:";9;>;];j;q;<br>
+>%>l><br>
+?O?k?<br>
+70m0}0<br>
+071Z1<br>
+202r2<br>
+3F3T3<br>
+6c7j7<br>
+778q8<br>
+9#9E9W9<br>
+9=:l:s:<br>
+;-<I<l<<br>
+=3=A=L=a=q=<br>
+=V?^?<br>
+5]6o6v6<br>
+7<br>
+7(747=7B7H7R7\7l7|7<br>
+8%8-888=8C8M8W8j8o8u:<br>
+1'12181J1T1]1<br>
+6V7u7<br>
+:::b:<br>
+;><{<k=<br>
+=Q>^><br>
+?!?+?<br>
+62I2<br>
+4U5_5e5u5}5<br>
+6*6;6A6G6N6W6\6b6j6o6u6}6<br>
+7<br>
+7(7-737;7@7F7N7S7Y7a7f7k7t7y7<br>
+8$8*82878=8E8J8P8X8]8c8k8q8<br>
+;%<G=_=<br>
+5O8S8W8[8_8c8g8k8K9e9t9<br>
+9":S:`:i:<br>
+:!;1;\;m;z;<br>
+243W3<br>
+5!686M6g6<br>
+7&7M7<br>
+8<br>
+9=9S9<br>
+;@;N;\;<br>
+;J<y<<br>
+<&=c=m=<br>
+2'2E2L2P2T2X2\2`2d2h2<br>
+2*353P3W3\3`3d3<br>
+4N4T4X4\4`4<br>
+9D9M9<br>
+:t;};o<x<d=<br>
+=2>F><br>
+0"1,1d1l1<br>
+2/2;2J2o2<br>
+3.3I3b3s3<br>
+474?4H4Q4q4<br>
+5#595Z5<br>
+6<br>
+6&676V6l6v6|6<br>
+6;7d7w7<br>
+8%8:8K8W8^8g8<br>
+9:9F9P9<br>
+9":A:t:<br>
+:-;f;x;<br>
+<!<'<<br>
+<8>|><br>
+?9?A?F?j?<br>
+0<br>
+0%0D0<br>
+191D1N1`1j1<br>
+2#2)2K2T2<br>
+2d3q3<br>
+717P7<br>
+9)9Z9<br>
+="=/=9=I=<br>
+=]?o?<br>
+1/181>1G1L1[1b1<br>
+1$272<br>
+3+3v3<br>
+6Z7w7<br>
+8/8_8<br>
+>>>D><br>
+2#2'2+273H3r3<br>
+6O7X7f7<br>
+8<br>
+818R8Y8<br>
+9+9A9J9V9a9<br>
+:#:8:>:U:Z:`:g:<br>
+;1=E>S>m><br>
+2?2h2<br>
+2G3F5K5]5{5<br>
+657O7X7B8^8<br>
+9#9`9}9<br>
+96:~:<br>
+;-;k;{;<br>
+<3<P<p<<br>
+=/=a=g=l=<br>
+=g>l>u><br>
+><?A?<br>
+020<0<br>
+2<br>
+2&252<2L2R2X2`2f2l2t2z2<br>
+2@3X3q3<br>
+3M4_8<br>
+9)9;9M9_9q9<br>
+8!8%8)8-8185898=8A8E8I8M8Q8U8Y8]8a8e8i8m8q8u8y8}8<br>
+9*989>9z9<br>
+:!<(<<br>
+=%=q=w=<br>
+=$>+><br>
+1(1<1B1G1_1<br>
+2<br>
+2h2l2p2t2x2<br>
+?$?,?4?<?D?L?<br>
+0t>|><br>
+?$?,?4?<?D?L?T?\?d?l?t?|?<br>
+0$0,040<0D0L0T0\0d0l0t0|0<br>
+1$1,141<1D1L1T1\1d1l1t1|1<br>
+2$2,242<2D2L2T2\2d2l2t2|2<br>
+3$3,343<3D3L3T3\3d3l3t3|3<br>
+4$4,444<4D4L4T4\4d4l4t4|4<br>
+5$5,545<5D5L5T5\5d5l5t5|5<br>
+6<br>
+6(60686@6H6P6X6`6h6p6x6<br>
+7<br>
+7(70787@7H7P7X7`7h7p7x7<br>
+8<br>
+8(80888@8H8P8X8`8h8p8x8<br>
+9<br>
+9(90989@9H9P9X9`9h9p9x9<br>
+:<br>
+:(:0:8:@:H:P:X:`:h:p:x:<br>
+;<br>
+;(;0;8;@;H;P;X;`;h;p;x;<br>
+<<br>
+<(<0<8<@<H<P<X<`<h<p<x<<br>
+?<br>
+?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?<br>
+0<br>
+0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0<br>
+=4>L>\>`>t>x><br>
+?H?h?<br>
+0(00080@0D0L0`0h0|0<br>
+1<br>
+1@1L1h1t1<br>
+202P2p2<br>
+383X3t3x3<br>
+;<br>
+;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;<br>
+<<br>
+<$<(<,<0<4<8<<<d<t<<br>
+=<br>
+=$=(=,=0=4=8=<=@=D=<br>
+<?xml<br>
+version='1.0'<br>
+encoding='UTF-8'<br>
+standalone='yes'?><br>
+<assembly<br>
+xmlns='urn:schemas-microsoft-com:asm.v1'<br>
+manifestVersion='1.0'><br>
+<trustInfo<br>
+xmlns="urn:schemas-microsoft-com:asm.v3"><br>
+<security><br>
+<requestedPrivileges><br>
+<requestedExecutionLevel<br>
+level='asInvoker'<br>
+uiAccess='false'<br>
+/><br>
+</requestedPrivileges><br>
+</security><br>
+</trustInfo><br>
+</assembly><br>
+KERNEL32.DLL<br>
+GetModuleHandleA<br>
+GetProcAddress<br>
+VirtualAlloc<br>
+VirtualFree<br>
+VirtualProtect<br>
+USER32.dll<br>
+EndPaint<br>
+ADVAPI32.dll<br>
+RegCloseKey<br>
+SHELL32.dll<br>
+ShellExecuteA<br>
+WS2_32.dll<br>
+IPHLPAPI.DLL<br>
+GetAdaptersAddresses<br>
+hUx6<br>
+222B<br>
+RNB!<br>
+WVz.<br>
+'<RE<br>
+(30<br>
+j"XBJ<br>
+E<br>
+&_<br>
+4>Wf&<br>
+I_>Y<br>
+Dj8[Q"<br>
+7BhCt<br>
+V5nR2<br>
+,!Rhq<br>
+H}?D$i3<br>
+vXJs<br>
+P<br>
+HR<br>
+hVLW<br>
+$!CU<br>
+m>wj+<br>
+Rm_<br>
+nLq<br>
+0v+M<br>
+_^,@<br>
+Rn:<br>
+MZAJ<br>
+HqOT<br>
+)+85<br>
+p7SO;!<br>
+jkb<<br>
+fpLl="<br>
+)e"bK<br>
+P%$@<br>
+{iy&<br>
+vLY~<br>
+QZAR<br>
+_^>tS<br>
+#$kA/<br>
+)R,rG6<br>
+h<br>
+4I22<br>
+tvh<br>
+QP?(<br>
+tI8(<br>
+*+-2<br>
+t4Kv*<br>
+#lDnh3U<br>
+B]QD<br>
+<0F<4CK<br>
+(oB|_<br>
+})OY@<br>
+^yij<br>
+/y4j<br>
+-P><br>
+>:il1<br>
+^yij<br>
+e9's<br>
+u&$S<br>
+jf<br>
+BY6<br>
+-PS3h{B<br>
+D<u^P<br>
+_G/BP`m<br>
+^$[_d<br>
+`g?k<br>
+=e)c<br>
+;Srx<br>
+Q(_5<br>
+@Z!+<br>
+-#@U<br>
+JHyDH<br>
+q<br>
+(n<br>
+S=K4V<br>
+h(=0<br>
+jD;w<br>
+7tn"I2<br>
+{WKYRF<br>
+lhLL*<br>
+SBPV<br>
+*pG@<br>
+SQ%l<br>
+,(<br>
+_[l<br>
+WkU|<br>
+3b"L<br>
+:Vr<t<br>
+ni<br>
+]<br>
+J*Q_i<br>
+R.j<br>
+PSW:<br>
+8sILg<br>
++.t<br>
+!RX-<br>
+~&~<br>
+i<br>
+2-uu<br>
+6Q<br>
+J=F.*`"<br>
+Xj97<br>
+U#&(<br>
+Lq{*<br>
+Cz8q<br>
+!%A6<br>
+D$(P<br>
+@u(97?t<br>
+|8SJ}<br>
+92tkSH0<br>
+:XC,6QJ<br>
+O<br>
+D//B<br>
+90tm<br>
+vJZbR<br>
+H%P(<br>
+@*WQM<br>
+uB{(<br>
++EP"<br>
+,{,Ud<br>
+{<br>
+9]<br>
+ABf9<br>
+.tS8<br>
+|qWX<br>
+<m`LU"<br>
+rEjd<br>
+v;(8<br>
+OShx<br>
+$<sh<br>
+`_w|W<br>
+'<br>
+4e<br>
+k>x@@<br>
+'D3W<br>
+SaAz<br>
+[^TQkv<br>
+%v5Y<br>
+|@T%>Y[<br>
+u<br>
+2K""<br>
+A"7Z<br>
+.!3}<br>
+DtN%t<br>
+Yjea$<br>
+t?y<br>
+*-{D<br>
+Wr@7<br>
+U[p&s<br>
+d~ZW<br>
+`~ff<br>
+&!R!<br>
+lRVqQ<br>
+g`3V<br>
+,!o`<br>
+0&Z/<br>
+*_E+b<br>
+Y~<br>
+lu<br>
+I+<br>
+yF<br>
+a+Dg<br>
+ktM.<br>
+^O:c<br>
+d~vSX<br>
+<,G7<br>
+q?xD<br>
+uvb:<br>
+RYK&3<br>
+/ZG.<br>
++jH<<br>
+$/nI<br>
+Up%#<br>
+woSW8<br>
+&?t-<br>
+v<br>
+gl)VS<br>
+.<br>
+:Df<br>
+e,<br>
+(<br>
+(;t3<br>
+zTR,<br>
+Se!23<br>
+&\i2P*<br>
+q%*h<br>
+&><br>
+&.k#<br>
+tBHA<br>
+x,Bp<br>
+n\<br>
+KR<br>
+"|,$~<br>
+>>:W<br>
+{+f<br>
+b<br>
+QP6j<br>
+WjAX<br>
+C<br>
+r/<br>
+I~(1-<br>
+8X^_q<br>
+A%w<br>
+9<br>
+j-Xg<br>
+<_[H<br>
+9d3x<br>
+>xp%<br>
+dgY^?<br>
+j)""<br>
+Wt<br>
+K.<br>
+HR3.'@}<br>
+Z:wV<br>
+|e8@<br>
+i:;]<br>
+<Z[d<<br>
+SayL}><br>
+WKY|<br>
+{jX0<br>
+8pP1<br>
+j<br>
+:Y+<br>
+2l+2-<br>
+Hj%lYa<br>
+3N(#2<br>
+LuAM<br>
+U2X<br>
+(+/@<br>
+q<br>
+w1<br>
+hfIQ<br>
+)pMU<br>
+D<br>
+3I<br>
+A9/!Z<br>
+qBESE<br>
+V<br>
+pa%5T<br>
+$gZ!<br>
+y[a##.<br>
+e@$E"_<br>
+L<br>
+J;<br>
+~\z,e<br>
+#@2V<br>
+OdVXD<Y<br>
+Ij0Y<br>
+RPWQ<br>
+}tEt<br>
+y0$<N3<br>
+AQ8DH<br>
+#e|<br>
+Vj@S<br>
+#}+d<br>
+~"{D<br>
+FBLE<br>
+?9*b<br>
+=WmQ<br>
+B\:!(kT<br>
+;=<br>
+d<br>
+Mj8{<br>
+d+Dgc<br>
+RH6C<br>
+@{7+<br>
+}h}d*<br>
+]%^<br>
+5H<br>
+=J|B<br>
+P6Bb<br>
+BPaw<br>
+\k~0L#)<br>
+/a]|<br>
+Zp1|<br>
+;-5`%<br>
+(<H@"F[<br>
+^[V6N=<br>
+aKcG<br>
+u+8&<br>
+BaY]N<br>
+/j8~p<br>
+YtqD<br>
+uFj:<br>
+ji:'<br>
+"Q(D@<br>
+UH-Ct<br>
+S&Y<br>
+NB:S<br>
+&F+'<br>
+;4<br>
+t<br>
+sU<br>
+r<br>
+%_tH<br>
+hALtY<br>
+lb@"<br>
+K^NmY<br>
+Jp%d<br>
+\DF<br>
+Gv]0X$<br>
+x\u8'5<br>
+WPV|<br>
+u6eS<br>
+ChNx<br>
+HW\N<br>
+||jK<br>
+8^0`<br>
+l,R.&<br>
+$h6$;<br>
+"|Dtl<br>
+(mKN<br>
+0$8HK<br>
+nDPvD`~fp3g)<br>
+2FG<br>
+T@HY%<br>
+#SV;0<br>
+h.E0~<br>
+2<@"<br>
+3D8^#<br>
+d-P%<br>
+tnDrp<br>
+/?@S<br>
+=/(<qQ<br>
+Ysd8'm$@<br>
+eVZ$WQ<br>
+r=UB<br>
+)eGQ<br>
+>a+12<br>
+~]X<br>
+^R06Q<br>
+YxF;v<br>
+K~<br>
+ycx<br>
+sxkY.|<br>
+)j$_<br>
+Fh[(9<br>
+8~$3tlv<br>
+D<7hQ@<br>
+3q"xlb#R9<br>
+";=Wd_e<br>
+ie0W<br>
+'YQ<br>
+Gh<br>
+t3V)<br>
+uWl=*<br>
+i=K:w1Q<br>
+x~-]<br>
+"WuH<br>
+rV9]J<br>
+69mF<br>
+t(OR<br>
+phUF<br>
+(VC!<br>
+<go"<br>
+.hY#<br>
+].va<br>
+tr-).)f+<br>
+US'J<br>
+VB-=<br>
+I^@P<br>
+cu{7<br>
+,Xqk<br>
+;"q=|<br>
+U1>f<br>
+\F`u<br>
+#8Lfj<br>
+"&*;.<br>
+_?s~K<br>
+vj".<br>
+hw/Y<br>
+yDr"W<br>
+KkJ8<br>
+-`%5D<br>
+R<1Yf<br>
+VKP,<br>
+J3^q<br>
+B<br>
+!(:<br>
+j<br>
+^ch<br>
+?"uY<br>
+Genu<br>
+izzIAV*<br>
+^@0B-<br>
+9%.?<br>
+t#w`}<br>
+L3SW+3<br>
+i$$}]=<br>
+>E=oO<br>
+&[FB<br>
+dBZic<br>
+uTG:<br>
+3Dm@"<br>
+)vH?<br>
+d1|7hD<br>
+Q615"<br>
+Np(t"<br>
+KD<br>
+).b&<br>
+q5zHu<br>
+FaG'<br>
+;T9N<br>
+0t&X<br>
+'r93<br>
+DtsR<br>
+.0<br>
+^<br>
+*)$.<br>
+m-;5^<br>
+XhSY<br>
+"=S2<br>
+c0+=<br>
+-$a"<br>
+//DC<br>
+IEOu<br>
+_uI+<br>
+m#,>Q2M<br>
+QJr{J.<br>
+)>B@<br>
+E'h@0<br>
+Z<br>
+L4<br>
+~td)<br>
+f\%TT<br>
+;Qwx<br>
+Yv<br>
+N+<br>
++<br>
+GXnvZ<br>
+9db-t*<br>
+v!Vh-1r<br>
+Xuh?<br>
+<>Xw}O<br>
+PFIt?<br>
+<6uv<br>
+3}9P<br>
+H|QV<br>
+6e't0<br>
+i3td<br>
+9~0*<br>
+4<#Y<br>
+!"/q<br>
+h$FQ?PU\{<br>
+u?9Q<br>
+H8a<br>
+x$;<br>
+AnA'<br>
+ut2m<br>
+f'"ve<br>
+NZ=Id<br>
+F;d|<br>
+M%x:<br>
+~';_<br>
+v]%u<br>
+wtVjd<br>
+Ps{Qm<br>
+6p;Kg<br>
+,%[K<br>
+|)Y'?<br>
+h@e|<br>
+6)It<br>
+_%@^Sr(FF<br>
+/(~kX<br>
+UMm4T<br>
+w?~s<br>
+TKRW,5[<br>
+`,<br>
+2s^0<br>
+2t6<br>
+)$<br>
+@<br>
+(t!"<br>
+Fjwbp<br>
+lV#<br>
+M1bX<br>
+uWB=<br>
+Z0fB<br>
+An<br>
+k<br>
+:$Y0<br>
+RbSM<br>
+)maPo<br>
+2u<br>
+)<br>
+puQS<br>
+itX><br>
+L`U<br>
+MuwW!<br>
+b`.V]z<br>
+AK7)<br>
+LN88<br>
+SVjA[0Z^+<br>
+UP$k`[<br>
+&^gM(FXxOp<br>
+$<br>
+pE<br>
+Q0*R<br>
+UQPX9Y]<br>
+`Dap<br>
+B@!P<br>
+67|vw<br>
+b7{b~-<br>
+%u0m<br>
+S&%E<br>
+BfUEF<br>
+@MtR!<br>
+dx`;<br>
+\qi2=wj*<br>
+gSdW<br>
+)%HjVh<br>
+,qSK<br>
+X)1a<br>
+t<0H<br>
+mK<br>
+e<br>
+|U/S<br>
+)j$h<br>
+w\V4<br>
+|:I}<br>
+G`=r<br>
+RM<br>
+A<br>
+t%Ou<br>
+9-p@<br>
+tO95<br>
+j9Ppx<br>
+!r/$<br>
+Z3t4<br>
+ZU"a<br>
+W:b42E*"<br>
+tIl`3<br>
+<&3a<br>
+G(#,<br>
+r89<-<br>
+GX#\<br>
+hrl9p<br>
+Gx)|<br>
+dH8L<br>
+\q`JP,<br>
+aI!:<br>
+\<br>
+IW<br>
+OkD9<br>
+QQSx=<br>
+"WVS<br>
+1|~BY<br>
+#*@W<br>
+^WR1Z%<br>
+E"IX<br>
+1w9L]<br>
+VBHW<br>
+7L1H<br>
+DEI/<br>
+]!TA<br>
+etug<br>
+#N+Q<br>
+z"E/><br>
+g\FNG<br>
+!$#O<br>
+W\FNG<br>
+N2sz<br>
+VDB~<br>
+P(Fq<br>
+uj2JR<br>
++$`HG<br>
+&2!D<br>
+t%<br>
+@x[b;"r<br>
+%jU\<br>
+4Bt^wj<br>
+}y`Q<br>
+Is"u<br>
+QC%^<br>
+1<br>
+]fu<br>
+sh6o<br>
+&K|A<br>
+#]DS<br>
+D1$+<br>
+jBI\<br>
+74t<br>
+URof<br>
+BfuzC@\<br>
+[()<br>
+%Tprx<br>
+_~dx<br>
+Dt}\Gh<br>
+@-\xQ<br>
+2n<br>
+`$<P<br>
+H$XHh<br>
+h"^DL:<br>
+Z$xH<br>
+"0DBR<br>
+"<br>
+8$NH`<br>
+\"pD"<br>
+$o\+<br>
+p<br>
+h@<br>
+bad<br>
+7l<br>
+O@F%sA<br>
+{z"Cr<br>
+sTs1d<br>
+ckGu<br>
+pqozl?im|<br>
+ushPr<br>
+yWhjn<br>
+g"<G<br>
+nkRW<br>
+faul<br>
+Jng<br>
+B-Az<br>
+T8<<br>
+U<br>
+Bp&Is<br>
+oH`e<br>
+8ltx<br>
+=*Dm,<br>
+e|bY8D(<br>
+!h%s<br>
+LhFXoa<br>
+6m1el<br>
+ilNl<br>
+,UrNVB`<br>
+ThRp<br>
+9mHLl<br>
+s;S<br>
+n<br>
+X^h_<br>
+rRXfDpLu<br>
+c#v&o<br>
+s*Qd\<br>
+,Ewnp<br>
+NQe3T<br>
+C)ST<br>
+xYmw<br>
+I,)xsP<br>
+sNpMKS<br>
+dMxb<br>
+*BP:<br>
+rj\j<br>
+I*&(y-<br>
+PHa*<br>
+&xiXvB4<br>
+RZQb<br>
+g.*-"Ed<br>
+L}rD<br>
+z"TD<br>
+4Ody<br>
+^4!Ef!E<br>
+N*krew<br>
+>Jd.<br>
+tMcr,rXi<br>
+tUTF-<br>
+16^L'Q<br>
+NICOdD<br>
+e9xc<br>
+Is<br>
+eQn'<br>
+(@8ilp<br>
+,"<br>
+M<br>
+C<br>
+yp<br>
+qH8:m<br>
+2T!e$W<br>
+BH+s<br>
+!p4M,<br>
+Ub|"<br>
+30h!*eJt<br>
+Jv%8<br>
+ft\WhxJ<br>
+Gxha|<br>
+8FD<e<br>
+!"#<br>
+$%&'()*+<br>
+,-./0123<br>
+456789:;<br>
+<=>?@ABC<br>
+FGHIJKLM<br>
+NOPQRSTU<br>
+VWXYZ[\]<br>
+^_`abcde<br>
+fghijklm<br>
+F,pq<br>
+vwxyz{<br>
+!50s<cb<br>
+8<br>
+\}~Q<br>
+](f'<br>
+o<br>
+(2<br>
+2#j8E'R<br>
+HpDpL<br>
+BoxW<br>
+P<br>
+4u<br>
+Av?.<br>
+UTW<br>
+b<<br>
+e<br>
+wdhz<br>
+iUImIiei<br>
+vpu[kf`<br>
+""<br>
+`^D#<br>
+9$(H><br>
+0"?D8@<br>
+D$XHF<br>
+`"GDhI<br>
+J$xHK<br>
+"%D(&<br>
+'$@H)<br>
+L"*DX+<br>
+$/Q"0DC<<br>
+T$EH`<br>
+F"lDGx<br>
+Zp@re<br>
+k$<br>
+Hl<br>
+sDk<br>
+H"<br>
+DT<br>
+$(H<br>
+$XH;<br>
+"<D;H<br>
+$dH<br>
+p";D|<br>
+HXDD<br>
+)qs48Bd!<br>
+"HDCT<br>
+'!E1<br>
+,$IH8<br>
+`!J=L<br>
+&!OLbl.&<br>
+!Zsb<br>
+&(!D<br>
+4D>p<br>
+|D7|<br>
+!OiL<br>
+!am<<br>
+!PmD<br>
+RL|D-<br>
+!rLlD1<br>
+!xL4D:$<br>
+b$?&01B<br>
+"2eL!y<br>
+"%eX!g<br>
+4"$dd!fLp<br>
++L|!m<br>
+2l!X<br>
+d,!\WL<br>
+!zyD<br>
+/!_1<br>
+2<br>
+!`<br>
+42,!<br>
+'&\!Dih<br>
+ds2d<br>
+B(8f)i<br>
+/L|SjX8k!o<br>
+Cv8t#h<br>
+!h?S@x<br>
+e,z48b<br>
+S@)o8<br>
+s<br>
+nT<br>
+yR*<br>
+iE4:<br>
+>duR<br>
+U7,Al<br>
+RtD<br>
+xK<br>
+TU9De<br>
+TMI`<br>
+V7h@<br>
+TMRp<br>
+2ENnt<br>
+TN`t<br>
+n]x5<br>
+!eek-<<br>
+s<YmR0M<br>
+tQHsL<br>
+0U]|<br>
+|\HP<br>
+SsdR<br>
+p'Pj<br>
+HC"8<br>
+WNX$Z<br>
+0)O4<br>
+|$(yBO<br>
+yC\$K<br>
+WL$$A<br>
+etNu<br>
+=Wle<br>
+pdBz<br>
+8j!ogk<br>
+G<e,e<br>
+&c|z<br>
+N&t[+<br>
+peBs<br>
+plCi<br>
+m;^)p<br>
+dreh<br>
+JHYp<br>
+8c!l<br>
+8n!igp<br>
+$LEp<br>
+XF$,s<br>
+ZJn:l<br>
+Nmi|<br>
+qn]~,<br>
+pmBo<br>
+$$H(<br>
+4"8D<@<br>
+H$LHP<br>
+T"XD\`<br>
+h$lHp<br>
+t"xD|<br>
+4"TDt<br>
+`"|D<br>
+based<br>
+{?hi<br>
+e%bi<br>
+ptr64<br>
+ezP?icB<br>
+y<br>
+N"<br>
+l>t[<br>
+operat<br>
+-IoN<br>
+,<br>
+()D~^<br>
+f*A+<br>
+D-/<br>
+>3k<<br>
+|<br>
+^<br>
+`vft<br>
+gx7Rd<br>
+2AdUFr<br>
+con<br>
+zSa!C<br>
+h<br>
+Z=<br>
+6P0$py)~w`Qd<br>
+`1EH<br>
+gEt9<br>
+@?LH,gE)=T<br>
+f>fG<br>
+V;ex<br>
+HA-}<br>
+f><br>
+NK<br>
+ZRx<br>
+V2.Yx<br>
+3\mE%<br>
+(RrV<br>
+)(CZ<br>
+"DM<E<br>
+>KHT<br>
+n$)vbj<br>
+O4%dd*<br>
+&wFi+d<br>
+2\W\<br>
+pNLT<br>
+^)9FV#V^<br>
+yI,ex<br>
+%0fV<br>
+w2<Hi*DL<br>
+{dI=<br>
+sanfdr.<br>
+)':Rerp<br>
+rmdiH<br>
+"b@<br>
+P<br>
+`!h4(AT<br>
+b8t*<br>
+yW<"<br>
+bu7Ls-r<br>
+j3Ev<br>
+pfP*hA<br>
+Modu<br>
+JickC6ou<br>
+'|wLB<br>
+vtiByR<br>
+oAnd<br>
+KERN`L32.d<br>
+T2}nUl<br>
+$+ch?<br>
+b%IcvV<br>
+)I8$n><br>
+oy'%<br>
+XoxQu<br>
+pKQ~<br>
+4B{K<br>
+_b8>W<br>
+S*sy<br>
+0IPHL<br>
+.Dniu<br>
+fe`Ng<br>
+a$Er<br>
+UnXhy<br>
+@~NSI<br>
+cG4P<br>
+r"yA<br>
+RN$a<br>
+:hB~ADvR7<br>
+6Bbl9RS<br>
+8PAP<br>
+Vbad_7l<br>
+oc@szt<br>
+e9xc<br>
+ption8N<br>
+P4eR2<br>
+WL`Y<br>
+"mD<br>
+p<br>
+hH4Fj<br>
+e_infoPpq<br>
+y)!0<br>
+J<br>
+xv#<br>
+defghijk<br>
+lmnopqrs<br>
+tuvwxyz'<br>
+BCDEFGH<br>
+IJKLMNOP<br>
+QRSTUVWX.YZ<br>
+E<br>
+UI5<br>
+($,H0<br>
+4"<DDL<br>
+d$lHx<br>
+"$E8w<br>
+L"<br>
+TD\d<br>
+t$|H<br>
+0$8H@<br>
+H"PDXh<br>
+d<br>
+,_<br>
+Dh@U<br>
+\IYH"TVU4<br>
+><br>
+C0<br>
+218.5s4w3<br>
+BpAM<br>
+opAz<br>
+H5!<p<br>
+D6U/<br>
+pdpgSf<br>
+y2)iYh<br>
+^(-g)<br>
+fI=N!<br>
+F>T(<br>
+p:h<br>
+``<br>
+D<br>
+psUcx<br>
+|t,*n8<br>
+e#Bp<br>
+O7,J<br>
+g*9fxds1wN4<br>
+6)4QD322V<br>
+4<br>
+'1GBo<br>
+5%'3GCg<br>
+t*vtx<br>
+A(;G<br>
+>retjvox<br>
+:95y<br>
+G=rot<br>
+>-?xN<br>
+xDzY|<br>
+9>%:l;<br>
+?ONk<br>
+!70m<br>
+rtrv<br>
+c97j:<br>
+'#GEgW<br>
+V?^'<br>
+7r<br>
+t<br>
+x<br>
+z(|4~=~B~H~R~\~lI|<br>
+1r't2v8xJzT|]~<br>
+6V7u<br>
+OQ)^'<br>
+P_'eGug}<br>
+~uI}<br>
+ktXy<br>
+7'TE<br>
+5O8IS<br>
+;[3_<br>
+K9eIt<br>
+":SNdi<br>
+43WK<br>
+!968:M;g<<br>
+7&'MO]<br>
+"'SG<br>
+&9=c:m.<br>
+2'NE<br>
+\'Hd<br>
+9rDtMv<br>
+t;}!o<x<br>
+2>]F<br>
+B"1,X<br>
+'.EI<br>
+t<br>
+v&X7zz]l<br>
+<M^8?<br>
+4:$F<br>
+v!x'z<br>
+'<br>
+G%gD<br>
+:9;D<N=`>j?<br>
+2#N)<br>
+]?o'<br>
+$27'<br>
+;<R$Y<br>
+;<>=U.Z$<br>
+=E9>S:m;<br>
+G3F5K<br>
+6:~N<br>
+;a^k<br>
+<r3tPvp]<br>
+G<br>
+g&<br>
+@&3X<br>
+;O$_Kq'R<br>
+9aDA,F'I<br>
+mXN~u~y~}d<br>
+=%x~[w<br>
+1r(t<MB<br>
+.Ip0?x<br>
+~T~\~d~l~t~|~<br>
+~L~T~\~dQl<br>
+4%:D<br>
+?\?d?l<br>
+t?|?<br>
+=O|@<br>
+~X~`Jh<br>
+C4>L<br>
+8d6L<br>
+FM,H&4J<br>
+`RVW<br>
+u<WF<br>
+,._F;<br>
+AAPQP<br>
+Y_^XQW

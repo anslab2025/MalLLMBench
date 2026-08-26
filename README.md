@@ -6,7 +6,7 @@ This repository contains the datasets for **MalLLMBench**, a benchmark dataset d
 
 ---
 
-## ⚠️ Data Access / 数据访问
+## Data Access / 数据访问
 
 **Access to the original PE binary files requires an application.** Please fill out the application form (`docs/binary_file_access_application.docx` for English, `docs/binary_file_access_application_cn.docx` for Chinese) and submit it as instructed in the form.
 
@@ -56,7 +56,7 @@ This repository contains the datasets for **MalLLMBench**, a benchmark dataset d
 | **Reprset** | 666 | 1,334 | 2,000 | 666 | 1,334 | 2,000 |
 | **Total** | 8,000 | 16,000 | 24,000 | 7,141 | 14,282 | 21,423 |
 
-> **Note**: The Wild set counts may differ slightly from the paper due to ongoing data quality filtering. The lab set was collected from February to August 2021, and the wild set from August to September 2021, with a temporal boundary at 2021-08-22.
+> **Note**: The lab set was collected from February to August 2021, and the wild set from August to September 2021, with a temporal boundary at 2021-08-22.
 
 ### 1. CSV Label Files / CSV 标签文件
 

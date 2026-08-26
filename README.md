@@ -52,9 +52,9 @@ This repository contains the datasets for **MalLLMBench**, a benchmark dataset d
 | Environment | Mining | Non-mining | Total | Ransomware | Non-ransomware | Total |
 |:---|---:|---:|---:|---:|---:|---:|
 | **Lab** | 2,000 | 4,000 | 6,000 | 2,000 | 4,000 | 6,000 |
-| **Wild** | 5,141 | 10,282 | 15,423 | 4,651 | 8,667 | 13,318 |
-| **Reprset** | 666 | 1,334 | 2,000 | 668 | 1,332 | 2,000 |
-| **Total** | 7,141 | 14,282 | 21,423 | 6,651 | 12,667 | 19,318 |
+| **Wild** | 6,000 | 12,000 | 18,000 | 5,141 | 10,282 | 15,423 |
+| **Reprset** | 666 | 1,334 | 2,000 | 666 | 1,334 | 2,000 |
+| **Total** | 8,000 | 16,000 | 24,000 | 7,141 | 14,282 | 21,423 |
 
 > **Note**: The Wild set counts may differ slightly from the paper due to ongoing data quality filtering. The lab set was collected from February to August 2021, and the wild set from August to September 2021, with a temporal boundary at 2021-08-22.
 

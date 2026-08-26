@@ -1,109 +1,234 @@
+# MalLLMBench: A Dataset Benchmark for LLM-assisted Malware Analysis
 
-# ansllab2025 - Malware Sample Dataset  
-# ansllab2025 - 恶意软件样本数据集
+This repository contains the datasets for **MalLLMBench**, a benchmark dataset designed for evaluating LLM-assisted malware analysis methods. The benchmark focuses on two malware categories: **cryptojacking (mining) malware** and **ransomware**, with samples organized using a temporal laboratory-to-wild separation to support non-i.i.d. evaluation.
 
-This repository contains labeled datasets for mining malware (**miner**) and ransomware classification research. The labels are stored in CSV files, and corresponding static analysis reports are provided as HTML files to support feature extraction and behavioral analysis.
-
-本仓库包含用于挖矿恶意软件（**miner**）和勒索软件（**ransomware**）分类研究的标注数据集。标签以 CSV 文件形式存储，并提供对应的静态分析 HTML 报告，便于特征提取与行为分析。
+本仓库包含 **MalLLMBench** 的数据集，这是一个用于评估 LLM 辅助恶意软件分析方法的基准数据集。基准聚焦于两类恶意软件：**挖矿恶意软件**与**勒索软件**，样本采用时间先后的 lab/wild 划分，支持非独立同分布 (non-i.i.d.) 评估。
 
 ---
 
-## 📂 Directory Structure / 目录结构
+## ⚠️ Data Access / 数据访问
+
+**Access to the original PE binary files requires an application.** Please fill out the application form (`docs/binary_file_access_application.docx` for English, `docs/binary_file_access_application_cn.docx` for Chinese) and submit it as instructed in the form.
+
+**获取原始 PE 二进制文件需要提交申请。** 请填写申请表（英文版 `docs/binary_file_access_application.docx`，中文版 `docs/binary_file_access_application_cn.docx`）并按要求提交。
+
+> The static analysis HTML reports and CSV label files in this repository are publicly accessible without application.
+
+> 本仓库中的静态分析 HTML 报告和 CSV 标签文件无需申请即可公开访问。
+
+---
+
+## Directory Structure / 目录结构
 
 ```
 .
-├── miner/                     # Mining malware dataset / 挖矿恶意软件数据集
-│   └── *.csv                  # Labels: 0 = non-miner, 1 = miner / 标签：0=非挖矿，1=挖矿
-├── miner_string/              # Static analysis reports (HTML) for miner samples / 挖矿样本的静态分析报告
-│   └── VirusShare_*.html      # Detailed analysis pages / 详细分析页面
-├── ransomware/                # Ransomware dataset / 勒索软件数据集
-│   └── *.csv                  # Labels: 0 = non-ransomware, 1 = ransomware / 标签：0=非勒索，1=勒索
-├── ransomware_string/         # Static analysis reports (HTML) for ransomware samples / 勒索软件样本的静态分析报告
-│   └── VirusShare_*.html      # Same format as above / 格式同上
+├── miner/                          # Cryptojacking (mining) malware dataset / 挖矿恶意软件数据集
+│   ├── lab_label.csv              # Lab set labels (6,000 samples)
+│   └── wild_label.csv             # Wild set labels (15,423 samples)
+├── miner_string/                   # Static analysis HTML reports for miner samples
+│   └── VirusShare_{hash}_{YYYYMMDD}_{HHMMSS}_analysis.html
+├── ransomware/                     # Ransomware dataset
+│   ├── lab_label.csv              # Lab set labels (6,000 samples)
+│   └── wild_label.csv             # Wild set labels (13,318 samples)
+├── ransomware_string/              # Static analysis HTML reports for ransomware samples
+│   └── VirusShare_{hash}_{YYYYMMDD}_{HHMMSS}_analysis.html
+├── docs/                           # Documentation & supplementary materials
+│   ├── binary_file_access_application.docx       # English version
+│   └── binary_file_access_application_cn.docx    # 中文版
+├── reprset/                        # Representative subset for efficient LLM evaluation / 代表性子集
+│   ├── Reprset_miner.csv          # Mining representative subset (2,000 samples)
+│   └── Reprset_ransomware.csv  # Ransomware representative subset (2,000 samples)
+├── LICENSE
+├── CITATION.cff
 └── README.md
 ```
 
 ---
 
-## 📊 Data Description / 数据说明
+## Data Description / 数据说明
 
-### 1. CSV Files (`miner/`, `ransomware/`)  
-### 1. CSV 文件（`miner/`、`ransomware/`）
+### Sample Distribution / 样本分布
 
-- Each row represents one malware sample.  
-  每行代表一个恶意软件样本。
-- Columns: `hash` (file hash), `label` (class label).  
-  列包括：`hash`（文件哈希）、`label`（类别标签）。
-- **Label Definition**:  
-  **标签定义**：
-  - `0`: Normal or non-target type (e.g., non-mining / non-ransomware)  
-    `0`：正常或非目标类型（例如：非挖矿 / 非勒索）
-  - `1`: Target malware (mining or ransomware)  
-    `1`：目标恶意软件（挖矿或勒索）
+| Environment | Mining | Non-mining | Total | Ransomware | Non-ransomware | Total |
+|:---|---:|---:|---:|---:|---:|---:|
+| **Lab** | 2,000 | 4,000 | 6,000 | 2,000 | 4,000 | 6,000 |
+| **Wild** | 5,141 | 10,282 | 15,423 | 4,651 | 8,667 | 13,318 |
+| **Reprset** | 666 | 1,334 | 2,000 | 668 | 1,332 | 2,000 |
+| **Total** | 7,141 | 14,282 | 21,423 | 6,651 | 12,667 | 19,318 |
 
-> **Example / 示例**:  
+> **Note**: The Wild set counts may differ slightly from the paper due to ongoing data quality filtering. The lab set was collected from February to August 2021, and the wild set from August to September 2021, with a temporal boundary at 2021-08-22.
+
+### 1. CSV Label Files / CSV 标签文件
+
+Each CSV file contains two columns:
+
+| Column | Description |
+|:---|:---|
+| `filename` | Sample identifier in the format `VirusShare_{md5_hash}` |
+| `label` | Class label: `0` = non-target (negative), `1` = target malware (positive) |
+
+**Label definitions / 标签定义**:
+- **miner/**: `1` = mining malware, `0` = non-mining (other malware families used as negative samples)
+- **ransomware/**: `1` = ransomware, `0` = non-ransomware
+
+> **Example**:
+> ```csv
+> filename,label
+> VirusShare_0000ee89e9109377eb763c07aa0cdf9d,1
+> VirusShare_2a01235356d4ddb0a49b678426b52836,0
 > ```
-> hash,label
-> 0000ee89e9109377eb763c07aa0cdf9d,1
-> a1b2c3d4e5f6...,0
-> ```
 
----
+### 2. HTML Analysis Reports / HTML 分析报告
 
-### 2. HTML Analysis Reports (`*_string/`)  
-### 2. HTML 分析报告（`*_string/`）
-
-Each HTML file corresponds to a sample’s static analysis report. Filename format:
-
-每个 HTML 文件对应一个样本的静态分析报告。文件命名规则如下：
+Each CSV entry has a corresponding HTML file in the `*_string/` directory. The HTML filename embeds the hash plus a timestamp:
 
 ```
 VirusShare_{hash}_{YYYYMMDD}_{HHMMSS}_analysis.html
 ```
 
-> **Example / 示例**:  
-> `VirusShare_0000ee89e9109377eb763c07aa0cdf9d_20250516_062308_analysis.html`
+**Important**: The `filename` column in the CSV contains only `VirusShare_{hash}` (without timestamp). To locate the corresponding HTML report, perform a prefix match:
 
-#### Included Sections / 包含内容：
+```python
+import glob
+html_files = glob.glob(f"miner_string/VirusShare_{hash}_*_analysis.html")
+```
 
-- **File Informations** – Basic metadata (size, timestamp, etc.)  
-  **文件信息** – 基础元数据（大小、时间戳等）
-- **File Version Info** – Version resource details  
-  **文件版本信息** – 版本资源详情
-- **File Checksums** – MD5, SHA1, SHA256 hashes  
-  **文件校验和** – MD5、SHA1、SHA256 等
-- **Sections** – PE section headers  
-  **节区信息** – PE 文件节表
-- **Strings** – Extracted printable strings  
-  **字符串** – 提取的可打印字符串
-- **Imports** – Imported functions (DLLs & APIs)  
-  **导入表** – 导入的函数（DLL 与 API）
-- **Suspicious APIs** – Potentially malicious API calls  
-  **可疑 API** – 可能恶意的 API 调用
-- **Exports** – Exported functions  
-  **导出表** – 导出的函数
+#### Report Sections / 报告包含内容:
 
-These reports are generated from automated reverse engineering or static analysis tools, and are suitable for large-scale feature engineering.
+| Section | Description |
+|:---|:---|
+| File Informations | Basic metadata (size, type, compilation timestamp) |
+| File Version Info | Version resource details |
+| File Checksums | MD5, SHA1, SHA256, SHA512 hashes |
+| Sections | PE section headers |
+| Strings | Extracted printable strings |
+| Imports | Imported functions (DLLs & APIs) |
+| Suspicious APIs | Potentially malicious API calls |
+| Exports | Exported functions |
+| Resources | Resource entries |
+| VirusTotal Results | Multi-engine detection (may be empty if rate-limited) |
 
-这些报告由自动化逆向工程或静态分析工具生成，适用于大规模特征工程。
+> **Note**: Some sections may be empty or show error messages (e.g., VirusTotal `403 Forbidden`) if the analysis tool encountered rate limits or the sample lacked corresponding data.
 
----
+### 3. Representative Subset (Reprset) / 代表性子集
 
-## 💡 Usage Recommendations / 使用建议
+The Reprset is a clustering-based representative subset designed to reduce LLM inference cost while preserving distributional coverage. Each CSV file contains two columns (`hash`, `label`), same format as the lab/wild labels.
 
-- Combine `miner.csv` with HTML files in `miner_string/` to train mining detection models.  
-  将 `miner.csv` 与 `miner_string/` 中的 HTML 文件结合，训练挖矿检测模型。
-- Similarly, use `ransomware.csv` + `ransomware_string/` for ransomware classification.  
-  类似地，使用 `ransomware.csv` 与 `ransomware_string/` 进行勒索软件分类。
-- Parse key fields such as **Strings**, **Imports**, and **Suspicious APIs** to build feature vectors.  
-  解析 **字符串**、**导入表** 和 **可疑 API** 等关键字段，构建特征向量。
-- Recommended tools: Python with `pandas`, `BeautifulSoup`, or `lxml` for batch processing.  
-  推荐工具：使用 Python 的 `pandas`、`BeautifulSoup` 或 `lxml` 批量处理数据。
+| File | Task | Positive | Negative | Total |
+|:---|:---|---:|---:|---:|
+| `reprset/Reprset_miner.csv` | Cryptojacking | 666 | 1,334 | 2,000 |
+| `reprset/Reprset_ransomware.csv` | Ransomware | 668 | 1,332 | 2,000 |
+
+> The Reprset is derived from the Wild set via 1D-CNN feature extraction, PCA dimensionality reduction, and K-Means clustering with proportional sampling.
 
 ---
 
-## 🔍 Data Source / 数据来源
+## Lab/Wild Temporal Split / Lab/Wild 时间划分
 
-All samples originate from public threat intelligence platforms (e.g., VirusShare), cleaned and labeled for research purposes. Original file hashes are preserved for traceability.
+A core design principle of MalLLMBench is **temporal separation** to prevent information leakage and enable realistic evaluation under distribution shift:
 
-所有样本均来源于公开威胁情报平台（如 VirusShare），经清洗与标注后用于研究。原始文件哈希值已保留，便于溯源。
+- **Lab set**: Samples collected from February to August 2021 (controlled environment)
+- **Wild set**: Samples collected from August to September 2021 (in-the-wild)
+- **Temporal boundary**: 2021-08-22
+
+This split ensures that wild-set samples are chronologically after lab-set samples, simulating real-world deployment where models must generalize to previously unseen malware variants.
+
+---
+
+## Download / 下载
+
+Due to the large number of HTML analysis reports, cloning the full repository may be slow. We recommend:
+
+```bash
+# Sparse clone (metadata files only, skip large HTML directories):
+git clone --filter=blob:none --sparse https://github.com/anslab2025/MalLLMBench.git
+cd MalLLMBench
+git sparse-checkout set miner ransomware README.md LICENSE CITATION.cff
+
+# Or download specific files via the GitHub API:
+curl -L https://github.com/anslab2025/MalLLMBench/raw/main/miner/lab_label.csv -o lab_label.csv
+```
+
+---
+
+## Usage / 使用方法
+
+### Loading labels / 加载标签
+
+```python
+import pandas as pd
+
+# Load mining malware labels
+lab_labels = pd.read_csv("miner/lab_label.csv")
+wild_labels = pd.read_csv("miner/wild_label.csv")
+
+print(f"Lab set: {len(lab_labels)} samples")
+print(f"  Mining: {(lab_labels.label == 1).sum()}")
+print(f"  Non-mining: {(lab_labels.label == 0).sum()}")
+```
+
+### Parsing HTML reports / 解析 HTML 报告
+
+```python
+from bs4 import BeautifulSoup
+import glob
+
+def load_html_report(hash_value, task="miner"):
+    """Load and parse an HTML analysis report by sample hash."""
+    pattern = f"{task}_string/VirusShare_{hash_value}_*_analysis.html"
+    matches = glob.glob(pattern)
+    if not matches:
+        raise FileNotFoundError(f"No HTML report found for {hash_value}")
+    with open(matches[0], "r", encoding="utf-8") as f:
+        return BeautifulSoup(f.read(), "html.parser")
+
+# Example: extract suspicious APIs
+soup = load_html_report("0000ee89e9109377eb763c07aa0cdf9d", "miner")
+suspicious_section = soup.find("a", id="suspicious")
+# ... parse the section as needed
+```
+
+---
+
+## Binary File Access / 二进制文件访问
+
+Access to the original PE binary files requires an application. Please fill out the appropriate form below and submit it as instructed:
+
+| Language | File |
+|:---|:---|
+| English | `docs/binary_file_access_application.docx` |
+| 中文 | `docs/binary_file_access_application_cn.docx` |
+
+原始 PE 二进制文件的访问需要申请，请填写对应的申请表并按要求提交。
+
+---
+
+## Reproducibility / 可复现性
+
+All samples originate from public threat intelligence platforms (VirusShare.com). Labels were derived using VirusTotal multi-engine detection results aggregated via AVClass. Original file hashes are preserved for full traceability.
+
+---
+
+## License / 许可证
+
+This dataset is released under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license. See [LICENSE](LICENSE) for details.
+
+If you use this dataset in your research, please cite the accompanying paper.
+
+---
+
+## Citation / 引用
+
+Citation information will be updated upon publication of the accompanying paper.
+
+引用信息将在配套论文发表后更新。
+
+---
+
+## Contact / 联系
+
+For questions or issues, please open a [GitHub Issue](https://github.com/anslab2025/MalLLMBench/issues).
+
+All samples are sourced from VirusShare.com and labeled for research purposes. Original file hashes are preserved for traceability.
+
+所有样本均来源于 VirusShare.com，经清洗与标注后用于研究。原始文件哈希值已保留，便于溯源。

@@ -1,0 +1,32 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Temporary / lock files
+~$*
+*.tmp
+*.log
+*.bak
+
+# Jupyter
+.ipynb_checkpoints/

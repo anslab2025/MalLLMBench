@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "MalLLMBench: A Dataset Benchmark for LLM-assisted Malware Analysis Tasks"
+message: "If you use this dataset in your research, please cite the accompanying paper."
+type: dataset
+authors:
+  - name: "Anonymous"
+    # Author names will be revealed upon acceptance
+date-released: "2025-01-09"
+url: "https://github.com/anslab2025/MalLLMBench"
+repository-code: "https://github.com/anslab2025/MalLLMBench"
+keywords:
+  - malware
+  - benchmark
+  - large-language-model
+  - ransomware
+  - cryptojacking
+  - dataset
+  - cybersecurity
+preferred-citation:
+  type: article
+  title: "MalLLMBench: A Dataset Benchmark for LLM-assisted Malware Analysis Tasks"
+  authors:
+    - name: "Anonymous"
+  note: "Citation will be updated upon publication"
+  url: "https://github.com/anslab2025/MalLLMBench"
+license: CC-BY-4.0
